@@ -35,8 +35,19 @@ function kubio_add_edit_post_row_actions( $actions, $post ) {
 		return $actions;
 	}
 
-	$post_id = $post->ID;
-
+	$post_id               = $post->ID;
+	$is_translate_redirect = false;
+	//when you try to edit the translated page redirect to the original language
+	if ( kubio_wpml_is_active() ) {
+		$translated_id = kubio_wpml_get_original_language_post_id( $post_id, $post->post_type );
+		if ( $translated_id !== $post_id ) {
+			$is_translate_redirect = true;
+			$post_id               = $translated_id;
+			if ( in_array( $post->post_type, array( 'wp_template', 'wp_template_part' ) ) ) {
+				$post = get_post( $translated_id );
+			}
+		}
+	}
 	if ( in_array( $post->post_type, array( 'wp_template', 'wp_template_part' ) ) ) {
 		$template = _kubio_build_template_result_from_post( $post );
 
@@ -47,17 +58,21 @@ function kubio_add_edit_post_row_actions( $actions, $post ) {
 		$post_id = $template->id;
 	}
 
+	$args = array(
+		'page'     => 'kubio',
+		'postId'   => $post_id,
+		'postType' => $post->post_type,
+	);
+	if ( $is_translate_redirect ) {
+		$args['isTranslateRedirect'] = 1;
+	}
 	$edit_url = add_query_arg(
-		array(
-			'page'     => 'kubio',
-			'postId'   => $post_id,
-			'postType' => $post->post_type,
-		),
+		$args,
 		admin_url( 'admin.php' )
 	);
 
-	$status    = get_post_status( $post_id );
-	$isTrashed = strpos( $post_id, '__trashed' );
+	$status     = get_post_status( $post_id );
+	$is_trashed = strpos( $post_id, '__trashed' );
 
 	if ( $status === 'draft' || $status === 'auto-draft' ) {
 		$edit_url = add_query_arg(
@@ -70,7 +85,7 @@ function kubio_add_edit_post_row_actions( $actions, $post ) {
 		);
 	}
 
-	if ( $status !== 'trash' && $isTrashed === false ) {
+	if ( $status !== 'trash' && $is_trashed === false ) {
 		$link = sprintf(
 			'<a href="%s"><span style="display:none" class="kubio-edit">%s</span>%s</a>',
 			esc_url( $edit_url ),
@@ -94,6 +109,7 @@ function kubio_add_edit_post_row_actions( $actions, $post ) {
 }
 
 function kubio_post_edit_add_button() {
+
 	global $post;
 
 	if ( ! $post ) {
@@ -112,9 +128,17 @@ function kubio_post_edit_add_button() {
 		return;
 	}
 
-	$post_id = $post->ID;
-
-	if ( in_array( $post->post_type, array( 'wp_template', 'wp_template_part' ) ) ) {
+	$post_id               = $post->ID;
+	$is_translate_redirect = false;
+	$translated_id         = kubio_wpml_get_original_language_post_id( $post_id, $post->post_type );
+	if ( $translated_id !== $post_id ) {
+		$is_translate_redirect = true;
+		$post_id               = $translated_id;
+		if ( in_array( $post->post_type, array( 'wp_template', 'wp_template_part' ), true ) ) {
+			$post = get_post( $translated_id );
+		}
+	}
+	if ( in_array( $post->post_type, array( 'wp_template', 'wp_template_part' ), true ) ) {
 		$template = _kubio_build_template_result_from_post( $post );
 
 		if ( is_wp_error( $template ) ) {
@@ -123,19 +147,22 @@ function kubio_post_edit_add_button() {
 
 		$post_id = $template->id;
 	}
-
+	$args = array(
+		'page'     => 'kubio',
+		'postId'   => $post_id,
+		'postType' => $post->post_type,
+	);
+	if ( $is_translate_redirect ) {
+		$args['isTranslateRedirect'] = 1;
+	}
 	$edit_url = add_query_arg(
-		array(
-			'page'     => 'kubio',
-			'postId'   => $post_id,
-			'postType' => $post->post_type,
-		),
+		$args,
 		admin_url( 'admin.php' )
 	);
 
 	add_action(
 		'admin_head',
-		function() {
+		function () {
 			?>
 			<style>
 				a.components-button.edit-in-kubio.is-primary svg {
@@ -149,9 +176,9 @@ function kubio_post_edit_add_button() {
 
 			if ( Utils::wpVersionCompare( '6.3', '>=' ) ) {
 				?>
-			 <style>
+			<style>
 					a.components-button.edit-in-kubio.is-primary {
-					
+
 						margin-right: 30px;
 					}
 				</style>
@@ -169,8 +196,9 @@ function kubio_post_edit_add_button() {
 			const icon = <?php echo wp_json_encode( base64_encode( KUBIO_LOGO_SVG ) ); ?>;
 			const label = <?php echo wp_json_encode( '<span>' . esc_html__( 'Edit with Kubio', 'kubio' ) . '</span>' ); ?>;
 			let unsubscribe = null;
-			
+
 			const createButton = () => {
+
 
 				if (unsubscribe) {
 						unsubscribe();
@@ -218,19 +246,18 @@ function kubio_post_edit_add_button() {
 								url,
 							});
 						}
-					} 
+					}
 				}, 2000);
 			};
 
 			unsubscribe = wp.data.subscribe(createButton);
-		})(
-		
-			);
+		})();
 	</script>
 	<?php
 
 	$script = str_replace( "\n\t\t", "\n", ob_get_clean() );
 
+	// phpcs:ignore WordPress.WP.AlternativeFunctions.strip_tags_strip_tags
 	wp_add_inline_script( 'wp-block-editor', strip_tags( $script ), 'after' );
 }
 
@@ -243,17 +270,34 @@ add_action( 'enqueue_block_editor_assets', 'kubio_post_edit_add_button', 0, 2 );
 
 function kubio_frontend_get_editor_url() {
 	global $post;
+	if ( gettype( $post ) === 'integer' ) {
+		$post = get_post( $post );
+	}
+
 	// Add site-editor link.
 	$url = null;
 	if ( ! is_admin() && current_user_can( 'edit_theme_options' ) ) {
+
+		// phpcs:ignore WordPress.Security.ValidatedSanitizedInput.InputNotValidated, WordPress.Security.ValidatedSanitizedInput.MissingUnslash, WordPress.Security.ValidatedSanitizedInput.InputNotSanitized
 		$current_url = ( is_ssl() ? 'https://' : 'http://' ) . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
 
 		$args = array();
 		if ( is_singular() || is_single() ) {
+			$post_id               = $post->ID;
+			$is_translate_redirect = false;
+			//when you try to edit the translated page redirect to the original language
+			$translated_post_id = kubio_wpml_get_original_language_post_id( $post_id, $post->post_type );
+			if ( $translated_post_id !== $post_id ) {
+				$post_id               = $translated_post_id;
+				$is_translate_redirect = true;
+			}
 			$args = array(
-				'postId'   => $post->ID,
+				'postId'   => $post_id,
 				'postType' => $post->post_type,
 			);
+			if ( $is_translate_redirect ) {
+				$args['isTranslateRedirect'] = 1;
+			}
 		} else {
 
 			$block_template = null;
@@ -267,6 +311,7 @@ function kubio_frontend_get_editor_url() {
 						'post_name__in'  => array( 'index', 'home' ),
 						'posts_per_page' => 1,
 						'no_found_rows'  => true,
+						// phpcs:ignore WordPress.DB.SlowDBQuery.slow_db_query_tax_query
 						'tax_query'      => array(
 							array(
 								'taxonomy' => 'wp_theme',
@@ -278,6 +323,11 @@ function kubio_frontend_get_editor_url() {
 				);
 
 				$block_template = $query->have_posts() ? _kubio_build_template_result_from_post( $query->next_post() ) : null;
+			}
+
+			//for 404 if you try to use the current_url it crashes the editor so we have a special case for it
+			if ( is_404() ) {
+				$block_template = resolve_block_template( '404', array( '404.php' ), null );
 			}
 
 			if ( $block_template ) {
@@ -316,7 +366,6 @@ function kubio_frontend_adminbar_items( $wp_admin_bar ) {
 			)
 		);
 	}
-
 }
 
 add_action( 'admin_bar_menu', 'kubio_frontend_adminbar_items', 80 );

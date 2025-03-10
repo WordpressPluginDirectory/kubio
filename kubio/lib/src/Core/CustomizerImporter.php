@@ -120,7 +120,6 @@ class CustomizerImporter {
 
 			static::$current_data = $data;
 		}
-
 	}
 
 	private function canProcessCurrent() {
@@ -173,7 +172,6 @@ class CustomizerImporter {
 		}
 
 		return $parsed_blocks;
-
 	}
 
 	private function postProcessBlock( $parsed_block, $current_data ) {
@@ -380,6 +378,12 @@ class CustomizerImporter {
 			Arr::forget( $style, 'descendants.frameImage.zIndex' );
 		}
 
+		// Check - image has border style from design (https://mantis.iconvert.pro/view.php?id=55688)
+		$image_border_style = Arr::get( $parsed_block, 'attrs.kubio.style.descendants.image.border' );
+		if ( $image_border_style ) {
+			Arr::set( $style, 'descendants.image.border', $image_border_style );
+		}
+
 		Arr::set( $parsed_block, 'attrs.kubio.style', $style );
 		Arr::set(
 			$parsed_block,
@@ -568,7 +572,6 @@ class CustomizerImporter {
 		}
 
 		return array();
-
 	}
 
 	private function normalizeTexts( $parsed_block, $data, $item_data ) {
@@ -750,8 +753,8 @@ class CustomizerImporter {
 
 		$bg_slides = static::prepareBackgroundSlides( $bg_slides );
 
-		list($r,$g,$b,$a) = sscanf( $overlay_color['value'], 'rgba(%d,%d,%d,%f)' );
-		list($r,$g,$b,$a) = sscanf( $overlay_color['value'], 'rgba(%d,%d,%d,%f)' );
+		list($r, $g, $b, $a) = sscanf( $overlay_color['value'], 'rgba(%d,%d,%d,%f)' );
+		list($r, $g, $b, $a) = sscanf( $overlay_color['value'], 'rgba(%d,%d,%d,%f)' );
 		if ( is_numeric( $r ) && is_numeric( $g ) && is_numeric( $b ) && is_numeric( $a ) ) {
 			$overlay_color = array(
 				'opacity' => $a,
@@ -776,11 +779,13 @@ class CustomizerImporter {
 			Arr::set( $data, 'style.descendants.outer.background.image.0.source.gradient', $this->composeGradient( $gradient_bg ) );
 		}
 
-		if ( $bg_type === 'image' ) {
-			Arr::set( $data, 'style.descendants.outer.background.image.0.source.type', $bg_type );
-		}
-
-		if ( $bg_type === 'gradient' ) {
+		if ( $bg_type === 'color' ) {
+			Arr::set(
+				$data,
+				'style.descendants.outer.background.type',
+				'none'
+			);
+		} elseif ( $bg_type === 'image' || $bg_type === 'gradient' ) {
 			Arr::set( $data, 'style.descendants.outer.background.image.0.source.type', $bg_type );
 		}
 
@@ -806,11 +811,15 @@ class CustomizerImporter {
 		$full_height         = Arr::get( $item_data, 'full_height' );
 
 		if (
-			Flags::get( 'import_design', false ) === true ||
-			( ! $hero_padding_top && ! $hero_padding_bottom )
+			( Flags::get( 'import_design', false ) === true && Flags::get( 'start_source' ) !== 'customizer-sidebar' ) ||
+			! $hero_padding_top || ! $hero_padding_bottom
 		) {
-			$hero_padding_top    = Arr::get( $item_data, 'style.descendants.outer.padding.top.value' );
-			$hero_padding_bottom = Arr::get( $item_data, 'style.descendants.outer.padding.bottom.value' );
+			if ( ! $hero_padding_top ) {
+				$hero_padding_top = Arr::get( $item_data, 'style.descendants.outer.padding.top.value' );
+			}
+			if ( ! $hero_padding_bottom ) {
+				$hero_padding_bottom = Arr::get( $item_data, 'style.descendants.outer.padding.bottom.value' );
+			}
 		}
 
 		if ( $full_height ) {
@@ -1058,7 +1067,6 @@ class CustomizerImporter {
 		}
 
 		return $parsed_blocks;
-
 	}
 
 	private function setColumnsWidth( $parsed_blocks, $text_column_width ) {
@@ -1156,7 +1164,6 @@ class CustomizerImporter {
 		}
 
 		return $parsed_blocks;
-
 	}
 
 	static function swapColumns( $row ) {

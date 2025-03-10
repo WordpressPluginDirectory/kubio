@@ -155,14 +155,20 @@ class BackgroundImage extends Property {
 	}
 
 	public function toStyle() {
-		 $computedStyle = array();
-		$source         = $this->get( 'source' );
-		$map            = $this->map;
+		$computedStyle = array();
+		$source        = $this->get( 'source' );
+		$map           = $this->map;
 		if ( $source['type'] === 'gradient' ) {
 			$map = array(
 				'backgroundImage'      => 'source',
 				'backgroundAttachment' => 'attachment',
 			);
+		}
+
+		$bgImage = $source['url'];
+		if ( ! empty( $bgImage ) ) {
+			$translatedImageUrl           = kubio_wpml_get_translated_media_url( $bgImage );
+			$this->value['source']['url'] = $translatedImageUrl;
 		}
 		foreach ( $map as $name => $property ) {
 			if ( isset( $this->properties[ $property ] ) ) {

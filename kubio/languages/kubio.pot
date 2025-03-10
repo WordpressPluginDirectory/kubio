@@ -1,15 +1,15 @@
-# Copyright (C) 2024 ExtendThemes
+# Copyright (C) 2025 ExtendThemes
 # This file is distributed under the GPL3+.
 msgid ""
 msgstr ""
-"Project-Id-Version: Kubio 2.3.3\n"
+"Project-Id-Version: Kubio 2.5.1\n"
 "Report-Msgid-Bugs-To: support@kubiobuilder.com\n"
 "Last-Translator: Kubio <support@kubiobuilder.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2024-08-28T14:18:27+03:00\n"
+"POT-Creation-Date: 2025-03-06T17:53:01+02:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.11.0\n"
 "X-Domain: kubio\n"
@@ -39,15 +39,11 @@ msgstr ""
 msgid "https://extendthemes.com"
 msgstr ""
 
-#: build/block-library/blocks/copyright/index.php:28
-msgid "&copy; {year} {site-name}. Created for free using WordPress and <a target=\"_blank\" href=\"https://kubiobuilder.com\" rel=\"noreferrer\">Kubio</a>"
-msgstr ""
-
-#: build/block-library/blocks/menu/menu-items/index.php:146
+#: build/block-library/blocks/menu/menu-items/index.php:145
 msgid "This block has no menu assigned."
 msgstr ""
 
-#: build/block-library/blocks/menu/menu-items/index.php:147
+#: build/block-library/blocks/menu/menu-items/index.php:146
 msgid "Edit this page to select a menu or delete this block."
 msgstr ""
 
@@ -56,37 +52,134 @@ msgid "Mobile Menu"
 msgstr ""
 
 #. translators: %s - year month or day
-#: build/block-library/blocks/page-title/index.php:17
+#: build/block-library/blocks/page-title/index.php:16
 msgid "Posts from %s"
 msgstr ""
 
 #. translators: %s - search term
-#: build/block-library/blocks/page-title/index.php:22
+#: build/block-library/blocks/page-title/index.php:21
 msgid "Search results for: %s"
 msgstr ""
 
 #. translators: %s - search term
-#: build/block-library/blocks/page-title/index.php:23
+#: build/block-library/blocks/page-title/index.php:22
 msgid "Sorry! Page Not Found!"
 msgstr ""
 
 #. translators: %s - category
-#: build/block-library/blocks/page-title/index.php:26
+#: build/block-library/blocks/page-title/index.php:25
 msgid "Posts in %s"
 msgstr ""
 
 #. translators: %s - author
-#: build/block-library/blocks/page-title/index.php:28
+#: build/block-library/blocks/page-title/index.php:27
 msgid "Posts by %s"
 msgstr ""
 
 #. translators: %s - tag
-#: build/block-library/blocks/page-title/index.php:30
+#: build/block-library/blocks/page-title/index.php:29
 msgid "Posts about %s"
+msgstr ""
+
+#. translators: Yearly archive title. 1: Year
+#: build/block-library/blocks/page-title/index.php:75
+msgctxt "yearly archives date format"
+msgid "Y"
+msgstr ""
+
+#. translators: Monthly archive title. 1: Month name and year
+#: build/block-library/blocks/page-title/index.php:79
+msgctxt "monthly archives date format"
+msgid "F Y"
+msgstr ""
+
+#. translators: Daily archive title. 1: Date
+#: build/block-library/blocks/page-title/index.php:83
+msgctxt "daily archives date format"
+msgid "F j, Y"
+msgstr ""
+
+#: build/block-library/blocks/page-title/index.php:87
+msgctxt "post format archive title"
+msgid "Asides"
+msgstr ""
+
+#: build/block-library/blocks/page-title/index.php:89
+msgctxt "post format archive title"
+msgid "Galleries"
+msgstr ""
+
+#: build/block-library/blocks/page-title/index.php:91
+msgctxt "post format archive title"
+msgid "Images"
+msgstr ""
+
+#: build/block-library/blocks/page-title/index.php:93
+msgctxt "post format archive title"
+msgid "Videos"
+msgstr ""
+
+#: build/block-library/blocks/page-title/index.php:95
+msgctxt "post format archive title"
+msgid "Quotes"
+msgstr ""
+
+#: build/block-library/blocks/page-title/index.php:97
+msgctxt "post format archive title"
+msgid "Links"
+msgstr ""
+
+#: build/block-library/blocks/page-title/index.php:99
+msgctxt "post format archive title"
+msgid "Statuses"
+msgstr ""
+
+#: build/block-library/blocks/page-title/index.php:101
+msgctxt "post format archive title"
+msgid "Audio"
+msgstr ""
+
+#: build/block-library/blocks/page-title/index.php:103
+msgctxt "post format archive title"
+msgid "Chats"
+msgstr ""
+
+#. translators: Post type archive title. 1: Post type name
+#: build/block-library/blocks/page-title/index.php:107
+msgid "Archives: %s"
+msgstr ""
+
+#. translators: Taxonomy term archive title. 1: Taxonomy singular name, 2: Current taxonomy term
+#: build/block-library/blocks/page-title/index.php:111
+msgid "%1$s: %2$s"
+msgstr ""
+
+#: build/block-library/blocks/page-title/index.php:113
+msgid "Archives"
 msgstr ""
 
 #: build/block-library/blocks/post-comments-form/index.php:26
 msgid "Comments are closed. This Post Comments Form block is still present here but is not visible on front-end."
+msgstr ""
+
+#: build/block-library/blocks/post-comments/index.php:42
+#: build/block-library/index.js:37
+msgid "No responses yet"
+msgstr ""
+
+#: build/block-library/blocks/post-comments/index.php:43
+#: build/block-library/index.js:37
+msgid "One response"
+msgstr ""
+
+#: build/block-library/blocks/post-comments/index.php:44
+#: build/block-library/index.js:37
+msgid "{COMMENTS-COUNT} Responses"
+msgstr ""
+
+#: build/block-library/blocks/post-comments/index.php:45
+#: build/block-library/index.js:37
+msgid "Comments are closed"
 msgstr ""
 
 #: build/block-library/blocks/post-excerpt/index.php:52
@@ -98,13 +191,13 @@ msgstr ""
 msgid "Edit this page and remove the current block or use it in a posts list."
 msgstr ""
 
-#: build/block-library/blocks/post-title/index.php:36
+#: build/block-library/blocks/post-title/index.php:35
 #: build/block-library/index.js:37
 msgid "(Post Title)"
 msgstr ""
 
 #. translators: %s: social link value
-#: build/block-library/blocks/social-icons/index.php:45
+#: build/block-library/blocks/social-icons/index.php:44
 msgid "Social link: %s"
 msgstr ""
 
@@ -116,18 +209,18 @@ msgstr ""
 msgid "Widget area not found"
 msgstr ""
 
-#: lib/add-edit-in-kubio.php:78
-#: lib/add-edit-in-kubio.php:170
-#: lib/add-edit-in-kubio.php:314
-#: lib/filters/default-editor-overlay.php:147
-#: lib/kubio-editor.php:960
+#: lib/add-edit-in-kubio.php:93
+#: lib/add-edit-in-kubio.php:197
+#: lib/add-edit-in-kubio.php:364
+#: lib/filters/default-editor-overlay.php:156
+#: lib/kubio-editor.php:996
 #: build/block-library/index.js:13
 msgid "Edit with Kubio"
 msgstr ""
 
-#: lib/add-edit-in-kubio.php:121
+#: lib/add-edit-in-kubio.php:145
 #: lib/full-site-editing/template-parts.php:156
-#: lib/full-site-editing/templates.php:277
+#: lib/full-site-editing/templates.php:276
 msgid "Unknown"
 msgstr ""
 
@@ -140,7 +233,7 @@ msgid "The supercharged block-based WordPress builder"
 msgstr ""
 
 #: lib/admin-pages/kubio-get-started.php:25
-#: build/editor/index.js:17
+#: build/editor/index.js:21
 msgid "Starter sites"
 msgstr ""
 
@@ -148,28 +241,38 @@ msgstr ""
 msgid "Beautiful starter sites with 1-click import"
 msgstr ""
 
-#: lib/admin-pages/kubio-get-started.php:82
+#: lib/admin-pages/kubio-get-started.php:44
+#: build/editor/index.js:51
+#: build/pro/index.js:1
+msgid "Upgrade to PRO"
+msgstr ""
+
+#: lib/admin-pages/kubio-get-started.php:46
+msgid "The first block-based WordPress builder"
+msgstr ""
+
+#: lib/admin-pages/kubio-get-started.php:100
 msgid "Unknown tab partial"
 msgstr ""
 
-#: lib/admin-pages/kubio-get-started.php:97
+#: lib/admin-pages/kubio-get-started.php:115
 msgid "Kubio - Get Started"
 msgstr ""
 
-#: lib/admin-pages/kubio-get-started.php:98
+#: lib/admin-pages/kubio-get-started.php:116
 msgid "Get Started"
 msgstr ""
 
-#: lib/admin-pages/kubio-get-started.php:108
+#: lib/admin-pages/kubio-get-started.php:126
 msgid "Kubio - Starter Sites"
 msgstr ""
 
-#: lib/admin-pages/kubio-get-started.php:109
+#: lib/admin-pages/kubio-get-started.php:127
 msgid "Starter Sites"
 msgstr ""
 
 #: lib/admin-pages/main-page/demo-sites.php:13
-#: lib/kubio-editor.php:1203
+#: lib/kubio-editor.php:1245
 msgid "You need a higher level of permission."
 msgstr ""
 
@@ -181,121 +284,118 @@ msgstr ""
 msgid "Retrieving starter sites..."
 msgstr ""
 
-#: lib/admin-pages/main-page/demo-sites.php:48
-#: build/block-editor/index.js:78
-#: build/editor/index.js:19
+#: lib/admin-pages/main-page/demo-sites.php:50
+#: build/editor/index.js:23
 msgid "Preview"
 msgstr ""
 
-#: lib/admin-pages/main-page/demo-sites.php:56
+#: lib/admin-pages/main-page/demo-sites.php:59
 #: build/editor/index.js:15
 msgid "Untitled"
 msgstr ""
 
-#: lib/admin-pages/main-page/demo-sites.php:62
-#: lib/admin-pages/main-page/demo-sites.php:149
+#: lib/admin-pages/main-page/demo-sites.php:65
+#: lib/admin-pages/main-page/demo-sites.php:152
 msgid "Import site"
 msgstr ""
 
-#: lib/admin-pages/main-page/demo-sites.php:69
+#: lib/admin-pages/main-page/demo-sites.php:72
 msgid "Try Online"
 msgstr ""
 
-#: lib/admin-pages/main-page/demo-sites.php:92
-#: build/editor/index.js:17
+#: lib/admin-pages/main-page/demo-sites.php:95
+#: build/editor/index.js:21
 msgid "You are about to import a demo site"
 msgstr ""
 
-#: lib/admin-pages/main-page/demo-sites.php:95
-#: build/editor/index.js:17
+#: lib/admin-pages/main-page/demo-sites.php:98
+#: build/editor/index.js:21
 msgid "Current pages will be moved to trash. You can restore the content back at any time."
 msgstr ""
 
-#: lib/admin-pages/main-page/demo-sites.php:98
-#: build/editor/index.js:17
+#: lib/admin-pages/main-page/demo-sites.php:101
+#: build/editor/index.js:21
 msgid "Posts, pages, images, widgets, menus and other theme settings will get imported."
 msgstr ""
 
-#: lib/admin-pages/main-page/demo-sites.php:101
+#: lib/admin-pages/main-page/demo-sites.php:104
 msgid "Your current design will be completely overwritten by the new template. This process is irreversible. If you wish to be able to go back to the current design, please create a backup of your site before proceeding with the import."
 msgstr ""
 
-#: lib/admin-pages/main-page/demo-sites.php:107
-#: build/editor/index.js:17
+#: lib/admin-pages/main-page/demo-sites.php:110
+#: build/editor/index.js:21
 msgid "The following plugins will be installed as they are part of the demo"
 msgstr ""
 
-#: lib/admin-pages/main-page/demo-sites.php:118
+#: lib/admin-pages/main-page/demo-sites.php:121
 msgid "Installing required plugins"
 msgstr ""
 
-#: lib/admin-pages/main-page/demo-sites.php:121
+#: lib/admin-pages/main-page/demo-sites.php:124
 msgid "Preparing for demo site import"
 msgstr ""
 
-#: lib/admin-pages/main-page/demo-sites.php:124
+#: lib/admin-pages/main-page/demo-sites.php:127
 msgid "Importing content"
 msgstr ""
 
-#: lib/admin-pages/main-page/demo-sites.php:130
+#: lib/admin-pages/main-page/demo-sites.php:133
 msgid "Errors"
 msgstr ""
 
-#: lib/admin-pages/main-page/demo-sites.php:140
+#: lib/admin-pages/main-page/demo-sites.php:143
 msgid "Available only with Kubio PRO"
 msgstr ""
 
-#: lib/admin-pages/main-page/demo-sites.php:146
+#: lib/admin-pages/main-page/demo-sites.php:149
 #: build/block-editor/index.js:11
 #: build/block-editor/index.js:23
-#: build/block-editor/index.js:36
-#: build/block-editor/index.js:94
 #: build/block-editor/index.js:96
-#: build/block-editor/index.js:110
 #: build/block-library/index.js:19
 #: build/controls/index.js:35
+#: build/editor/index.js:1
 #: build/editor/index.js:7
-#: build/editor/index.js:17
-#: build/editor/index.js:29
+#: build/editor/index.js:21
+#: build/editor/index.js:31
 msgid "Cancel"
 msgstr ""
 
-#: lib/admin-pages/main-page/demo-sites.php:153
+#: lib/admin-pages/main-page/demo-sites.php:156
 msgid "Check all PRO features"
 msgstr ""
 
-#: lib/admin-pages/main-page/demo-sites.php:161
+#: lib/admin-pages/main-page/demo-sites.php:164
 msgid "Demo site imported sucessfuly"
 msgstr ""
 
-#: lib/admin-pages/main-page/demo-sites.php:167
+#: lib/admin-pages/main-page/demo-sites.php:170
 msgid "View site"
 msgstr ""
 
-#: lib/admin-pages/main-page/demo-sites.php:171
-#: lib/admin-pages/pages.php:63
+#: lib/admin-pages/main-page/demo-sites.php:174
+#: lib/admin-pages/pages.php:64
 msgid "Start editing"
 msgstr ""
 
-#: lib/admin-pages/main-page/demo-sites.php:202
+#: lib/admin-pages/main-page/demo-sites.php:205
 #: build/block-library/index.js:27
 #: build/block-library/index.js:29
 #: build/block-library/index.js:33
 #: build/block-library/index.js:37
-#: build/editor/index.js:17
+#: build/editor/index.js:21
 msgid "Active"
 msgstr ""
 
-#: lib/admin-pages/main-page/demo-sites.php:203
-#: build/editor/index.js:17
+#: lib/admin-pages/main-page/demo-sites.php:206
+#: build/editor/index.js:21
 msgid "Installed"
 msgstr ""
 
-#: lib/admin-pages/main-page/demo-sites.php:204
+#: lib/admin-pages/main-page/demo-sites.php:207
 msgid "Not Installed"
 msgstr ""
 
-#: lib/admin-pages/main-page/demo-sites.php:206
+#: lib/admin-pages/main-page/demo-sites.php:209
 msgid "Import stopped"
 msgstr ""
 
@@ -320,61 +420,130 @@ msgstr ""
 msgid "Check out our 2 min getting started video"
 msgstr ""
 
-#: lib/admin-pages/main-page/upgrade-pro.php:20
-msgid "Don't have a Kubio Pro license yet?"
+#: lib/admin-pages/main-page/upgrade-pro.php:22
+msgid "Thank you for your interest in Kubio!"
 msgstr ""
 
-#: lib/admin-pages/main-page/upgrade-pro.php:35
-msgid "Get a Kubio license"
+#: lib/admin-pages/main-page/upgrade-pro.php:23
+msgid "Upgrading to Kubio PRO gives you access to advanced features and tools to create a truly professional website—effortlessly."
 msgstr ""
 
-#: lib/admin-pages/pages.php:58
+#: lib/admin-pages/main-page/upgrade-pro.php:26
+msgid "How to Upgrade in 3 Simple Steps"
+msgstr ""
+
+#. translators: %s: Upgrade to Kubio PRO link.
+#: lib/admin-pages/main-page/upgrade-pro.php:32
+msgid "%s - Select the plan that fits your needs."
+msgstr ""
+
+#. translators: %s: Upgrade to Kubio PRO link.
+#: lib/admin-pages/main-page/upgrade-pro.php:33
+msgid "Purchase a Kubio PRO License"
+msgstr ""
+
+#. translators: %s: Download the Kubio PRO Plugin link.
+#: lib/admin-pages/main-page/upgrade-pro.php:41
+msgid "%s - A download link will be provided after purchase."
+msgstr ""
+
+#. translators: %s: Download the Kubio PRO Plugin link.
+#: lib/admin-pages/main-page/upgrade-pro.php:42
+msgid "Download the Kubio PRO Plugin"
+msgstr ""
+
+#. Translators: %1$s: Install & Activate, %2$s: Add New.
+#: lib/admin-pages/main-page/upgrade-pro.php:50
+msgid "%1$s - Upload the ZIP file via WordPress > Plugins > %2$s, then enter your license key to activate PRO features instantly."
+msgstr ""
+
+#. Translators: %1$s: Install & Activate, %2$s: Add New.
+#: lib/admin-pages/main-page/upgrade-pro.php:51
+msgid "Install & Activate"
+msgstr ""
+
+#: lib/admin-pages/main-page/upgrade-pro.php:52
+msgid "Add New"
+msgstr ""
+
+#: lib/admin-pages/main-page/upgrade-pro.php:62
+msgid "Upgrade to Kubio PRO"
+msgstr ""
+
+#: lib/admin-pages/main-page/upgrade-pro.php:67
+msgid "Why Choose Kubio PRO?"
+msgstr ""
+
+#: lib/admin-pages/main-page/upgrade-pro.php:68
+msgid "Upgrade now and enjoy the full power of Kubio PRO!"
+msgstr ""
+
+#: lib/admin-pages/main-page/upgrade-pro.php:70
+msgid "<strong>AI-Powered Website Creation</strong> - Instantly generate pages, images, and text."
+msgstr ""
+
+#: lib/admin-pages/main-page/upgrade-pro.php:71
+msgid "<strong>50+ Advanced Blocks</strong> - Add sliders, pricing tables, carousels, and more."
+msgstr ""
+
+#: lib/admin-pages/main-page/upgrade-pro.php:72
+msgid "<strong>340+ Pre-Designed Sections</strong> - Choose from professionally crafted layouts for faster design."
+msgstr ""
+
+#: lib/admin-pages/main-page/upgrade-pro.php:73
+msgid "<strong>Multiple Headers & Footers</strong> - Fully customize headers, footers, and templates."
+msgstr ""
+
+#: lib/admin-pages/main-page/upgrade-pro.php:74
+msgid "<strong>Premium Support & Updates</strong> - We got you covered with priority support and continuous enhancements."
+msgstr ""
+
+#: lib/admin-pages/pages.php:59
 #: build/pro/index.js:1
 msgid "Try PRO Online"
 msgstr ""
 
 #. translators: %s: spinner icon
-#: lib/AI/admin-tab/partials/main.php:16
+#: lib/AI/admin-tab/partials/main.php:17
 msgid "%s Retrieving data..."
 msgstr ""
 
-#: lib/AI/admin-tab/tab.php:20
-#: build/editor/index.js:53
+#: lib/AI/admin-tab/tab.php:25
+#: build/editor/index.js:55
 msgid "Kubio AI"
 msgstr ""
 
-#: lib/AI/admin-tab/tab.php:22
+#: lib/AI/admin-tab/tab.php:27
 msgid "Build smarter & faster with Kubio AI"
 msgstr ""
 
-#: lib/AI/admin-tab/tab.php:51
-#: lib/AI/admin-tab/tab.php:52
+#: lib/AI/admin-tab/tab.php:57
+#: lib/AI/admin-tab/tab.php:58
 msgid "Unauthorized"
 msgstr ""
 
-#: lib/AI/api.php:623
-#: lib/AI/SDApi/KubioCloudSDApi.php:80
+#: lib/AI/api.php:700
+#: lib/AI/SDApi/KubioCloudSDApi.php:75
 msgid "No image was generated"
 msgstr ""
 
 #: lib/AI/SDApi/KubioImagePrompts.php:13
-#: build/editor/index.js:51
+#: build/editor/index.js:53
 msgid "Photographic"
 msgstr ""
 
 #: lib/AI/SDApi/KubioImagePrompts.php:14
-#: build/editor/index.js:51
+#: build/editor/index.js:53
 msgid "3D Model"
 msgstr ""
 
 #: lib/AI/SDApi/KubioImagePrompts.php:15
-#: build/block-editor/index.js:100
 #: build/controls/index.js:35
 msgid "Background image"
 msgstr ""
 
 #: lib/AI/SDApi/KubioImagePrompts.php:16
-#: build/editor/index.js:51
+#: build/editor/index.js:53
 msgid "Digital Art"
 msgstr ""
 
@@ -383,9 +552,9 @@ msgid "Artistic painting"
 msgstr ""
 
 #: lib/AI/SDApi/KubioImagePrompts.php:24
-#: build/block-editor/index.js:94
+#: build/block-editor/index.js:96
 #: build/block-library/index.js:19
-#: build/editor/index.js:53
+#: build/editor/index.js:55
 msgid "Landscape"
 msgstr ""
 
@@ -394,9 +563,9 @@ msgid "Macro"
 msgstr ""
 
 #: lib/AI/SDApi/KubioImagePrompts.php:26
-#: build/block-editor/index.js:94
+#: build/block-editor/index.js:96
 #: build/block-library/index.js:19
-#: build/editor/index.js:53
+#: build/editor/index.js:55
 msgid "Portrait"
 msgstr ""
 
@@ -413,7 +582,7 @@ msgid "Digital"
 msgstr ""
 
 #: lib/AI/SDApi/KubioImagePrompts.php:33
-#: build/editor/index.js:51
+#: build/editor/index.js:53
 msgid "Origami"
 msgstr ""
 
@@ -430,8 +599,6 @@ msgid "Floral"
 msgstr ""
 
 #: lib/AI/SDApi/KubioImagePrompts.php:40
-#: build/block-editor/index.js:84
-#: build/block-editor/index.js:100
 #: build/controls/index.js:15
 #: build/controls/index.js:35
 #: build/controls/index.js:37
@@ -452,7 +619,7 @@ msgid "Bokeh"
 msgstr ""
 
 #: lib/AI/SDApi/KubioImagePrompts.php:47
-#: build/editor/index.js:51
+#: build/editor/index.js:53
 msgid "Anime"
 msgstr ""
 
@@ -461,22 +628,22 @@ msgid "Cartoon"
 msgstr ""
 
 #: lib/AI/SDApi/KubioImagePrompts.php:49
-#: build/editor/index.js:51
+#: build/editor/index.js:53
 msgid "Cinematic"
 msgstr ""
 
 #: lib/AI/SDApi/KubioImagePrompts.php:50
-#: build/editor/index.js:51
+#: build/editor/index.js:53
 msgid "Comic Book"
 msgstr ""
 
 #: lib/AI/SDApi/KubioImagePrompts.php:51
-#: build/editor/index.js:51
+#: build/editor/index.js:53
 msgid "Fantasy Art"
 msgstr ""
 
 #: lib/AI/SDApi/KubioImagePrompts.php:52
-#: build/editor/index.js:51
+#: build/editor/index.js:53
 msgid "Isometric"
 msgstr ""
 
@@ -485,17 +652,17 @@ msgid "Vector"
 msgstr ""
 
 #: lib/AI/SDApi/KubioImagePrompts.php:54
-#: build/editor/index.js:51
+#: build/editor/index.js:53
 msgid "Pixel Art"
 msgstr ""
 
 #: lib/AI/SDApi/KubioImagePrompts.php:55
-#: build/editor/index.js:51
+#: build/editor/index.js:53
 msgid "Low Poly"
 msgstr ""
 
 #: lib/AI/SDApi/KubioImagePrompts.php:56
-#: build/editor/index.js:51
+#: build/editor/index.js:53
 msgid "Neon Punk"
 msgstr ""
 
@@ -505,7 +672,7 @@ msgid "Doodle"
 msgstr ""
 
 #: lib/AI/SDApi/KubioImagePrompts.php:61
-#: build/editor/index.js:51
+#: build/editor/index.js:53
 msgid "Line Art"
 msgstr ""
 
@@ -679,25 +846,47 @@ msgid "Exploring the world of gaming, video games, and esports."
 msgstr ""
 
 #. translators: %s is the error message
-#: lib/AI/utils.php:393
+#: lib/AI/utils.php:410
 msgid "AI Server error: %s"
 msgstr ""
 
-#: lib/AI/utils.php:409
+#: lib/AI/utils.php:426
 msgid "AI response is invalid"
 msgstr ""
 
-#: lib/AI/utils.php:467
+#: lib/AI/utils.php:484
 msgid "AI response is invalid ( Empty response )"
 msgstr ""
 
-#: lib/api/get-post-content.php:19
+#: lib/api/colibri.php:84
+#: lib/api/colibri.php:145
+msgid "Zip Export not supported."
+msgstr ""
+
+#: lib/api/colibri.php:98
+msgid "Bad screenshot."
+msgstr ""
+
+#: lib/api/colibri.php:103
+#: lib/api/colibri.php:163
+msgid "Bad name."
+msgstr ""
+
+#: lib/api/colibri.php:158
+msgid "No id."
+msgstr ""
+
+#: lib/api/colibri.php:218
+msgid "Unable to open export file (archive) for writing."
+msgstr ""
+
+#: lib/api/get-post-content.php:21
 msgid "Current post content is empty. A placeholder text is displayed in editor"
 msgstr ""
 
-#: lib/api/kubio-cloud.php:49
-#: lib/api/kubio-cloud.php:78
-#: lib/api/kubio-cloud.php:93
+#: lib/api/kubio-cloud.php:48
+#: lib/api/kubio-cloud.php:77
+#: lib/api/kubio-cloud.php:92
 msgid "Api key not found"
 msgstr ""
 
@@ -717,8 +906,31 @@ msgstr ""
 msgid "Comments are closed."
 msgstr ""
 
-#: lib/filters/default-editor-overlay.php:152
+#. translators: 1: Comment date, 2: Comment time.
+#: lib/blog/walker-comment.php:31
+msgid "%1$s at %2$s"
+msgstr ""
+
+#: lib/blog/walker-comment.php:39
+#: build/editor/index.js:53
+msgid "Edit"
+msgstr ""
+
+#: lib/blog/walker-comment.php:43
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: lib/blog/walker-comment.php:45
+msgid "Your comment is awaiting moderation. This is a preview; your comment will be visible after it has been approved."
+msgstr ""
+
+#: lib/filters/default-editor-overlay.php:161
 msgid "Edit with default editor"
+msgstr ""
+
+#. translators: %1$s is the name of the plugin, %2$s is the name of the other plugin.
+#: lib/filters/gutenerg-plugin-check.php:10
+msgid "The %1$s plugin is active on this site. This might interfere with the proper functioning of the %2$s plugin. It is recommended to deactivate the %1$s plugin"
 msgstr ""
 
 #. translators: %s - php version e.g. 7.2
@@ -736,22 +948,17 @@ msgstr ""
 msgid "%1$s and %2$s"
 msgstr ""
 
-#. translators: %s required message. e.g. WordPress 6.0 and PHP 7.2
-#: lib/filters/requirements-notices.php:92
-msgid "Kubio Page Builder requires %s!"
-msgstr ""
-
 #. translators: the placeholders are urls or a product name
-#: lib/filters/requirements-notices.php:102
+#: lib/filters/requirements-notices.php:42
 msgid "If you want to rollback to a previous version you can get it here: <a href=\"%1$s\">%2$s</a>. You can follow this steps to manually install a Kubio: <a target=\"_blank\" href=\"%3$s\">Manual plugin update</a>"
 msgstr ""
 
-#. translators: the placeholder is an url
-#: lib/filters/requirements-notices.php:112
-msgid "If you want to rollback to a previous version please open a support ticket: <a target=\"_blank\" href=\"%1$s\">Open support ticket</a>"
+#. translators: %s required message. e.g. WordPress 6.0 and PHP 7.2
+#: lib/filters/requirements-notices.php:105
+msgid "Kubio Page Builder requires %s!"
 msgstr ""
 
-#: lib/full-site-editing/block-templates.php:77
+#: lib/full-site-editing/block-templates.php:78
 msgid "No theme is defined for this template."
 msgstr ""
 
@@ -864,7 +1071,6 @@ msgid "Archive template used to display a list of posts with a given tag."
 msgstr ""
 
 #: lib/full-site-editing/default-template-types.php:74
-#: build/block-editor/index.js:96
 msgid "Media"
 msgstr ""
 
@@ -943,17 +1149,17 @@ msgstr ""
 msgid "\"%1$s\" is not a supported wp_template_part area value and has been added as \"%2$s\"."
 msgstr ""
 
-#: lib/full-site-editing/template-parts-area.php:142
+#: lib/full-site-editing/template-parts-area.php:143
 msgid "Template Part Areas"
 msgstr ""
 
-#: lib/full-site-editing/template-parts-area.php:143
+#: lib/full-site-editing/template-parts-area.php:144
 msgid "Template Part Area"
 msgstr ""
 
 #: lib/full-site-editing/template-parts.php:13
 #: lib/kubio-block-library.php:41
-#: build/editor/index.js:31
+#: build/editor/index.js:33
 msgid "Template Parts"
 msgstr ""
 
@@ -1037,7 +1243,7 @@ msgid "Template parts to include in your templates."
 msgstr ""
 
 #: lib/full-site-editing/template-parts.php:122
-#: lib/full-site-editing/templates.php:243
+#: lib/full-site-editing/templates.php:242
 #: build/block-library/index.js:27
 msgid "Slug"
 msgstr ""
@@ -1048,7 +1254,7 @@ msgstr ""
 
 #: lib/full-site-editing/template-parts.php:140
 #: lib/full-site-editing/templates.php:21
-#: lib/full-site-editing/templates.php:260
+#: lib/full-site-editing/templates.php:259
 #: build/wp-global-styles/index.js:3
 msgid "Theme"
 msgstr ""
@@ -1058,12 +1264,12 @@ msgid "Themes"
 msgstr ""
 
 #: lib/full-site-editing/templates.php:45
-#: build/editor/index.js:31
+#: build/editor/index.js:33
 msgid "Templates"
 msgstr ""
 
 #: lib/full-site-editing/templates.php:46
-#: build/editor/index.js:31
+#: build/editor/index.js:33
 msgid "Template"
 msgstr ""
 
@@ -1141,31 +1347,35 @@ msgstr ""
 msgid "Templates to include in your theme."
 msgstr ""
 
-#: lib/full-site-editing/templates.php:256
+#: lib/full-site-editing/templates.php:255
 msgid "Template slug"
 msgstr ""
 
 #: lib/global-data.php:20
-#: lib/global-data.php:128
+#: lib/global-data.php:129
 msgid "Kubio Globals"
 msgstr ""
 
 #. translators: %s is the number of the color e.g. Kubio color 1
-#: lib/global-data.php:423
+#: lib/global-data.php:424
 msgid "Kubio color %s"
 msgstr ""
 
 #: lib/integrations/third-party-themes/templates-importer.php:285
-#: lib/kubio-editor.php:164
-#: lib/src/Core/Activation.php:374
-#: lib/src/Core/Activation.php:556
-#: build/editor/index.js:17
+#: lib/kubio-editor.php:160
+#: lib/src/Core/Activation.php:424
+#: lib/src/Core/Activation.php:608
+#: lib/src/Core/KubioFrontPageRevertNotice.php:545
+#: build/editor/index.js:21
 msgid "Blog"
 msgstr ""
 
 #: lib/integrations/third-party-themes/templates-importer.php:323
-#: lib/src/Core/Activation.php:439
-#: lib/src/Core/Activation.php:542
+#: lib/src/Core/Activation.php:491
+#: lib/src/Core/Activation.php:594
+#: lib/src/Core/KubioFrontPageRevertNotice.php:470
+#: lib/src/Core/KubioFrontPageRevertNotice.php:519
+#: lib/src/Core/KubioFrontPageRevertNotice.php:532
 msgid "Home"
 msgstr ""
 
@@ -1173,7 +1383,7 @@ msgstr ""
 #: build/controls/index.js:19
 #: build/core/index.js:7
 #: build/editor-data/index.js:1
-#: build/editor/index.js:21
+#: build/editor/index.js:25
 msgid "Page"
 msgstr ""
 
@@ -1231,7 +1441,6 @@ msgid "Blog Blocks"
 msgstr ""
 
 #: lib/kubio-block-library.php:36
-#: build/block-editor/index.js:110
 #: build/block-library/index.js:9
 #: build/block-library/index.js:11
 #: build/block-library/index.js:25
@@ -1242,175 +1451,175 @@ msgstr ""
 msgid "Layout"
 msgstr ""
 
-#: lib/kubio-block-library.php:139
+#: lib/kubio-block-library.php:138
 msgid "Kubio Error: Blocks manifest file (blocks-manifest.php) does not exists. Please recompile the plugin"
 msgstr ""
 
-#: lib/kubio-editor.php:140
+#: lib/kubio-editor.php:136
 msgid "Hero accent"
 msgstr ""
 
-#: lib/kubio-editor.php:145
+#: lib/kubio-editor.php:141
 msgid "About"
 msgstr ""
 
-#: lib/kubio-editor.php:150
+#: lib/kubio-editor.php:146
 #: build/ai/index.js:3
 msgid "Features"
 msgstr ""
 
-#: lib/kubio-editor.php:155
-#: build/block-editor/index.js:3
-#: build/block-editor/index.js:100
-#: build/block-editor/index.js:110
+#. translators: %d: number of blocks
+#. translators: %d: number of words
+#: lib/kubio-editor.php:151
+#: build/block-editor/index.js:118
 #: build/block-library/index.js:3
 #: build/block-library/index.js:29
 #: build/block-library/index.js:37
 #: build/editor/index.js:3
 #: build/editor/index.js:7
-#: build/editor/index.js:17
-#: build/editor/index.js:19
+#: build/editor/index.js:21
+#: build/editor/index.js:23
 #: build/third-party-blocks/index.js:1
 msgid "Content"
 msgstr ""
 
-#: lib/kubio-editor.php:160
+#: lib/kubio-editor.php:156
 msgid "Call to action"
 msgstr ""
 
-#: lib/kubio-editor.php:169
+#: lib/kubio-editor.php:165
 msgid "Counters"
 msgstr ""
 
-#: lib/kubio-editor.php:174
+#: lib/kubio-editor.php:170
 #: build/ai/index.js:3
 msgid "Portfolio"
 msgstr ""
 
-#: lib/kubio-editor.php:179
+#: lib/kubio-editor.php:175
 msgid "Photo gallery"
 msgstr ""
 
-#: lib/kubio-editor.php:184
+#: lib/kubio-editor.php:180
 msgid "Testimonials"
 msgstr ""
 
-#: lib/kubio-editor.php:189
+#: lib/kubio-editor.php:185
 msgid "Clients"
 msgstr ""
 
-#: lib/kubio-editor.php:194
+#: lib/kubio-editor.php:190
 #: build/ai/index.js:3
 msgid "Team"
 msgstr ""
 
-#: lib/kubio-editor.php:199
+#: lib/kubio-editor.php:195
 #: build/ai/index.js:3
 msgid "Contact"
 msgstr ""
 
-#: lib/kubio-editor.php:204
+#: lib/kubio-editor.php:200
 #: build/ai/index.js:3
 msgid "F.A.Q."
 msgstr ""
 
-#: lib/kubio-editor.php:209
+#: lib/kubio-editor.php:205
 #: build/ai/index.js:3
 #: build/block-library/index.js:37
 msgid "Pricing"
 msgstr ""
 
-#: lib/kubio-editor.php:213
+#: lib/kubio-editor.php:209
 msgid "Inner Headers"
 msgstr ""
 
-#: lib/kubio-editor.php:218
+#: lib/kubio-editor.php:214
 #: build/editor/index.js:15
 msgid "Headers"
 msgstr ""
 
-#: lib/kubio-editor.php:223
+#: lib/kubio-editor.php:219
 #: build/editor/index.js:15
 msgid "Footers"
 msgstr ""
 
-#: lib/kubio-editor.php:375
+#: lib/kubio-editor.php:385
 #: build/block-editor/index.js:1
 #: build/block-library/index.js:19
 msgid "Thumbnail"
 msgstr ""
 
-#: lib/kubio-editor.php:376
+#: lib/kubio-editor.php:386
 #: build/block-editor/index.js:1
 #: build/block-library/index.js:19
-#: build/editor/index.js:53
+#: build/editor/index.js:55
 msgid "Medium"
 msgstr ""
 
-#: lib/kubio-editor.php:377
+#: lib/kubio-editor.php:387
 #: build/block-editor/index.js:1
 #: build/block-library/index.js:19
-#: build/editor/index.js:53
+#: build/editor/index.js:55
 msgid "Large"
 msgstr ""
 
-#: lib/kubio-editor.php:378
+#: lib/kubio-editor.php:388
 #: build/block-editor/index.js:1
 #: build/block-library/index.js:19
 msgid "Original Size"
 msgstr ""
 
-#: lib/kubio-editor.php:944
-#: lib/kubio-editor.php:948
-#: lib/kubio-editor.php:959
+#: lib/kubio-editor.php:980
+#: lib/kubio-editor.php:984
+#: lib/kubio-editor.php:995
 msgid "Kubio"
 msgstr ""
 
-#: lib/kubio-editor.php:987
-#: lib/src/Core/EditInKubioCustomizerPanel.php:86
+#: lib/kubio-editor.php:1023
+#: lib/src/Core/EditInKubioCustomizerPanel.php:87
 msgid "Open Kubio Editor"
 msgstr ""
 
-#: lib/kubio-editor.php:1063
+#: lib/kubio-editor.php:1101
 msgid "What to show on the front page"
 msgstr ""
 
-#: lib/kubio-editor.php:1075
+#: lib/kubio-editor.php:1114
 msgid "The ID of the page that should be displayed on the front page"
 msgstr ""
 
-#: lib/kubio-editor.php:1089
+#: lib/kubio-editor.php:1129
 msgid "The ID of the page that displays the posts"
 msgstr ""
 
-#: lib/kubio-editor.php:1106
+#: lib/kubio-editor.php:1147
 msgid "Site icon."
 msgstr ""
 
-#: lib/kubio-editor.php:1123
+#: lib/kubio-editor.php:1164
 msgctxt "Template name"
 msgid "Full Width"
 msgstr ""
 
-#: lib/kubio-editor.php:1124
-#: lib/kubio-editor.php:1131
+#: lib/kubio-editor.php:1165
+#: lib/kubio-editor.php:1172
 msgid "Recommended Kubio template to display individual pages. This template works best with the Kubio provided blocks and predesigned sections."
 msgstr ""
 
-#: lib/kubio-editor.php:1130
+#: lib/kubio-editor.php:1171
 msgctxt "Template name"
 msgid "Kubio Full Width"
 msgstr ""
 
-#: lib/kubio-editor.php:1204
+#: lib/kubio-editor.php:1246
 msgid "Sorry, you are not allowed to customize this site."
 msgstr ""
 
-#: lib/kubio-editor.php:1222
+#: lib/kubio-editor.php:1264
 msgid "Kubio Section"
 msgstr ""
 
-#: lib/kubio-editor.php:1264
+#: lib/kubio-editor.php:1306
 msgid "Kubio Favorites"
 msgstr ""
 
@@ -1532,15 +1741,96 @@ msgstr ""
 msgid "Unique identifier for menu."
 msgstr ""
 
-#: lib/preview/index.php:129
+#: lib/preview/index.php:128
 msgid "Kubio Preview"
 msgstr ""
 
-#: lib/preview/index.php:252
+#: lib/preview/index.php:253
 msgid "Current preview state is unavailable"
 msgstr ""
 
-#: lib/src/Core/Activation.php:492
+#. translators: the placeholder is an url
+#: lib/pro/filters/notices.php:33
+msgid "If you want to rollback to a previous version please open a support ticket: <a target=\"_blank\" href=\"%1$s\">Open support ticket</a>"
+msgstr ""
+
+#: lib/pro/integrations/multilanguage/polylang.php:385
+msgid "Current content will be replaced with the content from the primary language. Are you sure ?"
+msgstr ""
+
+#: lib/pro/integrations/multilanguage/polylang.php:401
+msgid "Copy from primary language"
+msgstr ""
+
+#: lib/pro/src/Core/License/ActivationForm.php:32
+msgid "Enter a valid Kubio PRO license key to unlock all the PRO features"
+msgstr ""
+
+#: lib/pro/src/Core/License/ActivationForm.php:67
+msgid "Activate Kubio PRO License"
+msgstr ""
+
+#: lib/pro/src/Core/License/ActivationForm.php:68
+msgid "If this is a testing site you can ignore this message. If this is your live site then please insert the license key below."
+msgstr ""
+
+#: lib/pro/src/Core/License/ActivationForm.php:81
+msgid "Activate License"
+msgstr ""
+
+#. translators: placeholders are some urls like <a href="#">My Account</a>
+#: lib/pro/src/Core/License/ActivationForm.php:99
+msgid "Your key was sent via email when the purchase was completed. Also you can find the key in the %1$s of your %2$s account"
+msgstr ""
+
+#: lib/pro/src/Core/License/ActivationForm.php:122
+#: build/admin-area/index.js:1
+msgid "License key is empty"
+msgstr ""
+
+#: lib/pro/src/Core/License/ActivationForm.php:189
+msgid "No error"
+msgstr ""
+
+#: lib/pro/src/Core/License/ActivationForm.php:197
+msgid "AI Features"
+msgstr ""
+
+#: lib/pro/src/Core/License/ActivationForm.php:198
+msgid "More sections and blocks"
+msgstr ""
+
+#: lib/pro/src/Core/License/ActivationForm.php:199
+msgid "Footer editing"
+msgstr ""
+
+#: lib/pro/src/Core/License/ActivationForm.php:200
+msgid "Multiple page headers"
+msgstr ""
+
+#: lib/pro/src/Core/License/ActivationForm.php:207
+msgid "Other"
+msgstr ""
+
+#: lib/pro/src/Core/License/ActivationForm.php:224
+msgid "Thank you for choosing Kubio PRO!"
+msgstr ""
+
+#: lib/pro/src/Core/License/ActivationForm.php:227
+msgid "Could you tell us what inspired your decision to upgrade?"
+msgstr ""
+
+#. translators: %1$s - string with server error response
+#: lib/pro/src/Core/License/CheckForm.php:27
+msgid "There was an error calling Kubio License Server: <code>%1$s</code>. Please contact us for support on <a href=\"%2$s\" target=\"_blank\">Kubio</a> website"
+msgstr ""
+
+#. translators: %s - string with server error response
+#: lib/pro/src/Core/License/CheckForm.php:36
+msgid "Current license key was removed! Reason: %s"
+msgstr ""
+
+#: lib/src/Core/Activation.php:544
 msgid "Primary menu"
 msgstr ""
 
@@ -1550,106 +1840,53 @@ msgstr ""
 msgid "No {post_title} found!"
 msgstr ""
 
-#: lib/src/Core/Blocks/TemplatePartBlockBase.php:25
+#: lib/src/Core/Blocks/TemplatePartBlockBase.php:26
 msgid "Template Part Not Found"
 msgstr ""
 
-#: lib/src/Core/CustomizerImporter.php:277
-#: build/block-editor/index.js:96
+#: lib/src/Core/CustomizerImporter.php:275
 #: build/block-library/index.js:19
 #: build/controls/index.js:19
 #: build/controls/index.js:35
 msgid "Image"
 msgstr ""
 
-#: lib/src/Core/EditInKubioCustomizerPanel.php:73
+#: lib/src/Core/EditInKubioCustomizerPanel.php:74
 msgid "After installing the Kubio builder, all page contents editing will be done using the WordPress block editor instead of the Customizer."
 msgstr ""
 
-#: lib/src/Core/EditInKubioCustomizerPanel.php:76
+#: lib/src/Core/EditInKubioCustomizerPanel.php:77
 msgid "After installing the Kubio builder, all site editing will be done using the WordPress block editor instead of the Customizer."
 msgstr ""
 
-#: lib/src/Core/EditInKubioCustomizerPanel.php:83
+#: lib/src/Core/EditInKubioCustomizerPanel.php:84
 msgid " Please use the button below to open the Kubio editor."
 msgstr ""
 
-#: lib/src/Core/License/ActivationForm.php:32
-msgid "Enter a valid Kubio PRO license key to unlock all the PRO features"
+#: lib/src/Core/KubioFrontPageRevertNotice.php:699
+msgid "Keep the new home page?"
 msgstr ""
 
-#: lib/src/Core/License/ActivationForm.php:67
-msgid "Activate Kubio PRO License"
+#: lib/src/Core/KubioFrontPageRevertNotice.php:703
+msgid " We created a new home page for you. If you don't like it you can restore your previous home page."
 msgstr ""
 
-#: lib/src/Core/License/ActivationForm.php:68
-msgid "If this is a testing site you can ignore this message. If this is your live site then please insert the license key below."
+#: lib/src/Core/KubioFrontPageRevertNotice.php:707
+msgid "Yes, keep my new home page"
 msgstr ""
 
-#: lib/src/Core/License/ActivationForm.php:81
-msgid "Activate License"
+#: lib/src/Core/KubioFrontPageRevertNotice.php:710
+msgid "Restore my previous home page"
 msgstr ""
 
-#. translators: placeholders are some urls like <a href="#">My Account</a>
-#: lib/src/Core/License/ActivationForm.php:99
-msgid "Your key was sent via email when the purchase was completed. Also you can find the key in the %1$s of your %2$s account"
+#: lib/src/Core/KubioFrontPageRevertNotice.php:737
+#: build/editor/index.js:1
+msgid "Your previous home page was showing the most recent blog posts. Are you sure you want to restore your previous home page?"
 msgstr ""
 
-#: lib/src/Core/License/ActivationForm.php:122
-#: build/admin-area/index.js:1
-msgid "License key is empty"
-msgstr ""
-
-#: lib/src/Core/License/ActivationForm.php:189
-msgid "No error"
-msgstr ""
-
-#: lib/src/Core/License/ActivationForm.php:197
-msgid "AI Features"
-msgstr ""
-
-#: lib/src/Core/License/ActivationForm.php:198
-msgid "More sections and blocks"
-msgstr ""
-
-#: lib/src/Core/License/ActivationForm.php:199
-msgid "Footer editing"
-msgstr ""
-
-#: lib/src/Core/License/ActivationForm.php:200
-msgid "Multiple page headers"
-msgstr ""
-
-#: lib/src/Core/License/ActivationForm.php:207
-msgid "Other"
-msgstr ""
-
-#: lib/src/Core/License/ActivationForm.php:224
-msgid "Thank you for choosing Kubio PRO!"
-msgstr ""
-
-#: lib/src/Core/License/ActivationForm.php:227
-msgid "Could you tell us what inspired your decision to upgrade?"
-msgstr ""
-
-#. translators: %1$s - string with server error response
-#: lib/src/Core/License/CheckForm.php:27
-msgid "There was an error calling Kubio License Server: <code>%1$s</code>. Please contact us for support on <a href=\"%2$s\" target=\"_blank\">Kubio</a> website"
-msgstr ""
-
-#. translators: %s - string with server error response
-#: lib/src/Core/License/CheckForm.php:36
-msgid "Current license key was removed! Reason: %s"
-msgstr ""
-
-#: lib/src/Core/License/License.php:99
-#: build/editor/index.js:49
-#: build/pro/index.js:1
-msgid "Upgrade to PRO"
-msgstr ""
-
-#: lib/src/Core/License/License.php:101
-msgid "The first block-based WordPress builder"
+#: lib/src/Core/KubioFrontPageRevertNotice.php:739
+#: build/editor/index.js:1
+msgid "Are you sure you want to restore your previous home page?"
 msgstr ""
 
 #: lib/src/Core/Utils.php:107
@@ -1660,17 +1897,47 @@ msgstr ""
 msgid "Edit this page to insert a shortcode or delete this block."
 msgstr ""
 
-#: lib/src/Core/Utils.php:143
+#. translators: %1$s: block name, %2$s: items type
+#: lib/src/Core/Utils.php:122
+msgid "%1$s has no %2$s."
+msgstr ""
+
+#. translators: %s: items type
+#: lib/src/Core/Utils.php:124
+msgid "Edit this page to insert %s or delete this block."
+msgstr ""
+
+#: lib/src/Core/Utils.php:144
 msgid "Kubio info"
 msgstr ""
 
 #. translators: %s: URL to Update PHP page.
-#: lib/src/Core/Utils.php:338
+#: lib/src/Core/Utils.php:331
+msgid "<a href=\"%s\">Learn more about updating PHP</a>"
+msgstr ""
+
+#. translators: %s: URL to Update PHP page.
+#: lib/src/Core/Utils.php:337
 msgid "<a href=\"%s\">Update WordPress now!</a>"
 msgstr ""
 
-#: lib/src/DemoSites/DemoSites.php:331
-#: lib/src/DemoSites/DemoSites.php:350
+#. translators: 1: Current WordPress version, 2: Current PHP version, 3: Plugin name, 4: Required WordPress version, 5: Required PHP version.
+#: lib/src/Core/Utils.php:346
+msgid "<strong>Error:</strong> Current versions of WordPress (%1$s) and PHP (%2$s) do not meet minimum requirements for %3$s. The plugin requires WordPress %4$s and PHP %5$s."
+msgstr ""
+
+#. translators: 1: Current PHP version, 2: Plugin name, 3: Required PHP version.
+#: lib/src/Core/Utils.php:359
+msgid "<strong>Error:</strong> Current PHP version (%1$s) does not meet minimum requirements for %2$s. The plugin requires PHP %3$s."
+msgstr ""
+
+#. translators: 1: Current WordPress version, 2: Plugin name, 3: Required WordPress version.
+#: lib/src/Core/Utils.php:370
+msgid "<strong>Error:</strong> Current WordPress version (%1$s) does not meet minimum requirements for %2$s. The plugin requires WordPress %3$s."
+msgstr ""
+
+#: lib/src/DemoSites/DemoSites.php:334
+#: lib/src/DemoSites/DemoSites.php:354
 msgid "Slug not found"
 msgstr ""
 
@@ -1697,57 +1964,58 @@ msgid "An error occurred while fetching file from: %1$s%2$s%3$s!%4$sReason: %5$s
 msgstr ""
 
 #. translators: %1$s - br HTML tag, %2$s - file path
-#: lib/src/DemoSites/DemoSitesHelpers.php:231
+#: lib/src/DemoSites/DemoSitesHelpers.php:229
+#: lib/src/DemoSites/DemoSitesHelpers.php:314
 msgid "An error occurred while writing file to your server! Tried to write a file to: %1$s%2$s."
 msgstr ""
 
 #. translators: %1$s and %2$s - strong HTML tags, %3$s - HTML link to a doc page.
-#: lib/src/DemoSites/DemoSitesHelpers.php:253
+#: lib/src/DemoSites/DemoSitesHelpers.php:251
 msgid "This WordPress site does not have %1$sdirect%2$s write file access. This plugin needs it in order to save the demo import files to the upload directory of your site. You can change this setting with these instructions: %3$s."
 msgstr ""
 
-#: lib/src/DemoSites/DemoSitesImporter.php:197
+#: lib/src/DemoSites/DemoSitesImporter.php:199
 msgid "Warn: Unable set memory_limit"
 msgstr ""
 
-#: lib/src/DemoSites/DemoSitesImporter.php:226
+#: lib/src/DemoSites/DemoSitesImporter.php:228
 msgid "No import files specified!"
 msgstr ""
 
-#: lib/src/DemoSites/DemoSitesImporter.php:245
-#: lib/src/DemoSites/DemoSitesImporter.php:255
-#: lib/src/DemoSites/DemoSitesImporter.php:265
+#: lib/src/DemoSites/DemoSitesImporter.php:247
+#: lib/src/DemoSites/DemoSitesImporter.php:257
+#: lib/src/DemoSites/DemoSitesImporter.php:267
 msgid "Downloaded files"
 msgstr ""
 
-#: lib/src/DemoSites/DemoSitesImporter.php:253
+#: lib/src/DemoSites/DemoSitesImporter.php:255
 msgid "Import file undefined"
 msgstr ""
 
 #. translators: %s - the name of the selected import.
-#: lib/src/DemoSites/DemoSitesImporter.php:261
+#: lib/src/DemoSites/DemoSitesImporter.php:263
 msgid "The import files for: %s were successfully downloaded!"
 msgstr ""
 
-#: lib/src/DemoSites/DemoSitesImporter.php:279
+#: lib/src/DemoSites/DemoSitesImporter.php:281
 msgid "Manual kds import!"
 msgstr ""
 
-#: lib/src/DemoSites/DemoSitesImporter.php:281
+#: lib/src/DemoSites/DemoSitesImporter.php:283
 msgid "Manual import"
 msgstr ""
 
-#: lib/src/DemoSites/DemoSitesImporter.php:321
+#: lib/src/DemoSites/DemoSitesImporter.php:323
 msgid "Importer action not found"
 msgstr ""
 
 #. translators: %s - menu item name e.g. "Home", "Contact"
-#: lib/src/DemoSites/DemoSitesImporter.php:441
+#: lib/src/DemoSites/DemoSitesImporter.php:445
 msgid "Old %s"
 msgstr ""
 
 #. translators: %s - menu item name e.g. "Home", "Contact"
-#: lib/src/DemoSites/DemoSitesImporter.php:441
+#: lib/src/DemoSites/DemoSitesImporter.php:445
 msgid "Old"
 msgstr ""
 
@@ -1756,17 +2024,17 @@ msgstr ""
 msgid "Unable to import remote file: %s"
 msgstr ""
 
-#: lib/src/DemoSites/WXRImporter.php:587
+#: lib/src/DemoSites/WXRImporter.php:549
+msgid "New AJAX call!"
+msgstr ""
+
+#: lib/src/DemoSites/WXRImporter.php:585
 msgid "Posts post processing"
 msgstr ""
 
-#. translators %1$s = term slug, %2$s = taxonomy
+#. translators: %1$s = term slug, %2$s = taxonomy
 #: lib/src/DemoSites/WXRImporter.php:596
 msgid "Create term `%1$s` in `%2$s`"
-msgstr ""
-
-#: lib/src/GoogleFontsLocalLoader.php:402
-msgid "Frobidden"
 msgstr ""
 
 #. translators: %s - plugin slug
@@ -1777,7 +2045,7 @@ msgstr ""
 #: build/admin-area/index.js:1
 #: build/block-library/index.js:33
 #: build/controls/index.js:21
-#: build/editor/index.js:31
+#: build/editor/index.js:33
 msgid "Loading…"
 msgstr ""
 
@@ -1912,64 +2180,27 @@ msgstr ""
 
 #: build/admin-area/index.js:7
 #: build/ai/index.js:3
-#: build/editor/index.js:49
 #: build/editor/index.js:51
+#: build/editor/index.js:53
 msgid "Generate"
 msgstr ""
 
-#: build/admin-panel/index.js:1
-#: build/block-library/index.js:27
-msgid "Official"
-msgstr ""
-
-#: build/admin-panel/index.js:1
-#: build/block-library/index.js:27
-msgid "Shared"
-msgstr ""
-
-#: build/admin-panel/index.js:1
-#: build/block-library/index.js:27
-msgid "Individual"
-msgstr ""
-
-#: build/admin-panel/index.js:1
-#: build/block-library/index.js:19
-#: build/block-library/index.js:25
-#: build/block-library/index.js:27
-#: build/block-library/index.js:29
-#: build/block-library/index.js:33
-#: build/block-library/index.js:37
-#: build/controls/index.js:35
-#: build/third-party-blocks/index.js:1
-msgid "Normal"
-msgstr ""
-
-#: build/admin-panel/index.js:1
-#: build/block-editor/index.js:100
-#: build/block-library/index.js:19
-#: build/block-library/index.js:25
-#: build/block-library/index.js:27
-#: build/block-library/index.js:29
-#: build/block-library/index.js:33
-#: build/block-library/index.js:37
-#: build/third-party-blocks/index.js:1
-msgid "Hover"
-msgstr ""
-
+#. translators: 2. Type of spacing being modified (Padding, margin, etc). 1: The side of the block being modified (top, bottom, left etc.).
+#. translators: %s: file name
 #: build/advanced-panel/index.js:1
-#: build/block-editor/index.js:100
-#: build/block-editor/index.js:110
+#: build/block-editor/index.js:108
+#: build/block-editor/index.js:118
 #: build/block-library/index.js:37
 #: build/controls/index.js:35
 #: build/editor/index.js:3
-#: build/editor/index.js:33
+#: build/editor/index.js:19
+#: build/editor/index.js:35
 #: build/format-library/index.js:1
 #: build/wp-global-styles/index.js:1
 msgid "Typography"
 msgstr ""
 
 #: build/advanced-panel/index.js:1
-#: build/block-editor/index.js:100
 #: build/block-library/index.js:9
 #: build/block-library/index.js:19
 #: build/editor/index.js:3
@@ -1981,8 +2212,8 @@ msgid "Border and Shadows"
 msgstr ""
 
 #: build/advanced-panel/index.js:1
-#: build/block-editor/index.js:100
-#: build/block-editor/index.js:110
+#: build/block-editor/index.js:108
+#: build/block-editor/index.js:118
 #: build/block-library/index.js:19
 #: build/block-library/index.js:37
 #: build/controls/index.js:1
@@ -2001,8 +2232,7 @@ msgid "Box shadow"
 msgstr ""
 
 #: build/advanced-panel/index.js:1
-#: build/block-editor/index.js:100
-#: build/block-editor/index.js:110
+#: build/block-editor/index.js:118
 #: build/block-library/index.js:13
 #: build/block-library/index.js:19
 #: build/block-library/index.js:29
@@ -2069,13 +2299,17 @@ msgid "Your account has insufficient credits"
 msgstr ""
 
 #: build/ai/index.js:1
-#: build/editor/index.js:37
+#: build/editor/index.js:39
 msgid "There was an error with the KubioAI services. If the error persists, please contact support"
 msgstr ""
 
 #. translators: %s is the error text
 #: build/ai/index.js:3
 msgid "Kubio AI: %s"
+msgstr ""
+
+#: build/ai/index.js:3
+msgid "Generating site structure"
 msgstr ""
 
 #: build/ai/index.js:3
@@ -2093,7 +2327,7 @@ msgid "Hero"
 msgstr ""
 
 #: build/ai/index.js:3
-#: build/editor/index.js:19
+#: build/editor/index.js:23
 msgid "Save changes"
 msgstr ""
 
@@ -2113,16 +2347,315 @@ msgstr ""
 #: build/ai/index.js:3
 #: build/controls/index.js:35
 #: build/editor/index.js:1
-#: build/editor/index.js:17
-#: build/editor/index.js:51
+#: build/editor/index.js:21
 #: build/editor/index.js:53
+#: build/editor/index.js:55
 msgid "Back"
 msgstr ""
 
 #: build/ai/index.js:3
-#: build/editor/index.js:31
+#: build/editor/index.js:19
 #: build/editor/index.js:33
+#: build/editor/index.js:35
 msgid "Continue"
+msgstr ""
+
+#: build/ai/index.js:3
+msgid "Search…"
+msgstr ""
+
+#: build/ai/index.js:3
+#: build/controls/index.js:1
+msgid "Select…"
+msgstr ""
+
+#: build/ai/index.js:3
+msgid "No results found"
+msgstr ""
+
+#: build/ai/index.js:3
+msgctxt "business industry"
+msgid "Agency"
+msgstr ""
+
+#: build/ai/index.js:3
+msgctxt "business industry"
+msgid "Local business"
+msgstr ""
+
+#: build/ai/index.js:3
+msgctxt "business industry"
+msgid "Non-profit"
+msgstr ""
+
+#: build/ai/index.js:3
+msgctxt "business industry"
+msgid "Spa"
+msgstr ""
+
+#: build/ai/index.js:3
+msgctxt "business industry"
+msgid "Gym"
+msgstr ""
+
+#: build/ai/index.js:3
+msgctxt "business industry"
+msgid "Dentist"
+msgstr ""
+
+#: build/ai/index.js:3
+msgctxt "business industry"
+msgid "Entrepreneur"
+msgstr ""
+
+#: build/ai/index.js:3
+msgctxt "business industry"
+msgid "Event"
+msgstr ""
+
+#: build/ai/index.js:3
+msgctxt "business industry"
+msgid "SaaS"
+msgstr ""
+
+#: build/ai/index.js:3
+msgctxt "business industry"
+msgid "Restaurant"
+msgstr ""
+
+#: build/ai/index.js:3
+msgctxt "shop industry"
+msgid "Department Stores"
+msgstr ""
+
+#: build/ai/index.js:3
+msgctxt "shop industry"
+msgid "Beauty, Cosmetics & Fragrances Store"
+msgstr ""
+
+#: build/ai/index.js:3
+msgctxt "shop industry"
+msgid "Clothing Stores"
+msgstr ""
+
+#: build/ai/index.js:3
+msgctxt "shop industry"
+msgid "Shoes Stores"
+msgstr ""
+
+#: build/ai/index.js:3
+msgctxt "shop industry"
+msgid "Furniture Stores"
+msgstr ""
+
+#: build/ai/index.js:3
+msgctxt "shop industry"
+msgid "Electronics Stores"
+msgstr ""
+
+#: build/ai/index.js:3
+msgctxt "shop industry"
+msgid "Restaurant"
+msgstr ""
+
+#: build/ai/index.js:3
+msgctxt "shop industry"
+msgid "Pastry"
+msgstr ""
+
+#: build/ai/index.js:3
+msgctxt "shop industry"
+msgid "Nutrition"
+msgstr ""
+
+#: build/ai/index.js:3
+msgctxt "shop industry"
+msgid "Sporting Goods Stores"
+msgstr ""
+
+#: build/ai/index.js:3
+msgctxt "shop industry"
+msgid "Hotels & Accommodations"
+msgstr ""
+
+#: build/ai/index.js:3
+msgctxt "shop industry"
+msgid "Auto Parts Stores"
+msgstr ""
+
+#: build/ai/index.js:3
+msgctxt "shop industry"
+msgid "Arts & Crafts Stores"
+msgstr ""
+
+#: build/ai/index.js:3
+msgctxt "shop industry"
+msgid "Book Stores"
+msgstr ""
+
+#: build/ai/index.js:3
+msgctxt "shop industry"
+msgid "Flower Stores"
+msgstr ""
+
+#: build/ai/index.js:3
+msgctxt "blog industry"
+msgid "Food and drink"
+msgstr ""
+
+#: build/ai/index.js:3
+msgctxt "blog industry"
+msgid "Travel"
+msgstr ""
+
+#: build/ai/index.js:3
+msgctxt "blog industry"
+msgid "Health and fitness"
+msgstr ""
+
+#: build/ai/index.js:3
+msgctxt "blog industry"
+msgid "Lifestyle and hobbies"
+msgstr ""
+
+#: build/ai/index.js:3
+msgctxt "blog industry"
+msgid "Fashion and beauty"
+msgstr ""
+
+#: build/ai/index.js:3
+msgctxt "blog industry"
+msgid "Photography"
+msgstr ""
+
+#: build/ai/index.js:3
+msgctxt "blog industry"
+msgid "Personal"
+msgstr ""
+
+#: build/ai/index.js:3
+msgctxt "blog industry"
+msgid "DIY"
+msgstr ""
+
+#: build/ai/index.js:3
+msgctxt "blog industry"
+msgid "Parenting"
+msgstr ""
+
+#: build/ai/index.js:3
+msgctxt "blog industry"
+msgid "Music"
+msgstr ""
+
+#: build/ai/index.js:3
+msgctxt "blog industry"
+msgid "Business"
+msgstr ""
+
+#: build/ai/index.js:3
+msgctxt "blog industry"
+msgid "Art and design"
+msgstr ""
+
+#: build/ai/index.js:3
+msgctxt "blog industry"
+msgid "Book and writing"
+msgstr ""
+
+#: build/ai/index.js:3
+msgctxt "blog industry"
+msgid "Finance"
+msgstr ""
+
+#: build/ai/index.js:3
+msgctxt "blog industry"
+msgid "Interior design"
+msgstr ""
+
+#: build/ai/index.js:3
+msgctxt "blog industry"
+msgid "Sports"
+msgstr ""
+
+#: build/ai/index.js:3
+msgctxt "blog industry"
+msgid "News"
+msgstr ""
+
+#: build/ai/index.js:3
+msgctxt "blog industry"
+msgid "Movie"
+msgstr ""
+
+#: build/ai/index.js:3
+msgctxt "blog industry"
+msgid "Religion"
+msgstr ""
+
+#: build/ai/index.js:3
+msgctxt "blog industry"
+msgid "Political"
+msgstr ""
+
+#: build/ai/index.js:3
+msgctxt "blog industry"
+msgid "Marketing "
+msgstr ""
+
+#: build/ai/index.js:3
+msgctxt "blog industry"
+msgid "Sales"
+msgstr ""
+
+#: build/ai/index.js:3
+msgctxt "blog industry"
+msgid "Design and development"
+msgstr ""
+
+#: build/ai/index.js:3
+msgctxt "blog industry"
+msgid "Technology"
+msgstr ""
+
+#: build/ai/index.js:3
+msgctxt "blog industry"
+msgid "Education"
+msgstr ""
+
+#: build/ai/index.js:3
+msgctxt "blog industry"
+msgid "Entertainment"
+msgstr ""
+
+#: build/ai/index.js:3
+msgctxt "blog industry"
+msgid "Relationships"
+msgstr ""
+
+#: build/ai/index.js:3
+msgctxt "blog industry"
+msgid "Gaming"
+msgstr ""
+
+#: build/ai/index.js:3
+msgctxt "blog industry"
+msgid "Science and medicine"
+msgstr ""
+
+#: build/ai/index.js:3
+msgctxt "blog industry"
+msgid "Home ownership"
+msgstr ""
+
+#: build/ai/index.js:3
+msgctxt "blog industry"
+msgid "Pets"
+msgstr ""
+
+#: build/ai/index.js:3
+msgctxt "blog industry"
+msgid "Your own journey"
 msgstr ""
 
 #: build/ai/index.js:3
@@ -2146,6 +2679,10 @@ msgid "Great description"
 msgstr ""
 
 #: build/ai/index.js:3
+msgid "Website topic cannot be empty!"
+msgstr ""
+
+#: build/ai/index.js:3
 msgid "Website name cannot be empty!"
 msgstr ""
 
@@ -2166,7 +2703,11 @@ msgid "Website name"
 msgstr ""
 
 #: build/ai/index.js:3
-msgid "Website type"
+msgid "Website Topic"
+msgstr ""
+
+#: build/ai/index.js:3
+msgid "Select Topic"
 msgstr ""
 
 #: build/ai/index.js:3
@@ -2175,6 +2716,10 @@ msgstr ""
 
 #: build/ai/index.js:3
 msgid "Short description of the website"
+msgstr ""
+
+#: build/ai/index.js:3
+msgid "Optional"
 msgstr ""
 
 #: build/ai/index.js:3
@@ -2242,10 +2787,6 @@ msgid "Email address"
 msgstr ""
 
 #: build/ai/index.js:3
-msgid "Optional"
-msgstr ""
-
-#: build/ai/index.js:3
 msgid "Phone number"
 msgstr ""
 
@@ -2291,8 +2832,6 @@ msgid "No URL set"
 msgstr ""
 
 #: build/ai/index.js:3
-#: build/block-editor/index.js:36
-#: build/block-editor/index.js:94
 #: build/block-editor/index.js:96
 #: build/block-library/index.js:19
 msgid "Apply"
@@ -2461,7 +3000,7 @@ msgid "Tell us a few things about the page we're about to generate."
 msgstr ""
 
 #: build/ai/index.js:3
-#: build/editor/index.js:23
+#: build/editor/index.js:25
 msgid "Generate with Kubio AI"
 msgstr ""
 
@@ -2511,12 +3050,10 @@ msgstr ""
 #. translators: accessibility text for the publish landmark region.
 #. translators: accessibility text for the footer landmark region.
 #: build/ai/index.js:5
-#: build/block-editor/index.js:96
-#: build/block-editor/index.js:110
 #: build/editor/index.js:1
-#: build/editor/index.js:17
-#: build/editor/index.js:49
-#: build/editor/index.js:53
+#: build/editor/index.js:21
+#: build/editor/index.js:51
+#: build/editor/index.js:55
 msgid "Close"
 msgstr ""
 
@@ -2673,57 +3210,6 @@ msgstr ""
 msgid "Use the Tab key and Arrow keys to choose new block location. Use Left and Right Arrow keys to move between nesting levels. Once location is selected press Enter or Space to move the block."
 msgstr ""
 
-#: build/block-editor/index.js:1
-msgid "More options"
-msgstr ""
-
-#: build/block-editor/index.js:1
-msgid "Find original"
-msgstr ""
-
-#: build/block-editor/index.js:1
-#: build/block-editor/index.js:100
-#: build/editor/index.js:1
-#: build/editor/index.js:3
-msgid "Remove"
-msgstr ""
-
-#: build/block-editor/index.js:1
-msgid "This block can only be used once."
-msgstr ""
-
-#: build/block-editor/index.js:1
-#: build/block-editor/index.js:100
-#: build/block-editor/index.js:110
-#: build/block-library/index.js:21
-#: build/block-library/index.js:25
-msgid "Align text left"
-msgstr ""
-
-#: build/block-editor/index.js:1
-#: build/block-editor/index.js:100
-#: build/block-editor/index.js:110
-#: build/block-library/index.js:21
-#: build/block-library/index.js:25
-msgid "Align text center"
-msgstr ""
-
-#: build/block-editor/index.js:1
-#: build/block-editor/index.js:100
-#: build/block-editor/index.js:110
-#: build/block-library/index.js:21
-#: build/block-library/index.js:25
-msgid "Align text right"
-msgstr ""
-
-#: build/block-editor/index.js:1
-msgid "Align text"
-msgstr ""
-
-#: build/block-editor/index.js:1
-msgid "Change text alignment"
-msgstr ""
-
 #. translators: %s: container size (i.e. 600px etc)
 #: build/block-editor/index.js:2
 #: build/block-editor/index.js:3
@@ -2731,260 +3217,7 @@ msgid "Max %s wide"
 msgstr ""
 
 #: build/block-editor/index.js:3
-msgid "Spacing control"
-msgstr ""
-
-#: build/block-editor/index.js:3
-#: build/block-library/index.js:19
-#: build/block-library/index.js:29
-#: build/controls/index.js:1
-#: build/controls/index.js:19
-#: build/controls/index.js:35
-#: build/controls/index.js:37
-msgid "Top"
-msgstr ""
-
-#: build/block-editor/index.js:3
-#: build/block-library/index.js:19
-#: build/block-library/index.js:29
-#: build/controls/index.js:1
-#: build/controls/index.js:19
-#: build/controls/index.js:35
-#: build/controls/index.js:37
-msgid "Bottom"
-msgstr ""
-
-#: build/block-editor/index.js:3
-#: build/block-library/index.js:19
-#: build/block-library/index.js:29
-#: build/controls/index.js:1
-#: build/controls/index.js:19
-#: build/controls/index.js:35
-#: build/controls/index.js:37
-msgid "Left"
-msgstr ""
-
-#: build/block-editor/index.js:3
-#: build/block-library/index.js:19
-#: build/block-library/index.js:29
-#: build/controls/index.js:1
-#: build/controls/index.js:19
-#: build/controls/index.js:35
-#: build/controls/index.js:37
-msgid "Right"
-msgstr ""
-
-#: build/block-editor/index.js:3
-#: build/block-editor/index.js:84
-#: build/block-editor/index.js:96
-#: build/block-editor/index.js:98
-#: build/controls/index.js:1
-#: build/controls/index.js:19
-msgid "Mixed"
-msgstr ""
-
-#: build/block-editor/index.js:3
-#: build/block-editor/index.js:94
-#: build/block-library/index.js:27
-#: build/block-library/index.js:29
-#: build/controls/index.js:37
-msgid "Vertical"
-msgstr ""
-
-#: build/block-editor/index.js:3
-#: build/block-editor/index.js:94
-#: build/block-library/index.js:27
-#: build/block-library/index.js:29
-#: build/controls/index.js:37
-msgid "Horizontal"
-msgstr ""
-
-#: build/block-editor/index.js:3
-msgid "Horizontal & vertical"
-msgstr ""
-
-#: build/block-editor/index.js:3
-#: build/block-editor/index.js:88
-#: build/block-library/index.js:11
-#: build/block-library/index.js:19
-#: build/block-library/index.js:37
-#: build/constants/index.js:1
-#: build/controls/index.js:35
-#: build/controls/index.js:37
-#: build/editor/index.js:5
-#: build/third-party-blocks/index.js:1
-#: build/utils/index.js:1
-#: build/wp-global-styles/index.js:3
-msgid "Custom"
-msgstr ""
-
-#: build/block-editor/index.js:3
-msgid "Flex"
-msgstr ""
-
-#: build/block-editor/index.js:3
-msgid "Align items top"
-msgstr ""
-
-#: build/block-editor/index.js:3
-msgid "Align items center"
-msgstr ""
-
-#: build/block-editor/index.js:3
-msgid "Align items bottom"
-msgstr ""
-
-#: build/block-editor/index.js:3
-msgid "Vertical alignment"
-msgstr ""
-
-#: build/block-editor/index.js:3
-#: build/block-editor/index.js:94
-msgid "Justify items left"
-msgstr ""
-
-#: build/block-editor/index.js:3
-#: build/block-editor/index.js:94
-msgid "Justify items center"
-msgstr ""
-
-#: build/block-editor/index.js:3
-#: build/block-editor/index.js:94
-msgid "Justify items right"
-msgstr ""
-
-#: build/block-editor/index.js:3
-#: build/block-editor/index.js:94
-#: build/block-library/index.js:37
-msgid "Space between items"
-msgstr ""
-
-#: build/block-editor/index.js:3
-#: build/block-editor/index.js:94
-msgid "Stretch items"
-msgstr ""
-
-#: build/block-editor/index.js:3
-msgid "Justification"
-msgstr ""
-
-#: build/block-editor/index.js:3
-msgid "Allow to wrap to multiple lines"
-msgstr ""
-
-#: build/block-editor/index.js:3
-#: build/block-editor/index.js:94
-#: build/block-editor/index.js:100
-msgid "Orientation"
-msgstr ""
-
-#: build/block-editor/index.js:3
-msgid "Flow"
-msgstr ""
-
-#: build/block-editor/index.js:3
-msgid "Constrained"
-msgstr ""
-
-#: build/block-editor/index.js:3
-#: build/block-editor/index.js:100
-msgid "Wide"
-msgstr ""
-
-#: build/block-editor/index.js:3
-msgid "Customize the width for all elements that are assigned to the center or wide columns."
-msgstr ""
-
-#: build/block-editor/index.js:3
-msgid "Grid"
-msgstr ""
-
-#: build/block-editor/index.js:3
-msgid "Minimum column width"
-msgstr ""
-
-#: build/block-editor/index.js:3
-#: build/block-editor/index.js:100
-#: build/block-library/index.js:7
-#: build/block-library/index.js:11
-msgid "Columns"
-msgstr ""
-
-#: build/block-editor/index.js:3
-msgid "Rows"
-msgstr ""
-
-#: build/block-editor/index.js:3
-#: build/block-library/index.js:19
-#: build/controls/index.js:9
-msgid "Type"
-msgstr ""
-
-#: build/block-editor/index.js:3
-#: build/block-editor/index.js:100
-#: build/block-editor/index.js:110
-#: build/block-library/index.js:19
-#: build/block-library/index.js:27
-#: build/controls/index.js:19
-#: build/controls/index.js:35
-msgid "Auto"
-msgstr ""
-
-#: build/block-editor/index.js:3
-msgid "Manual"
-msgstr ""
-
-#: build/block-editor/index.js:3
-msgctxt "Alignment option"
-msgid "None"
-msgstr ""
-
-#: build/block-editor/index.js:3
-msgid "Align left"
-msgstr ""
-
-#: build/block-editor/index.js:3
-msgid "Align center"
-msgstr ""
-
-#: build/block-editor/index.js:3
-msgid "Align right"
-msgstr ""
-
-#: build/block-editor/index.js:3
-msgid "Wide width"
-msgstr ""
-
-#: build/block-editor/index.js:3
-#: build/block-library/index.js:27
-msgid "Full width"
-msgstr ""
-
-#: build/block-editor/index.js:3
-#: build/block-library/index.js:11
-#: build/block-library/index.js:19
-#: build/third-party-blocks/index.js:1
-msgid "Align"
-msgstr ""
-
-#: build/block-editor/index.js:3
-msgid "Change alignment"
-msgstr ""
-
-#: build/block-editor/index.js:3
 msgid "Toggle full height"
-msgstr ""
-
-#: build/block-editor/index.js:3
-msgid "Change matrix alignment"
-msgstr ""
-
-#: build/block-editor/index.js:3
-msgid "Document"
-msgstr ""
-
-#: build/block-editor/index.js:3
-msgid "Block breadcrumb"
 msgstr ""
 
 #. translators: %s - template part name (e.g. header/ footer/ sidebar)
@@ -3162,34 +3395,7 @@ msgstr ""
 msgid "Move the selected block(s) down."
 msgstr ""
 
-#. Translators: Name of the block being copied, e.g. "Paragraph".
-#: build/block-editor/index.js:17
-msgid "Copied \"%s\" to clipboard."
-msgstr ""
-
-#. Translators: Name of the block being cut, e.g. "Paragraph".
-#: build/block-editor/index.js:19
-msgid "Moved \"%s\" to clipboard."
-msgstr ""
-
-#. Translators: %d: Number of blocks being copied.
-#: build/block-editor/index.js:21
-msgid "Copied %d block to clipboard."
-msgid_plural "Copied %d blocks to clipboard."
-msgstr[0] ""
-msgstr[1] ""
-
 #. Translators: %d: Number of blocks being cut.
-#: build/block-editor/index.js:23
-msgid "Moved %d block to clipboard."
-msgid_plural "Moved %d blocks to clipboard."
-msgstr[0] ""
-msgstr[1] ""
-
-#: build/block-editor/index.js:23
-msgid "Multiple selected blocks"
-msgstr ""
-
 #: build/block-editor/index.js:23
 #: build/editor/index.js:7
 msgid "Editor canvas"
@@ -3209,11 +3415,10 @@ msgstr ""
 
 #: build/block-editor/index.js:23
 #: build/block-editor/index.js:78
-#: build/block-editor/index.js:110
 #: build/block-library/index.js:1
 #: build/block-library/index.js:19
-#: build/editor/index.js:29
 #: build/editor/index.js:31
+#: build/editor/index.js:33
 msgid "Delete"
 msgstr ""
 
@@ -3240,7 +3445,6 @@ msgid "Reusable blocks are now synced patterns. A synced pattern will behave in 
 msgstr ""
 
 #: build/block-editor/index.js:23
-#: build/block-editor/index.js:110
 msgid "Dismiss hint"
 msgstr ""
 
@@ -3292,13 +3496,12 @@ msgstr ""
 
 #. translators: Patterns tab title in the block inserter.
 #: build/block-editor/index.js:23
-#: build/editor/index.js:17
+#: build/editor/index.js:21
 msgid "Sections"
 msgstr ""
 
 #. translators: Patterns tab title in the block inserter.
 #: build/block-editor/index.js:23
-#: build/block-editor/index.js:78
 msgid "Patterns"
 msgstr ""
 
@@ -3321,8 +3524,8 @@ msgstr ""
 
 #: build/block-editor/index.js:23
 #: build/block-library/index.js:25
-#: build/editor/index.js:17
-#: build/editor/index.js:51
+#: build/editor/index.js:21
+#: build/editor/index.js:53
 msgid "Search"
 msgstr ""
 
@@ -3356,36 +3559,18 @@ msgstr ""
 msgid "%s block added"
 msgstr ""
 
-#: build/block-editor/index.js:27
-msgid "Type / to choose a block"
-msgstr ""
-
-#: build/block-editor/index.js:27
-msgid "Add default block"
-msgstr ""
-
 #: build/block-editor/index.js:29
 msgid "This block has encountered an error and cannot be previewed."
-msgstr ""
-
-#: build/block-editor/index.js:29
-#: build/editor/index.js:7
-msgid "Current"
-msgstr ""
-
-#: build/block-editor/index.js:29
-#: build/block-editor/index.js:30
-msgid "Convert to HTML"
-msgstr ""
-
-#: build/block-editor/index.js:29
-msgid "After Conversion"
 msgstr ""
 
 #. translators: Button to fix block content
 #: build/block-editor/index.js:30
 msgctxt "imperative verb"
 msgid "Resolve"
+msgstr ""
+
+#: build/block-editor/index.js:30
+msgid "Convert to HTML"
 msgstr ""
 
 #: build/block-editor/index.js:30
@@ -3405,6 +3590,7 @@ msgstr ""
 msgid "Resolve Block"
 msgstr ""
 
+#. translators: %s: Name of the block.
 #: build/block-editor/index.js:32
 #: build/block-editor/index.js:78
 msgid "Convert to Blocks"
@@ -3415,130 +3601,17 @@ msgstr ""
 msgid "Block: %s"
 msgstr ""
 
+#. translators: 1: Font weight name. 2: Font style name.
 #: build/block-editor/index.js:34
 msgid "Sticky"
 msgstr ""
 
 #: build/block-editor/index.js:34
-#: build/block-editor/index.js:100
 #: build/controls/index.js:35
 msgid "Fixed"
-msgstr ""
-
-#: build/block-editor/index.js:34
-#: build/block-editor/index.js:82
-#: build/block-editor/index.js:88
-#: build/block-editor/index.js:94
-#: build/block-editor/index.js:98
-#: build/block-editor/index.js:100
-#: build/block-library/index.js:19
-#: build/block-library/index.js:33
-#: build/block-library/index.js:35
-#: build/controls/index.js:35
-#: build/controls/index.js:37
-#: build/third-party-blocks/index.js:1
-#: build/wp-global-styles/index.js:3
-msgid "Default"
-msgstr ""
-
-#: build/block-editor/index.js:34
-msgctxt "Name for the value of the CSS position property"
-msgid "Sticky"
-msgstr ""
-
-#: build/block-editor/index.js:34
-msgid "The block will stick to the top of the window instead of scrolling."
-msgstr ""
-
-#: build/block-editor/index.js:34
-msgctxt "Name for the value of the CSS position property"
-msgid "Fixed"
-msgstr ""
-
-#: build/block-editor/index.js:34
-msgid "The block will not move when the page is scrolled."
-msgstr ""
-
-#. translators: %s: the name of the parent block.
-#: build/block-editor/index.js:34
-msgid "The block will stick to the scrollable area of the parent %s block."
-msgstr ""
-
-#: build/block-editor/index.js:34
-#: build/block-editor/index.js:100
-#: build/block-editor/index.js:110
-#: build/controls/index.js:35
-#: build/controls/index.js:37
-msgid "Position"
 msgstr ""
 
 #. translators: %s: Currently selected position.
-#: build/block-editor/index.js:36
-msgid "Currently selected position: %s"
-msgstr ""
-
-#: build/block-editor/index.js:36
-#: build/block-editor/index.js:78
-msgid "Edit visually"
-msgstr ""
-
-#. translators: %s: Name of the block.
-#: build/block-editor/index.js:36
-msgid "Lock %s"
-msgstr ""
-
-#: build/block-editor/index.js:36
-msgid "Choose specific attributes to restrict or lock all available options."
-msgstr ""
-
-#: build/block-editor/index.js:36
-msgid "Lock all"
-msgstr ""
-
-#: build/block-editor/index.js:36
-msgid "Restrict editing"
-msgstr ""
-
-#: build/block-editor/index.js:36
-msgid "Disable movement"
-msgstr ""
-
-#: build/block-editor/index.js:36
-msgid "Prevent removal"
-msgstr ""
-
-#: build/block-editor/index.js:36
-msgid "Apply to all blocks inside"
-msgstr ""
-
-#: build/block-editor/index.js:36
-msgid "Unlock"
-msgstr ""
-
-#: build/block-editor/index.js:36
-msgid "Lock"
-msgstr ""
-
-#: build/block-editor/index.js:36
-msgid "Locked"
-msgstr ""
-
-#: build/block-editor/index.js:36
-msgid "Move right"
-msgstr ""
-
-#: build/block-editor/index.js:36
-msgid "Move left"
-msgstr ""
-
-#: build/block-editor/index.js:36
-msgid "Move up"
-msgstr ""
-
-#: build/block-editor/index.js:36
-msgid "Move down"
-msgstr ""
-
 #: build/block-editor/index.js:36
 msgid "All blocks are selected, and cannot be moved"
 msgstr ""
@@ -3640,16 +3713,17 @@ msgstr ""
 msgid "Block %1$s is at the beginning of the content and can’t be moved right"
 msgstr ""
 
-#: build/block-editor/index.js:74
-#: build/block-editor/index.js:78
-msgid "Drag"
-msgstr ""
-
 #. translators: %s: Name of the block's parent.
 #: build/block-editor/index.js:74
 msgid "Select parent block: %s"
 msgstr ""
 
+#: build/block-editor/index.js:74
+msgctxt "block style"
+msgid "Default"
+msgstr ""
+
+#. translators: %d: number of blocks.
 #: build/block-editor/index.js:74
 msgid "Unable to paste styles. This feature is only available on secure (https) sites in supporting browsers."
 msgstr ""
@@ -3673,30 +3747,6 @@ msgid "Pasted styles to %d blocks."
 msgstr ""
 
 #: build/block-editor/index.js:78
-msgctxt "verb"
-msgid "Group"
-msgstr ""
-
-#: build/block-editor/index.js:78
-msgctxt "single horizontal line"
-msgid "Row"
-msgstr ""
-
-#: build/block-editor/index.js:78
-msgctxt "verb"
-msgid "Stack"
-msgstr ""
-
-#: build/block-editor/index.js:78
-msgctxt "Ungrouping blocks from within a grouping block back into individual blocks within the Editor "
-msgid "Ungroup"
-msgstr ""
-
-#: build/block-editor/index.js:78
-msgid "Edit as HTML"
-msgstr ""
-
-#: build/block-editor/index.js:78
 msgid "Copy"
 msgstr ""
 
@@ -3706,14 +3756,13 @@ msgid "Select parent block (%s)"
 msgstr ""
 
 #: build/block-editor/index.js:78
-#: build/block-editor/index.js:82
 #: build/block-library/index.js:19
 msgid "Options"
 msgstr ""
 
 #: build/block-editor/index.js:78
 #: build/block-library/index.js:1
-#: build/editor/index.js:31
+#: build/editor/index.js:33
 msgid "Duplicate"
 msgstr ""
 
@@ -3734,50 +3783,11 @@ msgid "Paste styles"
 msgstr ""
 
 #: build/block-editor/index.js:78
-msgctxt "block style"
-msgid "Default"
-msgstr ""
-
-#: build/block-editor/index.js:78
-#: build/block-editor/index.js:110
-msgid "Styles"
-msgstr ""
-
-#: build/block-editor/index.js:78
-msgid "Transform to"
-msgstr ""
-
-#: build/block-editor/index.js:78
-#: build/block-editor/index.js:84
-msgid "Patterns list"
-msgstr ""
-
-#: build/block-editor/index.js:78
-msgid "No transforms."
-msgstr ""
-
-#: build/block-editor/index.js:78
-msgid "Multiple blocks selected"
-msgstr ""
-
-#: build/block-editor/index.js:78
-msgid "Change block type or style"
-msgstr ""
-
-#. translators: %d: number of blocks.
-#: build/block-editor/index.js:78
-msgid "Change type of %d block"
-msgid_plural "Change type of %d blocks"
-msgstr[0] ""
-msgstr[1] ""
-
-#: build/block-editor/index.js:78
-msgid "Block tools"
+msgid "Edit visually"
 msgstr ""
 
 #. translators: %s: Name of the block variation
 #: build/block-editor/index.js:78
-#: build/block-editor/index.js:84
 msgid "Transform to %s"
 msgstr ""
 
@@ -3797,568 +3807,201 @@ msgstr ""
 msgid "Open Colors Selector"
 msgstr ""
 
-#. translators: %s: name of block being inserted (i.e. Paragraph, Image, Group etc)
-#: build/block-editor/index.js:80
-msgid "%s block inserted"
-msgstr ""
-
-#. translators: 1: The name of the block. 2: The numerical position of the block. 3: The level of nesting for the block.
-#: build/block-editor/index.js:80
-msgid "Append to %1$s block at position %2$d, Level %3$d"
-msgstr ""
-
-#. translators: 1: Position of selected block, e.g. "Sticky" or "Fixed".
-#: build/block-editor/index.js:82
-msgid "Position: %1$s"
-msgstr ""
-
-#. translators: 1: The numerical position of the block. 2: The total number of blocks. 3. The level of nesting for the block.
-#: build/block-editor/index.js:82
-msgid "Block %1$d of %2$d, Level %3$d."
-msgstr ""
-
-#: build/block-editor/index.js:82
-msgid "This block is locked."
-msgstr ""
-
-#: build/block-editor/index.js:82
-msgid "Selected blocks are grouped."
-msgstr ""
-
-#. translators: %s: block name
-#: build/block-editor/index.js:82
-msgid "%s deselected."
-msgstr ""
-
-#. translators: %s: number of deselected blocks
-#: build/block-editor/index.js:82
-msgid "%s blocks deselected."
-msgstr ""
-
-#: build/block-editor/index.js:82
-msgid "Block navigation structure"
-msgstr ""
-
-#: build/block-editor/index.js:82
-#: build/editor/index.js:31
-msgid "List view"
-msgstr ""
-
-#: build/block-editor/index.js:82
-msgid "Go to parent Navigation block"
-msgstr ""
-
-#: build/block-editor/index.js:82
+#. translators:  %1$s: Custom block name. %2$s: Block title.
+#: build/block-editor/index.js:84
 msgid "No Preview Available."
 msgstr ""
 
-#: build/block-editor/index.js:82
-msgid "Change level"
-msgstr ""
-
-#: build/block-editor/index.js:82
-#: build/block-library/index.js:25
-#: build/editor/index.js:19
-msgid "Paragraph"
+#: build/block-editor/index.js:84
+#: build/block-library/index.js:19
+#: build/block-library/index.js:33
+#: build/block-library/index.js:35
+#: build/controls/index.js:35
+#: build/controls/index.js:37
+#: build/third-party-blocks/index.js:1
+#: build/wp-global-styles/index.js:3
+msgid "Default"
 msgstr ""
 
 #. translators: %d: heading level e.g: "1", "2", "3"
-#: build/block-editor/index.js:84
-#: build/block-library/index.js:21
-#: build/block-library/index.js:23
-msgid "Heading %d"
-msgstr ""
-
-#: build/block-editor/index.js:84
-msgid "Choose variation"
-msgstr ""
-
-#: build/block-editor/index.js:84
-msgid "Select a variation to start with."
-msgstr ""
-
-#: build/block-editor/index.js:84
-msgid "Block variations"
-msgstr ""
-
-#: build/block-editor/index.js:84
-msgid "Skip"
-msgstr ""
-
-#: build/block-editor/index.js:84
-msgid "Choose"
-msgstr ""
-
-#: build/block-editor/index.js:84
-msgid "Previous pattern"
-msgstr ""
-
-#: build/block-editor/index.js:84
-msgid "Next pattern"
-msgstr ""
-
-#: build/block-editor/index.js:84
-msgid "Carousel view"
-msgstr ""
-
-#: build/block-editor/index.js:84
-msgid "Grid view"
-msgstr ""
-
-#: build/block-editor/index.js:84
-msgid "Transform to variation"
-msgstr ""
-
-#: build/block-editor/index.js:84
+#. translators: %s: Name of the block variation
+#: build/block-editor/index.js:86
 msgctxt "Block vertical alignment setting"
 msgid "Align top"
 msgstr ""
 
-#: build/block-editor/index.js:84
+#: build/block-editor/index.js:86
 msgctxt "Block vertical alignment setting"
 msgid "Align middle"
 msgstr ""
 
-#: build/block-editor/index.js:84
+#: build/block-editor/index.js:86
 msgctxt "Block vertical alignment setting"
 msgid "Align bottom"
 msgstr ""
 
-#: build/block-editor/index.js:84
+#: build/block-editor/index.js:86
 msgctxt "Block vertical alignment setting"
 msgid "Stretch to fill"
 msgstr ""
 
-#: build/block-editor/index.js:84
+#: build/block-editor/index.js:86
 msgctxt "Block vertical alignment setting"
 msgid "Space between"
 msgstr ""
 
-#: build/block-editor/index.js:84
+#: build/block-editor/index.js:86
 msgctxt "Block vertical alignment setting label"
 msgid "Change vertical alignment"
 msgstr ""
 
-#: build/block-editor/index.js:84
+#: build/block-editor/index.js:86
+#: build/controls/index.js:1
+#: build/controls/index.js:19
+msgid "Mixed"
+msgstr ""
+
+#: build/block-editor/index.js:86
 msgid "Border radius"
 msgstr ""
 
-#: build/block-editor/index.js:84
+#: build/block-editor/index.js:86
 msgid "Top left"
 msgstr ""
 
-#: build/block-editor/index.js:84
+#: build/block-editor/index.js:86
 msgid "Top right"
 msgstr ""
 
-#: build/block-editor/index.js:84
+#: build/block-editor/index.js:86
 msgid "Bottom left"
 msgstr ""
 
-#: build/block-editor/index.js:84
+#: build/block-editor/index.js:86
 msgid "Bottom right"
 msgstr ""
 
-#: build/block-editor/index.js:84
+#: build/block-editor/index.js:86
 msgid "Unlink radii"
 msgstr ""
 
-#: build/block-editor/index.js:84
+#: build/block-editor/index.js:86
 msgid "Link radii"
 msgstr ""
 
-#: build/block-editor/index.js:84
-#: build/block-editor/index.js:100
+#: build/block-editor/index.js:86
+#: build/block-editor/index.js:108
 #: build/controls/index.js:37
 #: build/wp-global-styles/index.js:1
 msgid "Radius"
 msgstr ""
 
-#: build/block-editor/index.js:84
-#: build/block-library/index.js:25
-#: build/block-library/index.js:29
-#: build/block-library/index.js:33
-#: build/controls/index.js:1
-#: build/controls/index.js:19
-#: build/wp-global-styles/index.js:3
-msgid "Solid"
-msgstr ""
-
-#: build/block-editor/index.js:84
+#: build/block-editor/index.js:86
 msgid "text color"
 msgstr ""
 
-#: build/block-editor/index.js:84
+#: build/block-editor/index.js:86
 msgid "link color"
 msgstr ""
 
 #. translators: %s is a type of text color, e.g., "text color" or "link color".
-#: build/block-editor/index.js:86
+#: build/block-editor/index.js:88
 msgid "This color combination may be hard for people to read. Try using a darker background color and/or a brighter %s."
 msgstr ""
 
 #. translators: %s is a type of text color, e.g., "text color" or "link color".
-#: build/block-editor/index.js:88
+#: build/block-editor/index.js:90
 msgid "This color combination may be hard for people to read. Try using a brighter background color and/or a darker %s."
 msgstr ""
 
-#: build/block-editor/index.js:88
+#: build/block-editor/index.js:90
 msgid "This color combination may be hard for people to read."
 msgstr ""
 
-#: build/block-editor/index.js:88
+#: build/block-editor/index.js:90
 msgid "Transparent text may be hard for people to read."
 msgstr ""
 
-#: build/block-editor/index.js:88
-#: build/block-library/index.js:37
-msgid "Date format"
-msgstr ""
-
-#: build/block-editor/index.js:88
-msgid "Default format"
-msgstr ""
-
-#: build/block-editor/index.js:88
-msgid "Example:"
-msgstr ""
-
 #. translators: See https://www.php.net/manual/datetime.format.php
-#: build/block-editor/index.js:88
-msgctxt "short date format"
-msgid "n/j/Y"
-msgstr ""
-
-#. translators: See https://www.php.net/manual/datetime.format.php
-#: build/block-editor/index.js:88
-msgctxt "short date format with time"
-msgid "n/j/Y g:i A"
-msgstr ""
-
-#. translators: See https://www.php.net/manual/datetime.format.php
-#: build/block-editor/index.js:88
-msgctxt "medium date format"
-msgid "M j, Y"
-msgstr ""
-
-#. translators: See https://www.php.net/manual/datetime.format.php
-#: build/block-editor/index.js:88
-msgctxt "medium date format with time"
-msgid "M j, Y g:i A"
-msgstr ""
-
-#. translators: See https://www.php.net/manual/datetime.format.php
-#: build/block-editor/index.js:88
-msgctxt "long date format"
-msgid "F j, Y"
-msgstr ""
-
-#. translators: See https://www.php.net/manual/datetime.format.php
-#: build/block-editor/index.js:88
-msgctxt "short date format without the year"
-msgid "M j"
-msgstr ""
-
-#: build/block-editor/index.js:88
-msgid "Enter your own date format"
-msgstr ""
-
-#: build/block-editor/index.js:88
-msgid "Choose a format"
-msgstr ""
-
-#: build/block-editor/index.js:88
-msgid "Custom format"
-msgstr ""
-
-#: build/block-editor/index.js:88
-msgid "Enter a date or time <Link>format string</Link>."
-msgstr ""
-
-#: build/block-editor/index.js:88
-msgid "https://wordpress.org/documentation/article/customize-date-and-time-format/"
-msgstr ""
-
-#: build/block-editor/index.js:88
+#: build/block-editor/index.js:90
 msgid "Apply duotone filter"
 msgstr ""
 
-#: build/block-editor/index.js:88
-#: build/block-editor/index.js:100
+#: build/block-editor/index.js:90
 #: build/wp-global-styles/index.js:3
 msgid "Duotone"
 msgstr ""
 
-#: build/block-editor/index.js:88
-#: build/block-editor/index.js:100
+#: build/block-editor/index.js:90
 msgid "Create a two-tone color effect without losing your original image."
 msgstr ""
 
-#: build/block-editor/index.js:88
-msgctxt "font style"
-msgid "Regular"
-msgstr ""
-
-#: build/block-editor/index.js:88
-msgctxt "font style"
-msgid "Italic"
-msgstr ""
-
-#: build/block-editor/index.js:88
-msgctxt "font weight"
-msgid "Thin"
-msgstr ""
-
-#: build/block-editor/index.js:88
-msgctxt "font weight"
-msgid "Extra Light"
-msgstr ""
-
-#: build/block-editor/index.js:88
-msgctxt "font weight"
-msgid "Light"
-msgstr ""
-
-#: build/block-editor/index.js:88
-msgctxt "font weight"
-msgid "Regular"
-msgstr ""
-
-#: build/block-editor/index.js:88
-msgctxt "font weight"
-msgid "Medium"
-msgstr ""
-
-#: build/block-editor/index.js:88
-msgctxt "font weight"
-msgid "Semi Bold"
-msgstr ""
-
-#: build/block-editor/index.js:88
-msgctxt "font weight"
-msgid "Bold"
-msgstr ""
-
-#: build/block-editor/index.js:88
-msgctxt "font weight"
-msgid "Extra Bold"
-msgstr ""
-
-#: build/block-editor/index.js:88
-msgctxt "font weight"
-msgid "Black"
-msgstr ""
-
-#: build/block-editor/index.js:88
-#: build/block-editor/index.js:100
-msgid "Appearance"
-msgstr ""
-
-#: build/block-editor/index.js:88
-#: build/block-editor/index.js:100
-msgid "Font style"
-msgstr ""
-
-#: build/block-editor/index.js:88
-#: build/block-editor/index.js:100
-#: build/editor/index.js:3
-#: build/format-library/index.js:1
-msgid "Font weight"
-msgstr ""
-
-#. translators: %s: Currently selected font appearance.
-#: build/block-editor/index.js:90
-msgid "Currently selected font appearance: %s"
-msgstr ""
-
-#. translators: %s: Currently selected font style.
-#: build/block-editor/index.js:92
-msgid "Currently selected font style: %s"
-msgstr ""
-
 #. translators: %s: Currently selected font weight.
-#: build/block-editor/index.js:94
-msgid "Currently selected font weight: %s"
-msgstr ""
-
-#: build/block-editor/index.js:94
-msgid "No selected font appearance"
-msgstr ""
-
-#: build/block-editor/index.js:94
-#: build/block-editor/index.js:100
-#: build/format-library/index.js:1
-msgid "Font"
-msgstr ""
-
-#: build/block-editor/index.js:94
-#: build/block-editor/index.js:100
-#: build/controls/index.js:35
-msgid "Letter spacing"
-msgstr ""
-
-#: build/block-editor/index.js:94
-#: build/block-editor/index.js:98
-#: build/block-library/index.js:19
-#: build/block-library/index.js:29
-#: build/block-library/index.js:33
-#: build/controls/index.js:1
-#: build/controls/index.js:19
-#: build/controls/index.js:35
-#: build/editor/index.js:51
-msgid "None"
-msgstr ""
-
-#: build/block-editor/index.js:94
-#: build/block-library/index.js:19
-#: build/controls/index.js:35
-msgid "Underline"
-msgstr ""
-
-#: build/block-editor/index.js:94
-#: build/block-library/index.js:19
-msgid "Strikethrough"
-msgstr ""
-
-#: build/block-editor/index.js:94
-#: build/block-editor/index.js:100
-#: build/controls/index.js:35
-#: build/editor/index.js:3
-msgid "Decoration"
-msgstr ""
-
-#: build/block-editor/index.js:94
-#: build/controls/index.js:35
-msgid "Uppercase"
-msgstr ""
-
-#: build/block-editor/index.js:94
-#: build/controls/index.js:35
-msgid "Lowercase"
-msgstr ""
-
-#: build/block-editor/index.js:94
-#: build/controls/index.js:35
-msgid "Capitalize"
-msgstr ""
-
-#: build/block-editor/index.js:94
-#: build/block-editor/index.js:100
-msgid "Letter case"
-msgstr ""
-
-#: build/block-editor/index.js:94
-#: build/block-editor/index.js:100
-#: build/wp-global-styles/index.js:1
-#: build/wp-global-styles/index.js:3
-msgctxt "Indicates this palette comes from the theme."
-msgid "Theme"
-msgstr ""
-
-#: build/block-editor/index.js:94
-#: build/block-editor/index.js:100
-#: build/wp-global-styles/index.js:1
-#: build/wp-global-styles/index.js:3
-msgctxt "Indicates this palette comes from WordPress."
-msgid "Default"
-msgstr ""
-
-#: build/block-editor/index.js:94
-msgctxt "Indicates this palette comes from the theme."
-msgid "Custom"
-msgstr ""
-
-#: build/block-editor/index.js:94
-#: build/block-editor/index.js:100
-#: build/wp-global-styles/index.js:1
-#: build/wp-global-styles/index.js:3
-msgctxt "Indicates this palette is created by the user."
-msgid "Custom"
-msgstr ""
-
-#: build/block-editor/index.js:94
-#: build/block-editor/index.js:100
-#: build/block-editor/index.js:110
-#: build/block-library/index.js:19
-#: build/block-library/index.js:29
-#: build/block-library/index.js:37
-msgid "Height"
-msgstr ""
-
 #. translators: 1. Error message
-#: build/block-editor/index.js:94
+#: build/block-editor/index.js:96
 #: build/block-library/index.js:19
 msgid "Could not edit image. %s"
 msgstr ""
 
-#: build/block-editor/index.js:94
-#: build/block-library/index.js:19
-#: build/block-library/index.js:29
-msgid "Zoom"
-msgstr ""
-
-#: build/block-editor/index.js:94
+#: build/block-editor/index.js:96
 #: build/block-library/index.js:19
 msgid "Aspect Ratio"
 msgstr ""
 
-#: build/block-editor/index.js:94
+#: build/block-editor/index.js:96
 #: build/block-library/index.js:19
-#: build/editor/index.js:51
+#: build/editor/index.js:53
 msgid "Original"
 msgstr ""
 
-#: build/block-editor/index.js:94
+#: build/block-editor/index.js:96
 #: build/block-library/index.js:19
-#: build/editor/index.js:53
+#: build/editor/index.js:55
 msgid "Square"
 msgstr ""
 
-#: build/block-editor/index.js:94
+#: build/block-editor/index.js:96
 #: build/block-library/index.js:19
 msgid "16:9"
 msgstr ""
 
-#: build/block-editor/index.js:94
+#: build/block-editor/index.js:96
 #: build/block-library/index.js:19
 #: build/block-library/index.js:37
 msgid "4:3"
 msgstr ""
 
-#: build/block-editor/index.js:94
+#: build/block-editor/index.js:96
 #: build/block-library/index.js:19
 msgid "3:2"
 msgstr ""
 
-#: build/block-editor/index.js:94
+#: build/block-editor/index.js:96
 #: build/block-library/index.js:19
 msgid "9:16"
 msgstr ""
 
-#: build/block-editor/index.js:94
+#: build/block-editor/index.js:96
 #: build/block-library/index.js:19
 msgid "3:4"
 msgstr ""
 
-#: build/block-editor/index.js:94
+#: build/block-editor/index.js:96
 #: build/block-library/index.js:19
 msgid "2:3"
 msgstr ""
 
-#: build/block-editor/index.js:94
+#: build/block-editor/index.js:96
 #: build/block-library/index.js:19
 #: build/controls/index.js:37
 msgid "Rotate"
 msgstr ""
 
-#: build/block-editor/index.js:94
-#: build/block-editor/index.js:110
+#: build/block-editor/index.js:96
 msgid "Resolution"
 msgstr ""
 
-#: build/block-editor/index.js:94
-#: build/block-editor/index.js:100
-#: build/block-editor/index.js:110
+#: build/block-editor/index.js:96
 #: build/block-library/index.js:19
 #: build/block-library/index.js:21
 #: build/block-library/index.js:25
@@ -4368,11 +4011,18 @@ msgstr ""
 msgid "Width"
 msgstr ""
 
-#: build/block-editor/index.js:94
+#: build/block-editor/index.js:96
+#: build/block-library/index.js:19
+#: build/block-library/index.js:29
+#: build/block-library/index.js:37
+msgid "Height"
+msgstr ""
+
+#: build/block-editor/index.js:96
 msgid "Image size presets"
 msgstr ""
 
-#: build/block-editor/index.js:94
+#: build/block-editor/index.js:96
 #: build/controls/index.js:1
 #: build/controls/index.js:3
 #: build/controls/index.js:19
@@ -4382,537 +4032,148 @@ msgstr ""
 msgid "Reset"
 msgstr ""
 
-#: build/block-editor/index.js:94
+#: build/block-editor/index.js:96
+msgid "Justify items left"
+msgstr ""
+
+#: build/block-editor/index.js:96
+msgid "Justify items center"
+msgstr ""
+
+#: build/block-editor/index.js:96
+msgid "Justify items right"
+msgstr ""
+
+#: build/block-editor/index.js:96
+#: build/block-library/index.js:37
+msgid "Space between items"
+msgstr ""
+
+#: build/block-editor/index.js:96
+msgid "Stretch items"
+msgstr ""
+
+#: build/block-editor/index.js:96
 msgid "Change items justification"
 msgstr ""
 
-#: build/block-editor/index.js:94
-msgctxt "Additional link settings"
-msgid "Advanced"
-msgstr ""
-
-#. translators: %s: search term.
-#: build/block-editor/index.js:94
-msgid "Create: <mark>%s</mark>"
-msgstr ""
-
-#: build/block-editor/index.js:94
-msgid "Press ENTER to add this link"
-msgstr ""
-
-#: build/block-editor/index.js:94
-#: build/block-editor/index.js:96
-#: build/controls/index.js:21
-msgid "Open in new tab"
-msgstr ""
-
-#: build/block-editor/index.js:94
-msgid "Suggestions"
-msgstr ""
-
-#. translators: %s: search term.
-#: build/block-editor/index.js:94
-msgid "Search results for \"%s\""
-msgstr ""
-
-#: build/block-editor/index.js:94
-#: build/block-editor/index.js:96
-#: build/block-editor/index.js:100
-#: build/block-library/index.js:19
-#: build/block-library/index.js:27
-#: build/block-library/index.js:37
-#: build/controls/index.js:19
-#: build/third-party-blocks/index.js:1
-msgid "Link"
-msgstr ""
-
-#: build/block-editor/index.js:94
-msgid "Search or type URL"
-msgstr ""
-
-#: build/block-editor/index.js:94
-msgid "Link copied to clipboard."
-msgstr ""
-
-#: build/block-editor/index.js:94
-msgid "Currently selected"
-msgstr ""
-
-#: build/block-editor/index.js:94
-msgid "Link is empty"
-msgstr ""
-
-#: build/block-editor/index.js:94
-#: build/block-editor/index.js:96
-#: build/block-library/index.js:37
-#: build/controls/index.js:21
-msgid "Edit link"
-msgstr ""
-
-#: build/block-editor/index.js:94
-#: build/block-editor/index.js:96
-msgid "Remove link"
-msgstr ""
-
 #. Translators: %s is a placeholder for the link URL and an optional colon, (if a Link URL is present).
-#: build/block-editor/index.js:96
-msgid "Copy link%s"
-msgstr ""
-
-#: build/block-editor/index.js:96
-msgid "Currently selected link settings"
-msgstr ""
-
-#: build/block-editor/index.js:96
-msgid "An unknown error occurred during creation. Please try again."
-msgstr ""
-
-#: build/block-editor/index.js:96
-msgid "Creating"
-msgstr ""
-
-#: build/block-editor/index.js:96
-#: build/block-editor/index.js:100
-#: build/block-library/index.js:19
-#: build/block-library/index.js:21
-#: build/block-library/index.js:25
-#: build/block-library/index.js:29
-#: build/block-library/index.js:37
-#: build/wp-global-styles/index.js:1
-#: build/wp-global-styles/index.js:3
-msgid "Text"
-msgstr ""
-
-#: build/block-editor/index.js:96
-msgid "Submit"
-msgstr ""
-
-#: build/block-editor/index.js:96
-#: build/editor/index.js:7
-#: build/editor/index.js:15
-msgid "Save"
-msgstr ""
-
-#: build/block-editor/index.js:96
-#: build/block-editor/index.js:100
-#: build/controls/index.js:35
-msgid "Line height"
-msgstr ""
-
-#: build/block-editor/index.js:96
-#: build/block-library/index.js:3
-msgid "Replace"
-msgstr ""
-
-#: build/block-editor/index.js:96
-msgid "The media file has been replaced"
-msgstr ""
-
-#: build/block-editor/index.js:96
-#: build/controls/index.js:35
-msgid "Open Media Library"
-msgstr ""
-
-#: build/block-editor/index.js:96
-#: build/block-library/index.js:3
-msgid "Upload"
-msgstr ""
-
-#: build/block-editor/index.js:96
-msgid "Use featured image"
-msgstr ""
-
-#: build/block-editor/index.js:96
-msgid "Current media URL:"
-msgstr ""
-
 #. translators: %s: number of results.
-#: build/block-editor/index.js:96
+#: build/block-editor/index.js:98
 #: build/controls/index.js:19
 msgid "%d result found, use up and down arrow keys to navigate."
 msgid_plural "%d results found, use up and down arrow keys to navigate."
 msgstr[0] ""
 msgstr[1] ""
 
-#: build/block-editor/index.js:96
+#: build/block-editor/index.js:98
 #: build/controls/index.js:19
 msgid "No results."
 msgstr ""
 
-#: build/block-editor/index.js:96
+#: build/block-editor/index.js:98
 #: build/controls/index.js:19
 msgid "Link selected."
 msgstr ""
 
-#: build/block-editor/index.js:96
+#: build/block-editor/index.js:98
 #: build/controls/index.js:19
 msgid "Paste URL or type to search"
 msgstr ""
 
-#: build/block-editor/index.js:96
+#: build/block-editor/index.js:98
 #: build/controls/index.js:19
 msgid "URL"
 msgstr ""
 
-#: build/block-editor/index.js:96
-msgid "Link settings"
-msgstr ""
-
-#: build/block-editor/index.js:96
-#: build/editor/index.js:51
-msgid "Edit"
-msgstr ""
-
-#: build/block-editor/index.js:96
-msgid "Paste or type URL"
-msgstr ""
-
-#: build/block-editor/index.js:96
-msgid "Insert from URL"
-msgstr ""
-
-#: build/block-editor/index.js:96
-msgid "To edit this block, you need permission to upload media."
-msgstr ""
-
-#: build/block-editor/index.js:96
-msgid "Upload a media file or pick one from your media library."
-msgstr ""
-
-#: build/block-editor/index.js:96
-msgid "Upload an audio file, pick one from your media library, or add one with a URL."
-msgstr ""
-
-#: build/block-editor/index.js:96
-msgid "Upload an image file, pick one from your media library, or add one with a URL."
-msgstr ""
-
-#: build/block-editor/index.js:96
-msgid "Upload a video file, pick one from your media library, or add one with a URL."
-msgstr ""
-
-#: build/block-editor/index.js:96
-#: build/editor/index.js:15
-msgid "Audio"
-msgstr ""
-
-#: build/block-editor/index.js:96
-#: build/block-library/index.js:19
-#: build/controls/index.js:19
-#: build/controls/index.js:35
-msgid "Video"
-msgstr ""
-
-#: build/block-editor/index.js:96
-msgid "Media Library"
-msgstr ""
-
-#: build/block-editor/index.js:96
-msgid "More"
-msgstr ""
-
-#: build/block-editor/index.js:96
-msgid "Displays more block tools"
-msgstr ""
-
-#: build/block-editor/index.js:96
+#: build/block-editor/index.js:98
 msgid "Format tools"
 msgstr ""
 
+#. translators: %s: connected field label or source label
+#. translators: %s: source label or key
 #. translators: 1: property name. 2: viewport name.
-#: build/block-editor/index.js:96
+#: build/block-editor/index.js:98
 msgctxt "Text labelling a interface as controlling a given layout property (eg: margin) for a given screen size."
 msgid "Controls the %1$s property for %2$s viewports."
 msgstr ""
 
-#: build/block-editor/index.js:96
+#: build/block-editor/index.js:98
 msgctxt "screen sizes"
 msgid "All"
 msgstr ""
 
-#: build/block-editor/index.js:96
+#: build/block-editor/index.js:98
 msgid "Small screens"
 msgstr ""
 
-#: build/block-editor/index.js:96
+#: build/block-editor/index.js:98
 msgid "Medium screens"
 msgstr ""
 
-#: build/block-editor/index.js:96
+#: build/block-editor/index.js:98
 msgid "Large screens"
 msgstr ""
 
 #. translators: %s: Property value for the control (eg: margin, padding, etc.).
-#: build/block-editor/index.js:96
+#: build/block-editor/index.js:98
 msgid "Use the same %s on all screensizes."
 msgstr ""
 
-#: build/block-editor/index.js:96
+#: build/block-editor/index.js:98
 msgid "Toggle between using the same value for all screen sizes or using a unique value per screen size."
 msgstr ""
 
-#: build/block-editor/index.js:96
-msgid "Tools"
-msgstr ""
-
-#: build/block-editor/index.js:96
-#: build/core-hooks/index.js:1
-#: build/editor/index.js:15
-msgid "Select"
-msgstr ""
-
-#: build/block-editor/index.js:96
-msgid "Tools provide different interactions for selecting, navigating, and editing blocks. Toggle between select and edit by pressing Escape and Enter."
-msgstr ""
-
-#: build/block-editor/index.js:96
-msgid "Insert link"
-msgstr ""
-
-#: build/block-editor/index.js:96
-msgid "Link to image file"
-msgstr ""
-
-#: build/block-editor/index.js:96
-#: build/block-library/index.js:19
-msgid "Link to attachment page"
-msgstr ""
-
-#: build/block-editor/index.js:96
-msgid "Link rel"
-msgstr ""
-
-#: build/block-editor/index.js:96
-msgid "Link CSS class"
-msgstr ""
-
-#: build/block-editor/index.js:96
-msgid "Scale the image with a lightbox effect."
-msgstr ""
-
-#: build/block-editor/index.js:96
-#: build/block-editor/index.js:100
-msgid "Expand on click"
-msgstr ""
-
-#: build/block-editor/index.js:96
-msgid "Scales the image with a lightbox effect"
-msgstr ""
-
-#: build/block-editor/index.js:96
-msgid "Disable expand on click"
-msgstr ""
-
-#. translators: A custom measurement, eg. a number followed by a unit like 12px.
-#: build/block-editor/index.js:98
-msgid "Custom (%s)"
-msgstr ""
-
-#: build/block-editor/index.js:98
-msgid "Use size preset"
-msgstr ""
-
-#: build/block-editor/index.js:98
-msgid "Set custom size"
-msgstr ""
-
-#. translators: %s: The current spacing property e.g. "Padding", "Margin".
-#: build/block-editor/index.js:100
-msgctxt "Button label to reveal side configuration options"
-msgid "%s options"
-msgstr ""
-
-#: build/block-editor/index.js:100
-#: build/block-library/index.js:21
-#: build/block-library/index.js:25
-msgid "Justify text"
-msgstr ""
-
-#: build/block-editor/index.js:100
-msgid "Text alignment"
-msgstr ""
-
-#: build/block-editor/index.js:100
-#: build/controls/index.js:35
-#: build/editor/index.js:3
-#: build/editor/index.js:51
-msgid "Size"
-msgstr ""
-
-#: build/block-editor/index.js:100
-msgid "Stretch to fill available space."
-msgstr ""
-
-#: build/block-editor/index.js:100
-msgid "Specify a fixed width."
-msgstr ""
-
-#: build/block-editor/index.js:100
-msgid "Specify a fixed height."
-msgstr ""
-
-#: build/block-editor/index.js:100
-msgid "Fit contents."
-msgstr ""
-
-#: build/block-editor/index.js:100
-msgid "Fit"
-msgstr ""
-
-#: build/block-editor/index.js:100
-msgid "Fill"
-msgstr ""
-
-#: build/block-editor/index.js:100
-msgctxt "Aspect ratio option for dimensions control"
-msgid "Original"
-msgstr ""
-
-#: build/block-editor/index.js:100
-msgctxt "Aspect ratio option for dimensions control"
-msgid "Square - 1:1"
-msgstr ""
-
-#: build/block-editor/index.js:100
-msgctxt "Aspect ratio option for dimensions control"
-msgid "Standard - 4:3"
-msgstr ""
-
-#: build/block-editor/index.js:100
-msgctxt "Aspect ratio option for dimensions control"
-msgid "Portrait - 3:4"
-msgstr ""
-
-#: build/block-editor/index.js:100
-msgctxt "Aspect ratio option for dimensions control"
-msgid "Classic - 3:2"
-msgstr ""
-
-#: build/block-editor/index.js:100
-msgctxt "Aspect ratio option for dimensions control"
-msgid "Classic Portrait - 2:3"
-msgstr ""
-
-#: build/block-editor/index.js:100
-msgctxt "Aspect ratio option for dimensions control"
-msgid "Wide - 16:9"
-msgstr ""
-
-#: build/block-editor/index.js:100
-msgctxt "Aspect ratio option for dimensions control"
-msgid "Tall - 9:16"
-msgstr ""
-
-#: build/block-editor/index.js:100
-msgctxt "Aspect ratio option for dimensions control"
-msgid "Custom"
-msgstr ""
-
-#: build/block-editor/index.js:100
-#: build/block-library/index.js:19
-#: build/block-library/index.js:37
-msgid "Aspect ratio"
-msgstr ""
-
-#: build/block-editor/index.js:100
-#: build/block-editor/index.js:110
-#: build/wp-global-styles/index.js:1
-msgid "Dimensions"
-msgstr ""
-
-#: build/block-editor/index.js:100
-msgid "Set the width of the main content area."
-msgstr ""
-
-#: build/block-editor/index.js:100
-msgid "Content size"
-msgstr ""
-
-#: build/block-editor/index.js:100
-msgid "Wide size"
-msgstr ""
-
-#: build/block-editor/index.js:100
-#: build/block-library/index.js:19
-#: build/block-library/index.js:27
-#: build/block-library/index.js:29
-#: build/block-library/index.js:37
-#: build/controls/index.js:37
-#: build/editor/index.js:3
-#: build/woocommerce-styles/index.js:1
-#: build/wp-global-styles/index.js:1
-msgid "Padding"
-msgstr ""
-
-#: build/block-editor/index.js:100
-#: build/block-library/index.js:27
-#: build/block-library/index.js:33
-#: build/controls/index.js:37
-#: build/editor/index.js:3
-#: build/wp-global-styles/index.js:1
-msgid "Margin"
-msgstr ""
-
-#: build/block-editor/index.js:100
-#: build/wp-global-styles/index.js:1
-msgid "Block spacing"
-msgstr ""
-
-#: build/block-editor/index.js:100
-msgid "Minimum height"
-msgstr ""
-
-#: build/block-editor/index.js:100
-msgid "Drop shadow"
-msgstr ""
-
-#: build/block-editor/index.js:100
-msgid "Clear"
-msgstr ""
-
-#: build/block-editor/index.js:100
-msgid "Drop shadows"
-msgstr ""
-
-#: build/block-editor/index.js:100
-msgid "Unset"
-msgstr ""
-
-#: build/block-editor/index.js:100
-#: build/block-editor/index.js:110
+#: build/block-editor/index.js:108
+#: build/block-editor/index.js:118
 msgid "Shadow"
 msgstr ""
 
-#: build/block-editor/index.js:100
-#: build/wp-global-styles/index.js:1
-#: build/wp-global-styles/index.js:3
-msgid "Elements"
-msgstr ""
-
 #. translators: %s is the type of color property, e.g., "background"
-#: build/block-editor/index.js:100
-msgid "Color %s styles"
+#: build/block-editor/index.js:108
+msgctxt "Name for applying graphical effects"
+msgid "Filters"
 msgstr ""
 
-#: build/block-editor/index.js:100
-msgid "Captions"
+#: build/block-editor/index.js:108
+msgctxt "Image settings"
+msgid "Settings"
 msgstr ""
 
-#: build/block-editor/index.js:100
-#: build/block-library/index.js:19
-#: build/block-library/index.js:25
-#: build/block-library/index.js:37
-#: build/third-party-blocks/index.js:1
-msgid "Button"
+#. translators: %s: a list of global styles changes separated by a comma.
+#: build/block-editor/index.js:118
+#: build/block-library/index.js:11
+msgid "Border & Shadow"
 msgstr ""
 
-#: build/block-editor/index.js:100
-#: build/block-library/index.js:21
-msgid "Heading"
+#: build/block-editor/index.js:118
+msgid "Not set"
 msgstr ""
 
-#: build/block-editor/index.js:100
-#: build/block-editor/index.js:110
+#: build/block-editor/index.js:118
+msgid "Default Style"
+msgstr ""
+
+#: build/block-editor/index.js:118
+#: build/controls/index.js:37
+#: build/controls/index.js:39
+#: build/editor/index.js:3
+#: build/editor/index.js:7
+#: build/editor/index.js:33
+msgid "Advanced"
+msgstr ""
+
+#: build/block-editor/index.js:118
+#: build/controls/index.js:35
+#: build/controls/index.js:37
+msgid "Position"
+msgstr ""
+
+#: build/block-editor/index.js:118
+msgid "Styles"
+msgstr ""
+
+#: build/block-editor/index.js:118
 #: build/block-library/index.js:19
 #: build/block-library/index.js:21
 #: build/block-library/index.js:25
@@ -4925,356 +4186,97 @@ msgstr ""
 msgid "Color"
 msgstr ""
 
-#: build/block-editor/index.js:100
-msgctxt "Name for applying graphical effects"
-msgid "Filters"
-msgstr ""
-
-#: build/block-editor/index.js:100
-msgctxt "Image settings"
-msgid "Settings"
-msgstr ""
-
-#: build/block-editor/index.js:100
-#: build/editor/index.js:3
-msgid "Additional CSS"
-msgstr ""
-
-#: build/block-editor/index.js:100
-msgid "There is an error with your CSS structure."
-msgstr ""
-
-#: build/block-editor/index.js:100
-msgid "Add background image"
-msgstr ""
-
-#. translators: %s: file name
-#: build/block-editor/index.js:100
-msgid "Background image: %s"
-msgstr ""
-
-#: build/block-editor/index.js:100
-msgid "No background image selected"
-msgstr ""
-
-#: build/block-editor/index.js:100
-msgid "Only images can be used as a background image."
-msgstr ""
-
-#: build/block-editor/index.js:100
-msgid "Reset "
-msgstr ""
-
-#: build/block-editor/index.js:100
-msgid "Drop to upload"
-msgstr ""
-
-#: build/block-editor/index.js:100
-msgid "Image covers the space evenly."
-msgstr ""
-
-#: build/block-editor/index.js:100
-msgid "Image is contained without distortion."
-msgstr ""
-
-#: build/block-editor/index.js:100
-msgid "Image has a fixed width."
-msgstr ""
-
-#: build/block-editor/index.js:100
-msgctxt "Size option for background image control"
-msgid "Cover"
-msgstr ""
-
-#: build/block-editor/index.js:100
-msgctxt "Size option for background image control"
-msgid "Contain"
-msgstr ""
-
-#: build/block-editor/index.js:100
-msgctxt "Size option for background image control"
-msgid "Tile"
-msgstr ""
-
-#: build/block-editor/index.js:100
-msgid "Background image width"
-msgstr ""
-
-#: build/block-editor/index.js:100
-#: build/controls/index.js:35
-msgid "Repeat"
-msgstr ""
-
-#: build/block-editor/index.js:100
-#: build/block-library/index.js:19
-msgid "Caption"
-msgstr ""
-
-#: build/block-editor/index.js:100
+#: build/block-editor/index.js:118
 #: build/wp-global-styles/index.js:1
-#: build/wp-global-styles/index.js:3
-msgid "Colors"
+msgid "Dimensions"
 msgstr ""
 
-#: build/block-editor/index.js:100
-msgid ", "
-msgstr ""
-
-#. translators: %s: a list of block names separated by a comma.
-#: build/block-editor/index.js:102
-msgid "%s block."
-msgid_plural "%s blocks."
-msgstr[0] ""
-msgstr[1] ""
-
-#. translators: %s: a list of element names separated by a comma.
-#: build/block-editor/index.js:104
-msgid "%s element."
-msgid_plural "%s elements."
-msgstr[0] ""
-msgstr[1] ""
-
-#. translators: %s: a list of theme.json setting labels separated by a comma.
-#: build/block-editor/index.js:106
-msgid "%s settings."
-msgstr ""
-
-#. translators: %s: a list of theme.json top-level styles labels separated by a comma.
-#: build/block-editor/index.js:108
-msgid "%s styles."
-msgstr ""
-
-#. translators: %s: a list of global styles changes separated by a comma.
-#: build/block-editor/index.js:110
-msgid "%s."
-msgstr ""
-
-#: build/block-editor/index.js:110
-#: build/block-library/index.js:11
-msgid "Border & Shadow"
-msgstr ""
-
-#: build/block-editor/index.js:110
-msgid "Not set"
-msgstr ""
-
-#: build/block-editor/index.js:110
-msgid "Default Style"
-msgstr ""
-
-#: build/block-editor/index.js:110
-#: build/controls/index.js:37
-#: build/controls/index.js:39
-#: build/editor/index.js:3
-#: build/editor/index.js:7
-#: build/editor/index.js:31
-msgid "Advanced"
-msgstr ""
-
-#: build/block-editor/index.js:110
-msgid "Looking for other block settings? They've moved to the styles tab."
-msgstr ""
-
-#: build/block-editor/index.js:110
+#: build/block-editor/index.js:118
 #: build/editor/index.js:1
 #: build/editor/index.js:3
-#: build/editor/index.js:21
+#: build/editor/index.js:25
 msgid "Settings"
 msgstr ""
 
-#: build/block-editor/index.js:110
-#: build/editor/index.js:19
+#: build/block-editor/index.js:118
+#: build/editor/index.js:23
 msgid "List View"
 msgstr ""
 
-#. translators: %d: number of blocks
-#: build/block-editor/index.js:110
-msgid "%d Block"
-msgid_plural "%d Blocks"
-msgstr[0] ""
-msgstr[1] ""
-
-#. translators: %d: number of words
-#: build/block-editor/index.js:110
-msgid "%d word selected."
-msgid_plural "%d words selected."
-msgstr[0] ""
-msgstr[1] ""
-
-#: build/block-editor/index.js:110
-msgid "Skip to the selected block"
-msgstr ""
-
-#: build/block-editor/index.js:110
+#: build/block-editor/index.js:118
 #: build/inspectors/index.js:1
 msgid "No block selected."
 msgstr ""
 
-#: build/block-editor/index.js:110
+#: build/block-editor/index.js:118
 msgid "Publish"
 msgstr ""
 
-#: build/block-editor/index.js:110
+#: build/block-editor/index.js:118
 msgid "Now"
 msgstr ""
 
-#: build/block-editor/index.js:110
+#: build/block-editor/index.js:118
 msgid "HTML anchor"
 msgstr ""
 
-#: build/block-editor/index.js:110
+#: build/block-editor/index.js:118
 msgid "Enter a word or two — without spaces — to make a unique web address just for this block, called an “anchor”. Then, you’ll be able to link directly to this section of your page."
 msgstr ""
 
-#: build/block-editor/index.js:110
+#: build/block-editor/index.js:118
 msgid "https://wordpress.org/documentation/article/page-jumps/"
 msgstr ""
 
-#: build/block-editor/index.js:110
+#: build/block-editor/index.js:118
 msgid "Learn more about anchors"
 msgstr ""
 
-#: build/block-editor/index.js:110
+#: build/block-editor/index.js:118
 msgid "Add an anchor"
 msgstr ""
 
-#: build/block-editor/index.js:110
+#: build/block-editor/index.js:118
 #: build/controls/index.js:39
 msgid "Additional CSS class(es)"
 msgstr ""
 
-#: build/block-editor/index.js:110
+#: build/block-editor/index.js:118
 msgid "Separate multiple classes with spaces."
 msgstr ""
 
-#: build/block-editor/index.js:110
-msgid "Inner blocks use content width"
+#: build/block-editor/index.js:118
+#: build/block-library/index.js:21
+#: build/block-library/index.js:25
+msgid "Align text left"
 msgstr ""
 
-#: build/block-editor/index.js:110
-msgid "Nested blocks use content width with options for full and wide widths."
+#: build/block-editor/index.js:118
+#: build/block-library/index.js:21
+#: build/block-library/index.js:25
+msgid "Align text center"
 msgstr ""
 
-#: build/block-editor/index.js:110
-msgid "Nested blocks will fill the width of this container. Toggle to constrain."
+#: build/block-editor/index.js:118
+#: build/block-library/index.js:21
+#: build/block-library/index.js:25
+msgid "Align text right"
 msgstr ""
 
-#: build/block-editor/index.js:110
-#: build/block-library/index.js:35
-msgid "Done"
-msgstr ""
-
-#: build/block-editor/index.js:110
-msgid "Modify"
-msgstr ""
-
-#: build/block-editor/index.js:110
-#: build/editor/index.js:17
-msgid "Plugins"
-msgstr ""
-
-#: build/block-editor/index.js:110
-msgid "Manage the inclusion of blocks added automatically by plugins."
-msgstr ""
-
-#: build/block-editor/index.js:110
-#: build/core/index.js:7
-msgid "Attributes"
-msgstr ""
-
-#: build/block-editor/index.js:110
-msgid "Attributes connected to various sources."
-msgstr ""
-
-#: build/block-editor/index.js:110
-msgctxt "Scale option for dimensions control"
-msgid "Fill"
-msgstr ""
-
-#: build/block-editor/index.js:110
-msgid "Fill the space by stretching the content."
-msgstr ""
-
-#: build/block-editor/index.js:110
-msgctxt "Scale option for dimensions control"
-msgid "Contain"
-msgstr ""
-
-#: build/block-editor/index.js:110
-msgid "Fit the content to the space without clipping."
-msgstr ""
-
-#: build/block-editor/index.js:110
-msgctxt "Scale option for dimensions control"
-msgid "Cover"
-msgstr ""
-
-#: build/block-editor/index.js:110
-msgid "Fill the space by clipping what doesn't fit."
-msgstr ""
-
-#: build/block-editor/index.js:110
-msgctxt "Scale option for dimensions control"
-msgid "None"
-msgstr ""
-
-#: build/block-editor/index.js:110
-msgid "Do not adjust the sizing of the content. Content that is too large will be clipped, and content that is too small will have additional padding."
-msgstr ""
-
-#: build/block-editor/index.js:110
-msgctxt "Scale option for dimensions control"
-msgid "Scale down"
-msgstr ""
-
-#: build/block-editor/index.js:110
-msgid "Scale down the content to fit the space if it is too big. Content that is too small will have additional padding."
-msgstr ""
-
-#: build/block-editor/index.js:110
-#: build/block-library/index.js:19
-#: build/controls/index.js:37
-msgid "Scale"
-msgstr ""
-
-#: build/block-editor/index.js:110
-msgctxt "Image size option for resolution control"
-msgid "Thumbnail"
-msgstr ""
-
-#: build/block-editor/index.js:110
-msgctxt "Image size option for resolution control"
-msgid "Medium"
-msgstr ""
-
-#: build/block-editor/index.js:110
-msgctxt "Image size option for resolution control"
-msgid "Large"
-msgstr ""
-
-#: build/block-editor/index.js:110
-msgctxt "Image size option for resolution control"
-msgid "Full Size"
-msgstr ""
-
-#: build/block-editor/index.js:110
+#: build/block-editor/index.js:118
 msgid "Deleting this block will stop your post or page content from displaying on this template. It is not recommended."
 msgid_plural "Deleting these blocks will stop your post or page content from displaying on this template. It is not recommended."
 msgstr[0] ""
 msgstr[1] ""
 
-#: build/block-editor/index.js:110
+#: build/block-editor/index.js:118
 msgid "Deleting this block could break patterns on your site that have content linked to it. Are you sure you want to delete it?"
 msgid_plural "Deleting these blocks could break patterns on your site that have content linked to them. Are you sure you want to delete them?"
 msgstr[0] ""
 msgstr[1] ""
 
-#: build/block-editor/index.js:110
+#: build/block-editor/index.js:118
 msgid "Be careful!"
-msgstr ""
-
-#: build/block-editor/index.js:110
-msgid "Select the size of the source image."
 msgstr ""
 
 #: build/block-library/index.js:1
@@ -5321,6 +4323,14 @@ msgid "Block screenshot"
 msgstr ""
 
 #: build/block-library/index.js:3
+msgid "Replace"
+msgstr ""
+
+#: build/block-library/index.js:3
+msgid "Upload"
+msgstr ""
+
+#: build/block-library/index.js:3
 #: build/controls/index.js:19
 msgid "Category"
 msgstr ""
@@ -5362,7 +4372,7 @@ msgid "Update block preset"
 msgstr ""
 
 #: build/block-library/index.js:3
-#: build/editor/index.js:15
+#: build/editor/index.js:19
 msgid "Connect to Kubio Cloud"
 msgstr ""
 
@@ -5402,13 +4412,13 @@ msgstr ""
 
 #. translators: %s is the name of item that was saved
 #: build/block-library/index.js:5
-#: build/editor/index.js:25
+#: build/editor/index.js:27
 msgid "%s saved successfully!"
 msgstr ""
 
 #. translators: %s is the name of item that was not saved
 #: build/block-library/index.js:7
-#: build/editor/index.js:31
+#: build/editor/index.js:33
 msgid "An error occurred. %s was not saved"
 msgstr ""
 
@@ -5452,13 +4462,8 @@ msgid "Items per row"
 msgstr ""
 
 #: build/block-library/index.js:7
-#: build/editor/index.js:15
-msgid "Switch to quick mode"
-msgstr ""
-
-#: build/block-library/index.js:7
-#: build/editor/index.js:15
-msgid "Switch to advanced mode"
+#: build/block-library/index.js:11
+msgid "Columns"
 msgstr ""
 
 #: build/block-library/index.js:7
@@ -5480,7 +4485,7 @@ msgstr ""
 
 #: build/block-library/index.js:7
 #: build/block-library/index.js:19
-#: build/editor/index.js:49
+#: build/editor/index.js:51
 msgid "Full"
 msgstr ""
 
@@ -5498,6 +4503,10 @@ msgstr ""
 #: build/block-library/index.js:7
 #: build/block-library/index.js:9
 msgid "Add section after"
+msgstr ""
+
+#: build/block-library/index.js:7
+msgid "Replace section"
 msgstr ""
 
 #: build/block-library/index.js:7
@@ -5584,10 +4593,6 @@ msgid "Blog Layout"
 msgstr ""
 
 #: build/block-library/index.js:9
-msgid "Contact Form Api Errors"
-msgstr ""
-
-#: build/block-library/index.js:9
 #: build/block-library/index.js:27
 msgid "Forminator"
 msgstr ""
@@ -5599,6 +4604,10 @@ msgstr ""
 
 #: build/block-library/index.js:9
 msgid "WPForms"
+msgstr ""
+
+#: build/block-library/index.js:9
+msgid "Contact Form Api Errors"
 msgstr ""
 
 #: build/block-library/index.js:9
@@ -5644,6 +4653,12 @@ msgstr ""
 
 #: build/block-library/index.js:11
 msgid "Inner"
+msgstr ""
+
+#: build/block-library/index.js:11
+#: build/block-library/index.js:19
+#: build/third-party-blocks/index.js:1
+msgid "Align"
 msgstr ""
 
 #: build/block-library/index.js:11
@@ -5814,8 +4829,8 @@ msgstr ""
 #: build/block-library/index.js:29
 #: build/block-library/index.js:37
 #: build/editor/index.js:15
-#: build/editor/index.js:27
-#: build/editor/index.js:31
+#: build/editor/index.js:29
+#: build/editor/index.js:33
 msgid "Title"
 msgstr ""
 
@@ -5835,6 +4850,19 @@ msgstr ""
 #. translators: %s: template part title.
 #: build/block-library/index.js:11
 msgid "Template Part \"%s\" inserted."
+msgstr ""
+
+#: build/block-library/index.js:11
+#: build/block-library/index.js:19
+#: build/block-library/index.js:37
+#: build/constants/index.js:1
+#: build/controls/index.js:35
+#: build/controls/index.js:37
+#: build/editor/index.js:5
+#: build/third-party-blocks/index.js:1
+#: build/utils/index.js:1
+#: build/wp-global-styles/index.js:3
+msgid "Custom"
 msgstr ""
 
 #: build/block-library/index.js:11
@@ -5905,6 +4933,12 @@ msgid "%s (Header)"
 msgstr ""
 
 #: build/block-library/index.js:19
+#: build/controls/index.js:19
+#: build/controls/index.js:35
+msgid "Video"
+msgstr ""
+
+#: build/block-library/index.js:19
 msgid "Poster with Icon"
 msgstr ""
 
@@ -5936,6 +4970,13 @@ msgid "Icon"
 msgstr ""
 
 #: build/block-library/index.js:19
+#: build/block-library/index.js:25
+#: build/block-library/index.js:37
+#: build/third-party-blocks/index.js:1
+msgid "Button"
+msgstr ""
+
+#: build/block-library/index.js:19
 msgid "4:3 - QXGA"
 msgstr ""
 
@@ -5946,6 +4987,13 @@ msgstr ""
 
 #: build/block-library/index.js:19
 msgid "21:9 - Ultra wide"
+msgstr ""
+
+#: build/block-library/index.js:19
+#: build/block-library/index.js:27
+#: build/controls/index.js:19
+#: build/controls/index.js:35
+msgid "Auto"
 msgstr ""
 
 #: build/block-library/index.js:19
@@ -6037,6 +5085,7 @@ msgid "Video options"
 msgstr ""
 
 #: build/block-library/index.js:19
+#: build/editor/index.js:3
 msgid "Display as"
 msgstr ""
 
@@ -6050,6 +5099,11 @@ msgstr ""
 
 #: build/block-library/index.js:19
 msgid "Customize play icon"
+msgstr ""
+
+#: build/block-library/index.js:19
+#: build/block-library/index.js:37
+msgid "Aspect ratio"
 msgstr ""
 
 #: build/block-library/index.js:19
@@ -6079,6 +5133,14 @@ msgstr ""
 
 #: build/block-library/index.js:19
 msgid "Hero settings"
+msgstr ""
+
+#: build/block-library/index.js:19
+#: build/block-library/index.js:27
+#: build/block-library/index.js:37
+#: build/controls/index.js:19
+#: build/third-party-blocks/index.js:1
+msgid "Link"
 msgstr ""
 
 #: build/block-library/index.js:19
@@ -6182,13 +5244,31 @@ msgid "Fixed width"
 msgstr ""
 
 #: build/block-library/index.js:19
+#: build/block-library/index.js:29
+#: build/controls/index.js:1
+#: build/controls/index.js:19
+#: build/controls/index.js:35
+#: build/controls/index.js:37
+msgid "Left"
+msgstr ""
+
+#: build/block-library/index.js:19
 #: build/controls/index.js:35
 #: build/controls/index.js:37
 msgid "Center"
 msgstr ""
 
 #: build/block-library/index.js:19
-#: build/editor/index.js:53
+#: build/block-library/index.js:29
+#: build/controls/index.js:1
+#: build/controls/index.js:19
+#: build/controls/index.js:35
+#: build/controls/index.js:37
+msgid "Right"
+msgstr ""
+
+#: build/block-library/index.js:19
+#: build/editor/index.js:55
 msgid "Small"
 msgstr ""
 
@@ -6292,6 +5372,11 @@ msgid "Vertical offset"
 msgstr ""
 
 #: build/block-library/index.js:19
+#: build/controls/index.js:9
+msgid "Type"
+msgstr ""
+
+#: build/block-library/index.js:19
 #: build/block-library/index.js:25
 #: build/block-library/index.js:27
 #: build/block-library/index.js:29
@@ -6315,6 +5400,27 @@ msgstr ""
 
 #: build/block-library/index.js:19
 msgid "Icon rotate"
+msgstr ""
+
+#: build/block-library/index.js:19
+#: build/block-library/index.js:25
+#: build/block-library/index.js:27
+#: build/block-library/index.js:29
+#: build/block-library/index.js:33
+#: build/block-library/index.js:37
+#: build/controls/index.js:35
+#: build/third-party-blocks/index.js:1
+msgid "Normal"
+msgstr ""
+
+#: build/block-library/index.js:19
+#: build/block-library/index.js:25
+#: build/block-library/index.js:27
+#: build/block-library/index.js:29
+#: build/block-library/index.js:33
+#: build/block-library/index.js:37
+#: build/third-party-blocks/index.js:1
+msgid "Hover"
 msgstr ""
 
 #: build/block-library/index.js:19
@@ -6455,6 +5561,16 @@ msgid "Link to"
 msgstr ""
 
 #: build/block-library/index.js:19
+#: build/block-library/index.js:21
+#: build/block-library/index.js:25
+#: build/block-library/index.js:29
+#: build/block-library/index.js:37
+#: build/wp-global-styles/index.js:1
+#: build/wp-global-styles/index.js:3
+msgid "Text"
+msgstr ""
+
+#: build/block-library/index.js:19
 msgid "Max image height"
 msgstr ""
 
@@ -6472,6 +5588,17 @@ msgid "Logo"
 msgstr ""
 
 #: build/block-library/index.js:19
+#: build/block-library/index.js:27
+#: build/block-library/index.js:29
+#: build/block-library/index.js:37
+#: build/controls/index.js:37
+#: build/editor/index.js:3
+#: build/woocommerce-styles/index.js:1
+#: build/wp-global-styles/index.js:1
+msgid "Padding"
+msgstr ""
+
+#: build/block-library/index.js:19
 msgid "Make sure your visual identity is clear to your website visitors by adding your logo in a visible place."
 msgstr ""
 
@@ -6482,6 +5609,50 @@ msgstr ""
 #: build/block-library/index.js:19
 #: build/block-library/index.js:25
 msgid "symbol"
+msgstr ""
+
+#: build/block-library/index.js:19
+msgid "Languages"
+msgstr ""
+
+#: build/block-library/index.js:19
+#: build/editor/index.js:3
+msgid "Dropdown"
+msgstr ""
+
+#: build/block-library/index.js:19
+#: build/editor/index.js:3
+msgid "Flags"
+msgstr ""
+
+#: build/block-library/index.js:19
+#: build/editor/index.js:3
+msgid "Language Selector Properties"
+msgstr ""
+
+#: build/block-library/index.js:19
+#: build/editor/index.js:3
+msgid "Show language selector"
+msgstr ""
+
+#: build/block-library/index.js:19
+#: build/editor/index.js:3
+msgid "Show flags"
+msgstr ""
+
+#: build/block-library/index.js:19
+#: build/editor/index.js:3
+msgid "Show names"
+msgstr ""
+
+#: build/block-library/index.js:19
+msgid "Language selector"
+msgstr ""
+
+#: build/block-library/index.js:19
+#: build/block-library/index.js:25
+#: build/block-library/index.js:29
+msgid "icon"
 msgstr ""
 
 #: build/block-library/index.js:19
@@ -6505,6 +5676,16 @@ msgid "Clip"
 msgstr ""
 
 #: build/block-library/index.js:19
+#: build/block-library/index.js:29
+msgid "Zoom"
+msgstr ""
+
+#: build/block-library/index.js:19
+#: build/controls/index.js:37
+msgid "Scale"
+msgstr ""
+
+#: build/block-library/index.js:19
 msgid "Push"
 msgstr ""
 
@@ -6514,6 +5695,11 @@ msgstr ""
 
 #: build/block-library/index.js:19
 msgid "Circle"
+msgstr ""
+
+#: build/block-library/index.js:19
+#: build/controls/index.js:35
+msgid "Underline"
 msgstr ""
 
 #: build/block-library/index.js:19
@@ -6538,9 +5724,23 @@ msgid "Diagonal"
 msgstr ""
 
 #: build/block-library/index.js:19
+msgid "Strikethrough"
+msgstr ""
+
+#: build/block-library/index.js:19
 #: build/controls/index.js:35
 #: build/controls/index.js:37
 msgid "X"
+msgstr ""
+
+#: build/block-library/index.js:19
+#: build/block-library/index.js:29
+#: build/block-library/index.js:33
+#: build/controls/index.js:1
+#: build/controls/index.js:19
+#: build/controls/index.js:35
+#: build/editor/index.js:53
+msgid "None"
 msgstr ""
 
 #: build/block-library/index.js:19
@@ -6714,7 +5914,8 @@ msgid "Sticky navigation layout"
 msgstr ""
 
 #: build/block-library/index.js:19
-msgid "Animation "
+#: build/controls/index.js:35
+msgid "Animation"
 msgstr ""
 
 #: build/block-library/index.js:19
@@ -7094,6 +6295,10 @@ msgid "Embed Amazon Kindle content."
 msgstr ""
 
 #: build/block-library/index.js:19
+msgid "Caption"
+msgstr ""
+
+#: build/block-library/index.js:19
 #: build/controls/index.js:35
 msgid "%"
 msgstr ""
@@ -7220,6 +6425,10 @@ msgid "Link to media"
 msgstr ""
 
 #: build/block-library/index.js:19
+msgid "Link to attachment page"
+msgstr ""
+
+#: build/block-library/index.js:19
 msgid "Below image"
 msgstr ""
 
@@ -7233,8 +6442,26 @@ msgstr ""
 
 #: build/block-library/index.js:19
 #: build/block-library/index.js:29
+#: build/controls/index.js:1
+#: build/controls/index.js:19
+#: build/controls/index.js:35
+#: build/controls/index.js:37
+msgid "Top"
+msgstr ""
+
+#: build/block-library/index.js:19
+#: build/block-library/index.js:29
 #: build/controls/index.js:35
 msgid "Middle"
+msgstr ""
+
+#: build/block-library/index.js:19
+#: build/block-library/index.js:29
+#: build/controls/index.js:1
+#: build/controls/index.js:19
+#: build/controls/index.js:35
+#: build/controls/index.js:37
+msgid "Bottom"
 msgstr ""
 
 #: build/block-library/index.js:19
@@ -7437,6 +6664,17 @@ msgstr ""
 msgid "Change heading level"
 msgstr ""
 
+#. translators: %d: heading level e.g: "1", "2", "3"
+#: build/block-library/index.js:21
+#: build/block-library/index.js:23
+msgid "Heading %d"
+msgstr ""
+
+#: build/block-library/index.js:21
+#: build/block-library/index.js:25
+msgid "Justify text"
+msgstr ""
+
 #: build/block-library/index.js:21
 msgid "Write heading…"
 msgstr ""
@@ -7495,6 +6733,10 @@ msgid "Effect Type"
 msgstr ""
 
 #: build/block-library/index.js:21
+msgid "Heading"
+msgstr ""
+
+#: build/block-library/index.js:21
 msgid "subtitle"
 msgstr ""
 
@@ -7549,6 +6791,11 @@ msgstr ""
 
 #: build/block-library/index.js:25
 msgid "Paragraph properties"
+msgstr ""
+
+#: build/block-library/index.js:25
+#: build/editor/index.js:23
+msgid "Paragraph"
 msgstr ""
 
 #: build/block-library/index.js:25
@@ -7648,12 +6895,16 @@ msgid "Add attractive icons to web pages. 100+ free icons are available from the
 msgstr ""
 
 #: build/block-library/index.js:25
-#: build/block-library/index.js:29
-msgid "icon"
+msgid "Line"
 msgstr ""
 
 #: build/block-library/index.js:25
-msgid "Line"
+#: build/block-library/index.js:29
+#: build/block-library/index.js:33
+#: build/controls/index.js:1
+#: build/controls/index.js:19
+#: build/wp-global-styles/index.js:3
+msgid "Solid"
 msgstr ""
 
 #: build/block-library/index.js:25
@@ -7712,10 +6963,6 @@ msgstr ""
 
 #: build/block-library/index.js:25
 msgid "line"
-msgstr ""
-
-#: build/block-library/index.js:25
-msgid "© {year} {site-name}. Created for free using WordPress and <a target=\"_blank\" href=\"https://kubiobuilder.com\" rel=\"noreferrer\">Kubio</a>"
 msgstr ""
 
 #: build/block-library/index.js:25
@@ -7897,6 +7144,14 @@ msgid "Form elements align"
 msgstr ""
 
 #: build/block-library/index.js:27
+#: build/block-library/index.js:33
+#: build/controls/index.js:37
+#: build/editor/index.js:3
+#: build/wp-global-styles/index.js:1
+msgid "Margin"
+msgstr ""
+
+#: build/block-library/index.js:27
 msgid "These properties are not supported by current form type"
 msgstr ""
 
@@ -7942,6 +7197,18 @@ msgstr ""
 #: build/block-library/index.js:37
 #: build/third-party-blocks/index.js:1
 msgid "Icons"
+msgstr ""
+
+#: build/block-library/index.js:27
+msgid "Official"
+msgstr ""
+
+#: build/block-library/index.js:27
+msgid "Shared"
+msgstr ""
+
+#: build/block-library/index.js:27
+msgid "Individual"
 msgstr ""
 
 #: build/block-library/index.js:27
@@ -8058,7 +7325,23 @@ msgid "Make use of tabs to improve navigation and user experience. Style your ta
 msgstr ""
 
 #: build/block-library/index.js:27
+#: build/block-library/index.js:29
+#: build/controls/index.js:37
+msgid "Horizontal"
+msgstr ""
+
+#: build/block-library/index.js:27
+#: build/block-library/index.js:29
+#: build/controls/index.js:37
+msgid "Vertical"
+msgstr ""
+
+#: build/block-library/index.js:27
 msgid "Stretch"
+msgstr ""
+
+#: build/block-library/index.js:27
+msgid "Full width"
 msgstr ""
 
 #. translators: %d is the new number of tabs this block has.
@@ -8173,10 +7456,6 @@ msgid "Accordion item"
 msgstr ""
 
 #: build/block-library/index.js:29
-msgid "Use this icon for all items"
-msgstr ""
-
-#: build/block-library/index.js:29
 #: build/block-library/index.js:33
 #: build/controls/index.js:1
 #: build/controls/index.js:19
@@ -8203,6 +7482,14 @@ msgstr ""
 #: build/controls/index.js:1
 #: build/controls/index.js:19
 msgid "Outset"
+msgstr ""
+
+#: build/block-library/index.js:29
+msgid "Use this icon for all items"
+msgstr ""
+
+#: build/block-library/index.js:29
+msgid "Disabled"
 msgstr ""
 
 #: build/block-library/index.js:29
@@ -8244,6 +7531,14 @@ msgstr ""
 
 #: build/block-library/index.js:29
 msgid "Horizontal Align"
+msgstr ""
+
+#: build/block-library/index.js:29
+msgid "Icon disabled color"
+msgstr ""
+
+#: build/block-library/index.js:29
+msgid "Text disabled color"
 msgstr ""
 
 #: build/block-library/index.js:29
@@ -8456,7 +7751,7 @@ msgid "Show only first level"
 msgstr ""
 
 #: build/block-library/index.js:33
-#: build/editor/index.js:19
+#: build/editor/index.js:23
 msgid "Mobile"
 msgstr ""
 
@@ -8774,6 +8069,10 @@ msgstr ""
 #. translators: %s is the post title
 #: build/block-library/index.js:35
 msgid "Currently editing the \"%s\" item template"
+msgstr ""
+
+#: build/block-library/index.js:35
+msgid "Done"
 msgstr ""
 
 #: build/block-library/index.js:35
@@ -9164,6 +8463,10 @@ msgid "6 March"
 msgstr ""
 
 #: build/block-library/index.js:37
+msgid "Date format"
+msgstr ""
+
+#: build/block-library/index.js:37
 msgid "Prefix"
 msgstr ""
 
@@ -9229,6 +8532,11 @@ msgstr ""
 
 #: build/block-library/index.js:37
 msgid "Avatar"
+msgstr ""
+
+#: build/block-library/index.js:37
+#: build/controls/index.js:21
+msgid "Edit link"
 msgstr ""
 
 #: build/block-library/index.js:37
@@ -9338,22 +8646,6 @@ msgstr ""
 
 #: build/block-library/index.js:37
 msgid "Post comments"
-msgstr ""
-
-#: build/block-library/index.js:37
-msgid "No responses yet"
-msgstr ""
-
-#: build/block-library/index.js:37
-msgid "One response"
-msgstr ""
-
-#: build/block-library/index.js:37
-msgid "{COMMENTS-COUNT} Responses"
-msgstr ""
-
-#: build/block-library/index.js:37
-msgid "Comments are closed"
 msgstr ""
 
 #: build/block-library/index.js:37
@@ -9533,19 +8825,19 @@ msgid "Blank"
 msgstr ""
 
 #: build/constants/index.js:1
-#: build/editor/index.js:31
+#: build/editor/index.js:33
 #: build/utils/index.js:1
 msgid "Custom templates"
 msgstr ""
 
 #: build/constants/index.js:1
-#: build/editor/index.js:31
+#: build/editor/index.js:33
 #: build/utils/index.js:1
 msgid "Theme templates"
 msgstr ""
 
 #: build/constants/index.js:1
-#: build/editor/index.js:31
+#: build/editor/index.js:33
 #: build/utils/index.js:1
 msgid "Kubio templates"
 msgstr ""
@@ -9583,6 +8875,48 @@ msgstr ""
 #: build/constants/index.js:1
 #: build/utils/index.js:1
 msgid "Kubio Default"
+msgstr ""
+
+#: build/constants/index.js:1
+#: build/editor/index.js:19
+#: build/utils/index.js:1
+msgid "Color Scheme 1"
+msgstr ""
+
+#: build/constants/index.js:1
+#: build/editor/index.js:19
+#: build/utils/index.js:1
+msgid "Color Scheme 2"
+msgstr ""
+
+#: build/constants/index.js:1
+#: build/editor/index.js:19
+#: build/utils/index.js:1
+msgid "Color Scheme 3"
+msgstr ""
+
+#: build/constants/index.js:1
+#: build/editor/index.js:19
+#: build/utils/index.js:1
+msgid "Color Scheme 4"
+msgstr ""
+
+#: build/constants/index.js:1
+#: build/editor/index.js:19
+#: build/utils/index.js:1
+msgid "Color Scheme 5"
+msgstr ""
+
+#: build/constants/index.js:1
+#: build/editor/index.js:19
+#: build/utils/index.js:1
+msgid "Color Scheme 6"
+msgstr ""
+
+#: build/constants/index.js:1
+#: build/editor/index.js:19
+#: build/utils/index.js:1
+msgid "Color Scheme 7"
 msgstr ""
 
 #. translators: %s is color palette number
@@ -9637,6 +8971,11 @@ msgstr ""
 #: build/utils/index.js:21
 #: build/utils/index.js:22
 msgid "Playful %s"
+msgstr ""
+
+#: build/constants/index.js:22
+#: build/utils/index.js:22
+msgid "Contact form plugin"
 msgstr ""
 
 #: build/controls/index.js:1
@@ -9696,10 +9035,6 @@ msgstr ""
 #: build/controls/index.js:19
 #: build/controls/index.js:39
 msgid "Hidden"
-msgstr ""
-
-#: build/controls/index.js:1
-msgid "Select…"
 msgstr ""
 
 #: build/controls/index.js:1
@@ -9833,16 +9168,16 @@ msgid "New window"
 msgstr ""
 
 #: build/controls/index.js:19
-#: build/controls/index.js:21
-msgid "Search or type url"
-msgstr ""
-
-#: build/controls/index.js:19
 msgid "Tag"
 msgstr ""
 
 #: build/controls/index.js:19
 msgid "Unknown Block"
+msgstr ""
+
+#: build/controls/index.js:19
+#: build/controls/index.js:21
+msgid "Search or type url"
 msgstr ""
 
 #: build/controls/index.js:19
@@ -9896,6 +9231,10 @@ msgstr ""
 
 #: build/controls/index.js:21
 msgid "Item label"
+msgstr ""
+
+#: build/controls/index.js:21
+msgid "Open in new tab"
 msgstr ""
 
 #: build/controls/index.js:21
@@ -9987,8 +9326,12 @@ msgid "Step %1$d of %2$d"
 msgstr ""
 
 #: build/controls/index.js:35
-#: build/editor/index.js:33
+#: build/editor/index.js:35
 msgid "Finish"
+msgstr ""
+
+#: build/controls/index.js:35
+msgid "Open Media Library"
 msgstr ""
 
 #: build/controls/index.js:35
@@ -10200,10 +9543,6 @@ msgid "Flippers"
 msgstr ""
 
 #: build/controls/index.js:35
-msgid "Animation"
-msgstr ""
-
-#: build/controls/index.js:35
 msgid "Play animation"
 msgstr ""
 
@@ -10285,6 +9624,18 @@ msgid "REM"
 msgstr ""
 
 #: build/controls/index.js:35
+msgid "Uppercase"
+msgstr ""
+
+#: build/controls/index.js:35
+msgid "Lowercase"
+msgstr ""
+
+#: build/controls/index.js:35
+msgid "Capitalize"
+msgstr ""
+
+#: build/controls/index.js:35
 msgid "Italic"
 msgstr ""
 
@@ -10352,11 +9703,30 @@ msgid "Weight"
 msgstr ""
 
 #: build/controls/index.js:35
+#: build/editor/index.js:3
+#: build/editor/index.js:53
+msgid "Size"
+msgstr ""
+
+#: build/controls/index.js:35
 #: build/core/index.js:7
 #: build/editor/index.js:3
 #: build/editor/index.js:7
 #: build/wp-global-styles/index.js:1
 msgid "Style"
+msgstr ""
+
+#: build/controls/index.js:35
+#: build/editor/index.js:3
+msgid "Decoration"
+msgstr ""
+
+#: build/controls/index.js:35
+msgid "Line height"
+msgstr ""
+
+#: build/controls/index.js:35
+msgid "Letter spacing"
 msgstr ""
 
 #: build/controls/index.js:35
@@ -10431,6 +9801,10 @@ msgstr ""
 
 #: build/controls/index.js:35
 msgid "No Repeat"
+msgstr ""
+
+#: build/controls/index.js:35
+msgid "Repeat"
 msgstr ""
 
 #: build/controls/index.js:35
@@ -10628,7 +10002,7 @@ msgid "Custom width"
 msgstr ""
 
 #: build/controls/index.js:37
-#: build/editor/index.js:53
+#: build/editor/index.js:55
 msgid "Translate"
 msgstr ""
 
@@ -10720,12 +10094,17 @@ msgstr[1] ""
 msgid "Unlink"
 msgstr ""
 
+#: build/core-hooks/index.js:1
+#: build/editor/index.js:15
+msgid "Select"
+msgstr ""
+
 #: build/core/index.js:1
 msgid "Unnamed section"
 msgstr ""
 
 #: build/core/index.js:1
-#: build/editor/index.js:31
+#: build/editor/index.js:33
 msgid "(no title)"
 msgstr ""
 
@@ -10755,7 +10134,7 @@ msgid "Inner Page"
 msgstr ""
 
 #: build/core/index.js:3
-#: build/editor/index.js:17
+#: build/editor/index.js:21
 msgid "Post Page"
 msgstr ""
 
@@ -10808,12 +10187,44 @@ msgstr ""
 msgid "Kubio Debug"
 msgstr ""
 
+#: build/core/index.js:7
+msgid "Attributes"
+msgstr ""
+
 #: build/editor-data/index.js:1
 msgid "Page title placeholder"
 msgstr ""
 
 #: build/editor/index.js:1
-#: build/editor/index.js:51
+msgid "You are trying to to edit a translation"
+msgstr ""
+
+#: build/editor/index.js:1
+msgid "You must update the design by editing the page in default language and then update the translations"
+msgstr ""
+
+#: build/editor/index.js:1
+msgid "To update the design please use the \"Edit page in the default language\" button."
+msgstr ""
+
+#: build/editor/index.js:1
+msgid "If you want to translate the content please use the \"Translate\" button to edit the translated content"
+msgstr ""
+
+#: build/editor/index.js:1
+msgid "Edit page in the default language"
+msgstr ""
+
+#: build/editor/index.js:1
+msgid "Confirm home page restore"
+msgstr ""
+
+#: build/editor/index.js:1
+msgid "Restore home page"
+msgstr ""
+
+#: build/editor/index.js:1
+#: build/editor/index.js:53
 msgid "Add block"
 msgstr ""
 
@@ -10851,6 +10262,11 @@ msgstr ""
 
 #: build/editor/index.js:1
 #: build/editor/index.js:3
+msgid "Remove"
+msgstr ""
+
+#: build/editor/index.js:1
+#: build/editor/index.js:3
 msgid "Add block/section"
 msgstr ""
 
@@ -10868,7 +10284,7 @@ msgid "Choose footer design"
 msgstr ""
 
 #: build/editor/index.js:3
-#: build/editor/index.js:51
+#: build/editor/index.js:53
 msgid "Add section"
 msgstr ""
 
@@ -10885,38 +10301,42 @@ msgid "There was an error while importing the Kubio blog. Please try again"
 msgstr ""
 
 #: build/editor/index.js:3
-#: build/editor/index.js:21
+#: build/editor/index.js:25
 msgid "Kubio blog templates were imported successfully! Refresh the editor to enjoy the full site editing experience"
 msgstr ""
 
 #: build/editor/index.js:3
-#: build/editor/index.js:21
+#: build/editor/index.js:25
 msgid "Refresh page now"
 msgstr ""
 
 #: build/editor/index.js:3
-#: build/editor/index.js:21
+#: build/editor/index.js:25
 msgid "💫 Start with the Kubio blog!"
 msgstr ""
 
 #: build/editor/index.js:3
-#: build/editor/index.js:21
+#: build/editor/index.js:25
 msgid "Kubio comes with a fully customizable blog area for your site."
 msgstr ""
 
 #: build/editor/index.js:3
-#: build/editor/index.js:21
+#: build/editor/index.js:25
 msgid "Would you like to use the Kubio blog templates? "
 msgstr ""
 
 #: build/editor/index.js:3
-#: build/editor/index.js:21
+#: build/editor/index.js:25
 msgid "Import Kubio blog"
 msgstr ""
 
 #: build/editor/index.js:3
-#: build/editor/index.js:21
+#: build/editor/index.js:25
 msgid "Importing Kubio blog…"
+msgstr ""
+
+#: build/editor/index.js:3
+msgid "Additional CSS"
 msgstr ""
 
 #: build/editor/index.js:3
@@ -10952,7 +10372,8 @@ msgid "Generate color scheme"
 msgstr ""
 
 #: build/editor/index.js:3
-#: build/editor/index.js:33
+#: build/editor/index.js:19
+#: build/editor/index.js:35
 msgid "Color Scheme"
 msgstr ""
 
@@ -10998,6 +10419,11 @@ msgstr ""
 
 #: build/editor/index.js:3
 msgid "Letter Spacing"
+msgstr ""
+
+#: build/editor/index.js:3
+#: build/format-library/index.js:1
+msgid "Font weight"
 msgstr ""
 
 #: build/editor/index.js:3
@@ -11055,6 +10481,18 @@ msgstr ""
 
 #: build/editor/index.js:3
 msgid "Global Spacing"
+msgstr ""
+
+#: build/editor/index.js:3
+msgid "Top offset"
+msgstr ""
+
+#: build/editor/index.js:3
+msgid "Flags padding"
+msgstr ""
+
+#: build/editor/index.js:3
+msgid "Multi language"
 msgstr ""
 
 #: build/editor/index.js:3
@@ -11154,12 +10592,16 @@ msgstr ""
 
 #. translators: %s: number of the preset, Set refers to the color scheme preset
 #: build/editor/index.js:7
-#: build/editor/index.js:33
+#: build/editor/index.js:35
 msgid "Set %s"
 msgstr ""
 
 #: build/editor/index.js:7
 msgid "Color Scheme Presets"
+msgstr ""
+
+#: build/editor/index.js:7
+msgid "Current"
 msgstr ""
 
 #: build/editor/index.js:7
@@ -11196,6 +10638,11 @@ msgstr ""
 
 #: build/editor/index.js:7
 msgid "Description"
+msgstr ""
+
+#: build/editor/index.js:7
+#: build/editor/index.js:15
+msgid "Save"
 msgstr ""
 
 #. translators: %1s: Title of a media work from Openverse; %2s: Name of the work's creator; %3s: Work's licence e.g: "CC0 1.0".
@@ -11236,6 +10683,10 @@ msgstr ""
 
 #: build/editor/index.js:15
 msgid "Search videos"
+msgstr ""
+
+#: build/editor/index.js:15
+msgid "Audio"
 msgstr ""
 
 #: build/editor/index.js:15
@@ -11281,7 +10732,7 @@ msgstr[0] ""
 msgstr[1] ""
 
 #: build/editor/index.js:15
-#: build/editor/index.js:31
+#: build/editor/index.js:33
 msgid "Close panel"
 msgstr ""
 
@@ -11298,7 +10749,11 @@ msgid "Sidebars"
 msgstr ""
 
 #: build/editor/index.js:15
-msgid "Advanced Mode"
+msgid "Switch to quick mode"
+msgstr ""
+
+#: build/editor/index.js:15
+msgid "Switch to advanced mode"
 msgstr ""
 
 #: build/editor/index.js:15
@@ -11309,1210 +10764,1289 @@ msgstr ""
 msgid "Feature activated"
 msgstr ""
 
-#: build/editor/index.js:15
-msgid "Convert Colibri Site"
-msgstr ""
-
-#: build/editor/index.js:15
-msgid "Convert Colibri template"
-msgstr ""
-
-#: build/editor/index.js:15
-msgid "Converting template…"
-msgstr ""
-
-#: build/editor/index.js:15
-msgid "Toggle Kubio debug"
-msgstr ""
-
-#: build/editor/index.js:15
-msgid "Convert colibri data"
-msgstr ""
-
-#: build/editor/index.js:15
-msgid "Save converted content"
-msgstr ""
-
-#: build/editor/index.js:15
-msgid "Switch to Kubio Editor layout"
-msgstr ""
-
-#: build/editor/index.js:15
-msgid "Switch to WordPress Editor layout"
-msgstr ""
-
-#: build/editor/index.js:15
-msgid "Switch to the new Kubio editor layout for a more friendly editing experience"
-msgstr ""
-
-#: build/editor/index.js:15
-msgid "Switch to the WordPress editor layout to have the default editing experience"
-msgstr ""
-
-#: build/editor/index.js:15
-msgid "Disable Kubio AI capabilities"
-msgstr ""
-
-#: build/editor/index.js:15
-msgid "Enable Kubio AI capabilities"
-msgstr ""
-
-#: build/editor/index.js:15
-msgid "Hide Kubio AI buttons in editors interface"
-msgstr ""
-
-#: build/editor/index.js:15
-msgid "Show Kubio AI buttons in editors interface"
-msgstr ""
-
-#: build/editor/index.js:15
-msgid "Connect this site to Kubio Cloud"
-msgstr ""
-
-#. translators: %s is Kubio Cloud the account email
-#: build/editor/index.js:17
-msgid "Currently connected as %s"
-msgstr ""
-
-#: build/editor/index.js:17
-msgid "Disconnect from Kubio Cloud"
-msgstr ""
-
-#: build/editor/index.js:17
-#: build/editor/index.js:31
-msgid "More tools & options"
-msgstr ""
-
-#: build/editor/index.js:17
-msgctxt "noun"
-msgid "View"
-msgstr ""
-
-#: build/editor/index.js:17
-msgid "Spotlight mode"
-msgstr ""
-
-#: build/editor/index.js:17
-msgid "Focus on one block at a time"
-msgstr ""
-
-#: build/editor/index.js:17
-msgid "Spotlight mode activated"
-msgstr ""
-
-#: build/editor/index.js:17
-msgid "Spotlight mode deactivated"
-msgstr ""
-
-#: build/editor/index.js:17
-msgid "Open theme customizer"
-msgstr ""
-
-#: build/editor/index.js:17
-#: build/editor/index.js:19
-msgid "Full page"
-msgstr ""
-
-#: build/editor/index.js:17
-msgid "Only this page"
-msgstr ""
-
-#: build/editor/index.js:17
-msgid "All pages"
-msgstr ""
-
-#: build/editor/index.js:17
-#: build/editor/index.js:31
-msgid "Pages"
-msgstr ""
-
-#: build/editor/index.js:17
-msgid "Favorites"
-msgstr ""
-
-#: build/editor/index.js:17
-msgid "Could not import content. Please try again later"
-msgstr ""
-
-#: build/editor/index.js:17
-#: build/editor/index.js:19
-#: build/editor/index.js:49
-#: build/editor/index.js:51
-#: build/pro/index.js:1
-msgid "PRO"
-msgstr ""
-
-#: build/editor/index.js:17
-msgid "ALL"
-msgstr ""
-
-#: build/editor/index.js:17
-#: build/editor/index.js:19
-#: build/editor/index.js:49
-msgid "FREE"
-msgstr ""
-
-#: build/editor/index.js:17
-msgid "Close dialog"
-msgstr ""
-
-#: build/editor/index.js:17
-msgid "Find a starter site…"
-msgstr ""
-
-#: build/editor/index.js:17
-msgid "Import Starter Site"
-msgstr ""
-
-#: build/editor/index.js:17
-msgid "Preview starter site"
-msgstr ""
-
-#: build/editor/index.js:17
-msgid "Not installed"
-msgstr ""
-
-#: build/editor/index.js:17
-msgid "Your current design will be completely overwritten by the new template. This process is irreversible. If you wish to be able to go back to the current design,please create a backup of your site before proceedingwith the import."
-msgstr ""
-
-#: build/editor/index.js:17
-#: build/editor/index.js:19
-msgid "Import full starter site"
-msgstr ""
-
-#: build/editor/index.js:17
-msgid "No Starter Site Found"
-msgstr ""
-
-#: build/editor/index.js:17
-msgid "Find a page…"
-msgstr ""
-
-#: build/editor/index.js:17
-msgid "No Page Found"
-msgstr ""
-
-#: build/editor/index.js:17
-msgid "This section is available only in the PRO version."
-msgstr ""
-
-#: build/editor/index.js:17
-msgid "NO ELEMENTS FOUND"
-msgstr ""
-
-#: build/editor/index.js:17
-msgid "No Section Found"
-msgstr ""
-
-#: build/editor/index.js:17
-msgid "Find a section…"
-msgstr ""
-
-#: build/editor/index.js:17
-msgid "Kubio Library"
-msgstr ""
-
-#: build/editor/index.js:17
-msgid "Back to Starter Sites"
-msgstr ""
-
-#: build/editor/index.js:17
-msgid "Back to Pages"
-msgstr ""
-
-#: build/editor/index.js:17
-msgid "You can't import page content"
-msgstr ""
-
-#: build/editor/index.js:17
-msgid "other"
-msgstr ""
-
-#. translators: %s: page name
-#: build/editor/index.js:19
-msgid "You are being redirected to <strong>%s</strong> page."
-msgstr ""
-
-#: build/editor/index.js:19
-msgid "You have unsaved changes"
-msgstr ""
-
-#: build/editor/index.js:19
-#: build/editor/index.js:49
-msgid "Would you like to save these changes or discard them?"
-msgstr ""
-
-#: build/editor/index.js:19
-msgid "Discard changes"
-msgstr ""
-
-#: build/editor/index.js:19
-msgid "Could not redirect to the page you selected"
-msgstr ""
-
-#: build/editor/index.js:19
-msgid "This content can be imported only on the blog template"
-msgstr ""
-
-#: build/editor/index.js:19
-msgid "Switch to the blog template"
-msgstr ""
-
-#: build/editor/index.js:19
-msgid "This content can be imported only on the singe post template"
-msgstr ""
-
-#: build/editor/index.js:19
-msgid "Switch to the singe post template"
-msgstr ""
-
-#: build/editor/index.js:19
-msgid "This content can be imported only on the search template"
-msgstr ""
-
-#: build/editor/index.js:19
-msgid "Switch to the search template"
-msgstr ""
-
-#: build/editor/index.js:19
-msgid "This content can be imported only on the 404 template"
-msgstr ""
-
-#: build/editor/index.js:19
-msgid "Switch to the 404 template"
-msgstr ""
-
-#: build/editor/index.js:19
-msgid "Could not create new page"
-msgstr ""
-
-#: build/editor/index.js:19
-msgid "This content can be imported only on a page"
-msgstr ""
-
-#: build/editor/index.js:19
-msgid "Create new page"
-msgstr ""
-
-#: build/editor/index.js:19
-msgid "Live Preview"
-msgstr ""
-
-#: build/editor/index.js:19
-msgid "Starter site colors"
-msgstr ""
-
-#: build/editor/index.js:19
-msgid "Heading 1"
-msgstr ""
-
-#: build/editor/index.js:19
-msgid "Heading 2"
-msgstr ""
-
-#: build/editor/index.js:19
-msgid "Heading 3"
-msgstr ""
-
-#: build/editor/index.js:19
-msgid "Heading 4"
-msgstr ""
-
-#: build/editor/index.js:19
-msgid "Heading 5"
-msgstr ""
-
-#: build/editor/index.js:19
-msgid "Heading 6"
-msgstr ""
-
-#: build/editor/index.js:19
-msgid "Starter site typography"
-msgstr ""
-
-#: build/editor/index.js:19
-msgid "Replace global styles"
-msgstr ""
-
-#: build/editor/index.js:19
-msgid "The selected starter site content will be added after your existing sections"
-msgstr ""
-
-#: build/editor/index.js:19
-msgid "Your header, content and footer will be all replaced with the ones from the selected page"
-msgstr ""
-
-#: build/editor/index.js:19
-msgid "Full starter site"
-msgstr ""
-
-#: build/editor/index.js:19
-msgid "All content will be replaced with the selected full starter site"
-msgstr ""
-
-#: build/editor/index.js:19
-msgid "Import selection"
-msgstr ""
-
-#: build/editor/index.js:19
-msgid "What to import:"
-msgstr ""
-
-#: build/editor/index.js:19
-msgid "This content can't be imported here"
-msgstr ""
-
-#: build/editor/index.js:19
-msgid "This page is only available in the PRO version of Kubio. Please select a free page to import or upgrade to the PRO version."
-msgstr ""
-
-#: build/editor/index.js:19
-msgid "Import"
-msgstr ""
-
-#: build/editor/index.js:19
-msgid "This starter site is only available in the PRO version of Kubio. Please select a free starter site to import or upgrade to the PRO version."
-msgstr ""
-
-#: build/editor/index.js:19
-msgid "Something went wrong"
-msgstr ""
-
-#: build/editor/index.js:19
-msgid "Templates Gallery"
-msgstr ""
-
-#: build/editor/index.js:19
-msgid "Generating preview…"
-msgstr ""
-
-#: build/editor/index.js:19
-msgid "Desktop"
-msgstr ""
-
-#: build/editor/index.js:19
-msgid "Tablet"
-msgstr ""
-
-#: build/editor/index.js:19
-#: build/editor/index.js:51
-msgid "Redo"
-msgstr ""
-
-#: build/editor/index.js:19
-#: build/editor/index.js:51
-msgid "Undo"
-msgstr ""
-
-#: build/editor/index.js:19
-msgid "AI page generation"
-msgstr ""
-
-#: build/editor/index.js:19
-msgid "Generate page"
-msgstr ""
-
-#: build/editor/index.js:19
-msgid "Close the site content panel"
-msgstr ""
-
-#: build/editor/index.js:19
-msgid "Change page"
-msgstr ""
-
-#. translators: Editing current page
-#: build/editor/index.js:21
-msgid "Editing: %s"
-msgstr ""
-
-#: build/editor/index.js:21
-msgid "Save your changes."
-msgstr ""
-
-#: build/editor/index.js:21
-msgid "Undo your last changes."
-msgstr ""
-
-#: build/editor/index.js:21
-msgid "Redo your last undo."
-msgstr ""
-
-#: build/editor/index.js:21
-msgid "Open the block list view."
-msgstr ""
-
-#: build/editor/index.js:21
-#: build/editor/index.js:49
-msgid "Maybe later"
-msgstr ""
-
 #. translators: %s is the url to pexels
-#: build/editor/index.js:23
-#: build/editor/index.js:53
+#: build/editor/index.js:17
+#: build/editor/index.js:55
 msgid "The media items like photos and videos are provided by %s"
 msgstr ""
 
-#: build/editor/index.js:23
-msgid "Creating new page…"
-msgstr ""
-
-#: build/editor/index.js:23
-msgid "How would you like to create your new page?"
-msgstr ""
-
-#: build/editor/index.js:23
-msgid "Choose one of the two methods below for creating your new page."
-msgstr ""
-
-#: build/editor/index.js:23
-msgid "New Page"
-msgstr ""
-
-#: build/editor/index.js:23
-#: build/editor/index.js:31
-msgid "Add page"
-msgstr ""
-
-#: build/editor/index.js:23
-msgid "Create from scratch"
-msgstr ""
-
-#: build/editor/index.js:23
-msgid "Build your page by hand starting from a blank canvas. This option is recommended for advanced users who wish to create their own, custom design."
-msgstr ""
-
-#: build/editor/index.js:23
-msgid "Get a head start by letting Kubio Al generate a first draft of the page for you. Then you can further customize the page to your liking."
-msgstr ""
-
-#. translators: %s is the name of item that was not saved
-#: build/editor/index.js:27
-msgid "An error occurred. %s was not saved!"
-msgstr ""
-
-#: build/editor/index.js:27
-msgid "Duplicate page"
-msgstr ""
-
-#: build/editor/index.js:27
-msgid "Delete "
-msgstr ""
-
-#: build/editor/index.js:27
-msgid " page?"
-msgstr ""
-
-#. translators: %s: page name
-#: build/editor/index.js:29
-msgid "The <strong>%s</strong> page will be moved in the trash."
-msgstr ""
-
-#: build/editor/index.js:29
-msgid "You can recover it later from WP Admin -> Pages -> Trash"
-msgstr ""
-
-#: build/editor/index.js:29
-msgid " moved to trash!"
-msgstr ""
-
-#: build/editor/index.js:31
-msgid "Homepage"
-msgstr ""
-
-#: build/editor/index.js:31
-msgid "Posts page"
-msgstr ""
-
-#: build/editor/index.js:31
-msgid "Shop page"
-msgstr ""
-
-#: build/editor/index.js:31
-msgid "[Draft]"
-msgstr ""
-
-#: build/editor/index.js:31
-msgid "Search results"
-msgstr ""
-
-#: build/editor/index.js:31
-msgid "All Posts"
-msgstr ""
-
-#: build/editor/index.js:31
-msgid "Posts"
-msgstr ""
-
-#: build/editor/index.js:31
-msgid "Categories"
-msgstr ""
-
-#: build/editor/index.js:31
-msgid "Dashboard"
-msgstr ""
-
-#: build/editor/index.js:31
-msgid "Site Content"
-msgstr ""
-
-#: build/editor/index.js:31
-msgid "Add Template"
-msgstr ""
-
-#: build/editor/index.js:31
-msgid "New"
-msgstr ""
-
-#: build/editor/index.js:31
-msgid "Page templates"
-msgstr ""
-
-#: build/editor/index.js:31
-msgid "Post templates"
-msgstr ""
-
-#: build/editor/index.js:31
-msgid "General templates"
-msgstr ""
-
-#: build/editor/index.js:31
-msgid "Toggle navigation"
-msgstr ""
-
-#: build/editor/index.js:31
-msgid "Close list view sidebar"
-msgstr ""
-
-#: build/editor/index.js:31
-msgid "Hero Image"
-msgstr ""
-
-#: build/editor/index.js:31
-msgid "Hero Slideshow"
-msgstr ""
-
-#: build/editor/index.js:31
-msgid "Are you happy with the hero image selected by Kubio AI?"
-msgstr ""
-
-#: build/editor/index.js:31
-msgid "Are you happy with the hero slideshow images selected by Kubio AI?"
-msgstr ""
-
-#: build/editor/index.js:31
-#: build/editor/index.js:33
-msgid "Below are a few alternatives. You can also change this later."
-msgstr ""
-
-#: build/editor/index.js:31
-msgid "Set 1"
-msgstr ""
-
-#: build/editor/index.js:33
-msgid "Are you happy with the color scheme selected by Kubio AI?"
-msgstr ""
-
-#: build/editor/index.js:33
-msgid "Are you happy with the family fonts selected by Kubio AI?"
-msgstr ""
-
-#. translators: %1$s is the current step index, %2$s is the total number of steps
-#: build/editor/index.js:35
-msgid "Step %1$s of %2$s"
-msgstr ""
-
-#: build/editor/index.js:35
-msgid "Finishing Touches"
-msgstr ""
-
-#: build/editor/index.js:35
-msgid "You can edit the content of the website after you finish the style customization setup."
-msgstr ""
-
-#: build/editor/index.js:35
+#: build/editor/index.js:17
+#: build/editor/index.js:37
 msgid "Preparing page content"
 msgstr ""
 
 #. translators: %s section name
+#: build/editor/index.js:19
+msgid "Tailoring \"%s\" section"
+msgstr ""
+
+#: build/editor/index.js:19
+msgid "Theme colors"
+msgstr ""
+
+#: build/editor/index.js:19
+msgid "Tailoring page structure"
+msgstr ""
+
+#: build/editor/index.js:19
+msgid "The following features will be installed:"
+msgstr ""
+
+#: build/editor/index.js:19
+msgid "The following plugins will be installed to add features that are needed for this type of website."
+msgstr ""
+
+#: build/editor/index.js:19
+msgid "Home page with tailored content"
+msgstr ""
+
+#: build/editor/index.js:19
+msgid "Our AI will create a first draft of home page content specific for the <strong>%s</strong> industry"
+msgstr ""
+
+#: build/editor/index.js:19
+msgid "The following pages will be created:"
+msgstr ""
+
+#: build/editor/index.js:19
+msgid "Here's how we will tailor your website"
+msgstr ""
+
+#: build/editor/index.js:19
+msgid "You can deselect any of the suggested customizations if you don't think they would fit your website."
+msgstr ""
+
+#: build/editor/index.js:19
 #: build/editor/index.js:37
+msgid "Skip"
+msgstr ""
+
+#: build/editor/index.js:19
+msgid "Preparing site structure"
+msgstr ""
+
+#: build/editor/index.js:19
+msgid "Toggle Kubio debug"
+msgstr ""
+
+#: build/editor/index.js:19
+msgid "Export AI structure"
+msgstr ""
+
+#: build/editor/index.js:19
+msgid "Switch to Kubio Editor layout"
+msgstr ""
+
+#: build/editor/index.js:19
+msgid "Switch to WordPress Editor layout"
+msgstr ""
+
+#: build/editor/index.js:19
+msgid "Switch to the new Kubio editor layout for a more friendly editing experience"
+msgstr ""
+
+#: build/editor/index.js:19
+msgid "Switch to the WordPress editor layout to have the default editing experience"
+msgstr ""
+
+#: build/editor/index.js:19
+msgid "Disable Kubio AI capabilities"
+msgstr ""
+
+#: build/editor/index.js:19
+msgid "Enable Kubio AI capabilities"
+msgstr ""
+
+#: build/editor/index.js:19
+msgid "Hide Kubio AI buttons in editors interface"
+msgstr ""
+
+#: build/editor/index.js:19
+msgid "Show Kubio AI buttons in editors interface"
+msgstr ""
+
+#: build/editor/index.js:19
+msgid "Connect this site to Kubio Cloud"
+msgstr ""
+
+#. translators: %s is Kubio Cloud the account email
+#: build/editor/index.js:21
+msgid "Currently connected as %s"
+msgstr ""
+
+#: build/editor/index.js:21
+msgid "Disconnect from Kubio Cloud"
+msgstr ""
+
+#: build/editor/index.js:21
+#: build/editor/index.js:33
+msgid "More tools & options"
+msgstr ""
+
+#: build/editor/index.js:21
+msgctxt "noun"
+msgid "View"
+msgstr ""
+
+#: build/editor/index.js:21
+msgid "Spotlight mode"
+msgstr ""
+
+#: build/editor/index.js:21
+msgid "Focus on one block at a time"
+msgstr ""
+
+#: build/editor/index.js:21
+msgid "Spotlight mode activated"
+msgstr ""
+
+#: build/editor/index.js:21
+msgid "Spotlight mode deactivated"
+msgstr ""
+
+#: build/editor/index.js:21
+msgid "Open theme customizer"
+msgstr ""
+
+#: build/editor/index.js:21
+msgid "Plugins"
+msgstr ""
+
+#: build/editor/index.js:21
+#: build/editor/index.js:23
+msgid "Full page"
+msgstr ""
+
+#: build/editor/index.js:21
+msgid "Only this page"
+msgstr ""
+
+#: build/editor/index.js:21
+msgid "All pages"
+msgstr ""
+
+#: build/editor/index.js:21
+#: build/editor/index.js:33
+msgid "Pages"
+msgstr ""
+
+#: build/editor/index.js:21
+msgid "Favorites"
+msgstr ""
+
+#: build/editor/index.js:21
+msgid "Could not import content. Please try again later"
+msgstr ""
+
+#: build/editor/index.js:21
+#: build/editor/index.js:23
+#: build/editor/index.js:51
+#: build/editor/index.js:53
+#: build/pro/index.js:1
+msgid "PRO"
+msgstr ""
+
+#: build/editor/index.js:21
+msgid "ALL"
+msgstr ""
+
+#: build/editor/index.js:21
+#: build/editor/index.js:23
+#: build/editor/index.js:51
+msgid "FREE"
+msgstr ""
+
+#: build/editor/index.js:21
+msgid "Close dialog"
+msgstr ""
+
+#: build/editor/index.js:21
+msgid "Find a starter site…"
+msgstr ""
+
+#: build/editor/index.js:21
+msgid "Import Starter Site"
+msgstr ""
+
+#: build/editor/index.js:21
+msgid "Preview starter site"
+msgstr ""
+
+#: build/editor/index.js:21
+msgid "Not installed"
+msgstr ""
+
+#: build/editor/index.js:21
+msgid "Your current design will be completely overwritten by the new template. This process is irreversible. If you wish to be able to go back to the current design,please create a backup of your site before proceedingwith the import."
+msgstr ""
+
+#: build/editor/index.js:21
+#: build/editor/index.js:23
+msgid "Import full starter site"
+msgstr ""
+
+#: build/editor/index.js:21
+msgid "No Starter Site Found"
+msgstr ""
+
+#: build/editor/index.js:21
+msgid "Find a page…"
+msgstr ""
+
+#: build/editor/index.js:21
+msgid "No Page Found"
+msgstr ""
+
+#: build/editor/index.js:21
+msgid "This section is available only in the PRO version."
+msgstr ""
+
+#: build/editor/index.js:21
+msgid "NO ELEMENTS FOUND"
+msgstr ""
+
+#: build/editor/index.js:21
+msgid "No Section Found"
+msgstr ""
+
+#: build/editor/index.js:21
+msgid "Find a section…"
+msgstr ""
+
+#: build/editor/index.js:21
+msgid "Kubio Library"
+msgstr ""
+
+#: build/editor/index.js:21
+msgid "Back to Starter Sites"
+msgstr ""
+
+#: build/editor/index.js:21
+msgid "Back to Pages"
+msgstr ""
+
+#: build/editor/index.js:21
+msgid "You can't import page content"
+msgstr ""
+
+#: build/editor/index.js:21
+msgid "other"
+msgstr ""
+
+#. translators: %s: page name
+#: build/editor/index.js:23
+msgid "You are being redirected to <strong>%s</strong> page."
+msgstr ""
+
+#: build/editor/index.js:23
+msgid "You have unsaved changes"
+msgstr ""
+
+#: build/editor/index.js:23
+#: build/editor/index.js:51
+msgid "Would you like to save these changes or discard them?"
+msgstr ""
+
+#: build/editor/index.js:23
+msgid "Discard changes"
+msgstr ""
+
+#: build/editor/index.js:23
+msgid "Could not redirect to the page you selected"
+msgstr ""
+
+#: build/editor/index.js:23
+msgid "This content can be imported only on the blog template"
+msgstr ""
+
+#: build/editor/index.js:23
+msgid "Switch to the blog template"
+msgstr ""
+
+#: build/editor/index.js:23
+msgid "This content can be imported only on the singe post template"
+msgstr ""
+
+#: build/editor/index.js:23
+msgid "Switch to the singe post template"
+msgstr ""
+
+#: build/editor/index.js:23
+msgid "This content can be imported only on the search template"
+msgstr ""
+
+#: build/editor/index.js:23
+msgid "Switch to the search template"
+msgstr ""
+
+#: build/editor/index.js:23
+msgid "This content can be imported only on the 404 template"
+msgstr ""
+
+#: build/editor/index.js:23
+msgid "Switch to the 404 template"
+msgstr ""
+
+#: build/editor/index.js:23
+msgid "Could not create new page"
+msgstr ""
+
+#: build/editor/index.js:23
+msgid "This content can be imported only on a page"
+msgstr ""
+
+#: build/editor/index.js:23
+msgid "Create new page"
+msgstr ""
+
+#: build/editor/index.js:23
+msgid "Live Preview"
+msgstr ""
+
+#: build/editor/index.js:23
+msgid "Starter site colors"
+msgstr ""
+
+#: build/editor/index.js:23
+msgid "Heading 1"
+msgstr ""
+
+#: build/editor/index.js:23
+msgid "Heading 2"
+msgstr ""
+
+#: build/editor/index.js:23
+msgid "Heading 3"
+msgstr ""
+
+#: build/editor/index.js:23
+msgid "Heading 4"
+msgstr ""
+
+#: build/editor/index.js:23
+msgid "Heading 5"
+msgstr ""
+
+#: build/editor/index.js:23
+msgid "Heading 6"
+msgstr ""
+
+#: build/editor/index.js:23
+msgid "Starter site typography"
+msgstr ""
+
+#: build/editor/index.js:23
+msgid "Replace global styles"
+msgstr ""
+
+#: build/editor/index.js:23
+msgid "The selected starter site content will be added after your existing sections"
+msgstr ""
+
+#: build/editor/index.js:23
+msgid "Your header, content and footer will be all replaced with the ones from the selected page"
+msgstr ""
+
+#: build/editor/index.js:23
+msgid "Full starter site"
+msgstr ""
+
+#: build/editor/index.js:23
+msgid "All content will be replaced with the selected full starter site"
+msgstr ""
+
+#: build/editor/index.js:23
+msgid "Import selection"
+msgstr ""
+
+#: build/editor/index.js:23
+msgid "What to import:"
+msgstr ""
+
+#: build/editor/index.js:23
+msgid "This content can't be imported here"
+msgstr ""
+
+#: build/editor/index.js:23
+msgid "This page is only available in the PRO version of Kubio. Please select a free page to import or upgrade to the PRO version."
+msgstr ""
+
+#: build/editor/index.js:23
+msgid "Import"
+msgstr ""
+
+#: build/editor/index.js:23
+msgid "This starter site is only available in the PRO version of Kubio. Please select a free starter site to import or upgrade to the PRO version."
+msgstr ""
+
+#: build/editor/index.js:23
+msgid "Something went wrong"
+msgstr ""
+
+#: build/editor/index.js:23
+msgid "Templates Gallery"
+msgstr ""
+
+#: build/editor/index.js:23
+msgid "Generating preview…"
+msgstr ""
+
+#: build/editor/index.js:23
+msgid "Desktop"
+msgstr ""
+
+#: build/editor/index.js:23
+msgid "Tablet"
+msgstr ""
+
+#: build/editor/index.js:23
+#: build/editor/index.js:53
+msgid "Redo"
+msgstr ""
+
+#: build/editor/index.js:23
+#: build/editor/index.js:53
+msgid "Undo"
+msgstr ""
+
+#: build/editor/index.js:23
+msgid "AI page generation"
+msgstr ""
+
+#: build/editor/index.js:23
+msgid "Generate page"
+msgstr ""
+
+#: build/editor/index.js:23
+msgid "Close the site content panel"
+msgstr ""
+
+#: build/editor/index.js:23
+msgid "Change page"
+msgstr ""
+
+#. translators: Editing current page
+#: build/editor/index.js:25
+msgid "Editing: %s"
+msgstr ""
+
+#: build/editor/index.js:25
+msgid "Save your changes."
+msgstr ""
+
+#: build/editor/index.js:25
+msgid "Undo your last changes."
+msgstr ""
+
+#: build/editor/index.js:25
+msgid "Redo your last undo."
+msgstr ""
+
+#: build/editor/index.js:25
+msgid "Open the block list view."
+msgstr ""
+
+#: build/editor/index.js:25
+#: build/editor/index.js:51
+msgid "Maybe later"
+msgstr ""
+
+#: build/editor/index.js:25
+msgid "Creating new page…"
+msgstr ""
+
+#: build/editor/index.js:25
+msgid "How would you like to create your new page?"
+msgstr ""
+
+#: build/editor/index.js:25
+msgid "Choose one of the two methods below for creating your new page."
+msgstr ""
+
+#: build/editor/index.js:25
+msgid "New Page"
+msgstr ""
+
+#: build/editor/index.js:25
+#: build/editor/index.js:33
+msgid "Add page"
+msgstr ""
+
+#: build/editor/index.js:25
+msgid "Create from scratch"
+msgstr ""
+
+#: build/editor/index.js:25
+msgid "Build your page by hand starting from a blank canvas. This option is recommended for advanced users who wish to create their own, custom design."
+msgstr ""
+
+#: build/editor/index.js:25
+msgid "Get a head start by letting Kubio Al generate a first draft of the page for you. Then you can further customize the page to your liking."
+msgstr ""
+
+#. translators: %s is the name of item that was not saved
+#: build/editor/index.js:29
+msgid "An error occurred. %s was not saved!"
+msgstr ""
+
+#: build/editor/index.js:29
+msgid "Duplicate page"
+msgstr ""
+
+#: build/editor/index.js:29
+msgid "Delete "
+msgstr ""
+
+#: build/editor/index.js:29
+msgid " page?"
+msgstr ""
+
+#. translators: %s: page name
+#: build/editor/index.js:31
+msgid "The <strong>%s</strong> page will be moved in the trash."
+msgstr ""
+
+#: build/editor/index.js:31
+msgid "You can recover it later from WP Admin -> Pages -> Trash"
+msgstr ""
+
+#: build/editor/index.js:31
+msgid " moved to trash!"
+msgstr ""
+
+#: build/editor/index.js:33
+msgid "Homepage"
+msgstr ""
+
+#: build/editor/index.js:33
+msgid "Posts page"
+msgstr ""
+
+#: build/editor/index.js:33
+msgid "Shop page"
+msgstr ""
+
+#: build/editor/index.js:33
+msgid "[Draft]"
+msgstr ""
+
+#: build/editor/index.js:33
+msgid "Search results"
+msgstr ""
+
+#: build/editor/index.js:33
+msgid "All Posts"
+msgstr ""
+
+#: build/editor/index.js:33
+msgid "Posts"
+msgstr ""
+
+#: build/editor/index.js:33
+msgid "Categories"
+msgstr ""
+
+#: build/editor/index.js:33
+msgid "Dashboard"
+msgstr ""
+
+#: build/editor/index.js:33
+msgid "Site Content"
+msgstr ""
+
+#: build/editor/index.js:33
+msgid "Add Template"
+msgstr ""
+
+#: build/editor/index.js:33
+msgid "New"
+msgstr ""
+
+#: build/editor/index.js:33
+msgid "Page templates"
+msgstr ""
+
+#: build/editor/index.js:33
+msgid "Post templates"
+msgstr ""
+
+#: build/editor/index.js:33
+msgid "General templates"
+msgstr ""
+
+#: build/editor/index.js:33
+msgid "Toggle navigation"
+msgstr ""
+
+#: build/editor/index.js:33
+msgid "List view"
+msgstr ""
+
+#: build/editor/index.js:33
+msgid "Close list view sidebar"
+msgstr ""
+
+#: build/editor/index.js:33
+msgid "Hero Image"
+msgstr ""
+
+#: build/editor/index.js:33
+msgid "Hero Slideshow"
+msgstr ""
+
+#: build/editor/index.js:33
+msgid "Are you happy with the hero image selected by Kubio AI?"
+msgstr ""
+
+#: build/editor/index.js:33
+msgid "Are you happy with the hero slideshow images selected by Kubio AI?"
+msgstr ""
+
+#: build/editor/index.js:33
+#: build/editor/index.js:35
+msgid "Below are a few alternatives. You can also change this later."
+msgstr ""
+
+#: build/editor/index.js:33
+msgid "Set 1"
+msgstr ""
+
+#: build/editor/index.js:35
+msgid "Are you happy with the color scheme selected by Kubio AI?"
+msgstr ""
+
+#: build/editor/index.js:35
+msgid "Are you happy with the family fonts selected by Kubio AI?"
+msgstr ""
+
+#: build/editor/index.js:35
+msgid "You can edit the content of the website after you finish the setup."
+msgstr ""
+
+#. translators: %1$s is the current step index, %2$s is the total number of steps
+#: build/editor/index.js:37
+msgid "Step %1$s of %2$s"
+msgstr ""
+
+#: build/editor/index.js:37
+msgid "Finishing Touches"
+msgstr ""
+
+#: build/editor/index.js:37
+msgid "3. What is your website about?"
+msgstr ""
+
+#: build/editor/index.js:37
+msgid "Add logo"
+msgstr ""
+
+#: build/editor/index.js:37
+msgid "Choose File"
+msgstr ""
+
+#: build/editor/index.js:37
+msgid "2. What is your website name?"
+msgstr ""
+
+#: build/editor/index.js:37
+msgid "1. Your Favorite Colors and Fonts"
+msgstr ""
+
+#: build/editor/index.js:37
+msgid "Finish Setup"
+msgstr ""
+
+#: build/editor/index.js:37
+msgid "Initial Setup"
+msgstr ""
+
+#: build/editor/index.js:37
+msgid "Let's set up your website essentials."
+msgstr ""
+
+#: build/editor/index.js:37
+msgid "Field is Required"
+msgstr ""
+
+#. translators: %s section name
+#: build/editor/index.js:39
 msgid "Generating \"%s\" section"
 msgstr ""
 
-#: build/editor/index.js:37
+#: build/editor/index.js:39
 msgid "Generating…"
 msgstr ""
 
-#: build/editor/index.js:37
-msgid "Generating site structure "
-msgstr ""
-
-#: build/editor/index.js:37
+#: build/editor/index.js:39
 msgid "Determine the website particularities"
 msgstr ""
 
-#: build/editor/index.js:37
+#: build/editor/index.js:39
 msgid "Generating page structure"
 msgstr ""
 
-#: build/editor/index.js:37
+#: build/editor/index.js:39
 msgid "Blending colors for an exceptional color palette"
 msgstr ""
 
-#: build/editor/index.js:37
+#: build/editor/index.js:39
 msgid "Crafting an engaging website header"
 msgstr ""
 
-#: build/editor/index.js:37
+#: build/editor/index.js:39
 msgid "KUBIO AI: There was an unknown error. If it persists, please contact support"
 msgstr ""
 
 #. translators: %s is the number of credits
-#: build/editor/index.js:39
+#: build/editor/index.js:41
 msgid "With %s credits you'll benefit of:"
 msgstr ""
 
 #. translators: %d is the number
-#: build/editor/index.js:41
+#: build/editor/index.js:43
 msgid "%d full page generations"
 msgstr ""
 
 #. translators: %d is the number
-#: build/editor/index.js:43
+#: build/editor/index.js:45
 msgid "%d page sections generations"
 msgstr ""
 
 #. translators: %d is the number
-#: build/editor/index.js:45
+#: build/editor/index.js:47
 msgid "%d text generations"
 msgstr ""
 
 #. translators: %d is the number
-#: build/editor/index.js:47
+#: build/editor/index.js:49
 msgid "%d image generations"
 msgstr ""
 
-#: build/editor/index.js:47
+#: build/editor/index.js:49
 msgid "The numbers provided are approximations and may vary based on the size and complexity of the generated content"
 msgstr ""
 
-#: build/editor/index.js:47
+#: build/editor/index.js:49
 msgid "Generate pages with AI"
 msgstr ""
 
-#: build/editor/index.js:47
+#: build/editor/index.js:49
 msgid "Homepage only"
 msgstr ""
 
-#: build/editor/index.js:47
+#: build/editor/index.js:49
 msgid "Multiple pages"
 msgstr ""
 
-#: build/editor/index.js:47
+#: build/editor/index.js:49
 msgid "Regenerate page section"
 msgstr ""
 
-#: build/editor/index.js:47
+#: build/editor/index.js:49
 msgid "Search images on Pexels"
 msgstr ""
 
-#: build/editor/index.js:47
+#: build/editor/index.js:49
 msgid "Generate images with AI"
 msgstr ""
 
-#: build/editor/index.js:47
+#: build/editor/index.js:49
 msgid "Kubio AI credits"
 msgstr ""
 
 #. translators: %s is the amount of credits, e.g 7500
-#: build/editor/index.js:49
+#: build/editor/index.js:51
 msgid "Starting from %s"
 msgstr ""
 
-#: build/editor/index.js:49
+#: build/editor/index.js:51
 msgid "Design variety on AI generated pages"
 msgstr ""
 
-#: build/editor/index.js:49
+#: build/editor/index.js:51
 msgid "Limited"
 msgstr ""
 
-#: build/editor/index.js:49
+#: build/editor/index.js:51
 msgid "Customize footer text"
 msgstr ""
 
-#: build/editor/index.js:49
+#: build/editor/index.js:51
 msgid "Sticky navigation"
 msgstr ""
 
-#: build/editor/index.js:49
+#: build/editor/index.js:51
 msgid "High converting navigation layouts"
 msgstr ""
 
-#: build/editor/index.js:49
+#: build/editor/index.js:51
 msgid "Navigation layouts containing “call to action” buttons that will lead to better conversion rates."
 msgstr ""
 
-#: build/editor/index.js:49
+#: build/editor/index.js:51
 msgid "Beautiful hero sections"
 msgstr ""
 
-#: build/editor/index.js:49
+#: build/editor/index.js:51
 msgid "Different hero image for each page"
 msgstr ""
 
-#: build/editor/index.js:49
+#: build/editor/index.js:51
 msgid "Newsletter subscription forms"
 msgstr ""
 
-#: build/editor/index.js:49
+#: build/editor/index.js:51
 msgid "Pricing tables"
 msgstr ""
 
-#: build/editor/index.js:49
+#: build/editor/index.js:51
 msgid "Technical support"
 msgstr ""
 
-#: build/editor/index.js:49
+#: build/editor/index.js:51
 msgid "Best effort"
 msgstr ""
 
-#: build/editor/index.js:49
+#: build/editor/index.js:51
 msgid "Priority support"
 msgstr ""
 
-#: build/editor/index.js:49
+#: build/editor/index.js:51
 msgid "Looks like you have used all your free Kubio AI credits."
 msgstr ""
 
-#: build/editor/index.js:49
+#: build/editor/index.js:51
 msgid "To continue generating website content with Kubio AI you will need to upgrade to Kubio PRO."
 msgstr ""
 
-#: build/editor/index.js:49
+#: build/editor/index.js:51
 msgid "You can also continue using the Kubio builder for free and you can keep the generated content, but you won't be able to enjoy the AI features anymore."
 msgstr ""
 
-#: build/editor/index.js:49
+#: build/editor/index.js:51
 msgid "On the right, you can see a few advantages offered by the PRO version."
 msgstr ""
 
-#: build/editor/index.js:49
+#: build/editor/index.js:51
 msgid "Already purchased?"
 msgstr ""
 
-#: build/editor/index.js:49
+#: build/editor/index.js:51
 msgid "Activate PRO now"
 msgstr ""
 
-#: build/editor/index.js:49
+#: build/editor/index.js:51
 msgid "The current page has unsaved changes"
 msgstr ""
 
-#: build/editor/index.js:49
+#: build/editor/index.js:51
 msgid "The Kubio PRO license activation process will take you to the WordPress admin area and the page you are currently editing has unsaved changes."
 msgstr ""
 
-#: build/editor/index.js:49
+#: build/editor/index.js:51
 msgid "Discard & activate"
 msgstr ""
 
-#: build/editor/index.js:49
+#: build/editor/index.js:51
 msgid "Save & activate"
 msgstr ""
 
-#: build/editor/index.js:49
+#: build/editor/index.js:51
 msgid "Credit status"
 msgstr ""
 
-#: build/editor/index.js:49
+#: build/editor/index.js:51
 msgid "You currently do not have enough credits to generate a new page. To continue using this feature, please consider purchasing more credits."
 msgstr ""
 
-#: build/editor/index.js:49
+#: build/editor/index.js:51
 msgid "You currently do not have enough credits. To continue using this feature, please consider purchasing more credits"
 msgstr ""
 
-#: build/editor/index.js:49
+#: build/editor/index.js:51
 msgid "Credit status updated!"
 msgstr ""
 
-#: build/editor/index.js:49
+#: build/editor/index.js:51
 msgid "Generate page content"
 msgstr ""
 
-#: build/editor/index.js:49
+#: build/editor/index.js:51
 msgid "Choose a method to generate content for the current page"
 msgstr ""
 
-#: build/editor/index.js:49
+#: build/editor/index.js:51
 msgid "Get started with Kubio AI"
 msgstr ""
 
-#: build/editor/index.js:49
+#: build/editor/index.js:51
 msgid "Let's get your homepage done in 30 seconds, using AI"
 msgstr ""
 
-#: build/editor/index.js:49
+#: build/editor/index.js:51
 msgid "We'll bet you didn't think you could get your website done this fast. Upgrade to Kubio PRO to be able to generate your pages for you in seconds! It's incredibly simple:"
 msgstr ""
 
-#: build/editor/index.js:49
+#: build/editor/index.js:51
 msgid "Step 1"
 msgstr ""
 
-#: build/editor/index.js:49
+#: build/editor/index.js:51
 msgid "Insert a quick description of your site"
 msgstr ""
 
-#: build/editor/index.js:49
+#: build/editor/index.js:51
 msgid "Step 2"
 msgstr ""
 
-#: build/editor/index.js:49
+#: build/editor/index.js:51
 msgid "Get a customized homepage, including text, images, colour schemes, typography, forms and social media integration."
 msgstr ""
 
-#: build/editor/index.js:49
+#: build/editor/index.js:51
 msgid "It really is that simple! To get started, simply upgrade to PRO below:"
 msgstr ""
 
-#: build/editor/index.js:49
+#: build/editor/index.js:51
 msgid "Curious to see it in action?"
 msgstr ""
 
-#: build/editor/index.js:49
+#: build/editor/index.js:51
 msgid "Try it free on a separate test site."
 msgstr ""
 
-#: build/editor/index.js:49
+#: build/editor/index.js:51
 msgid "Block Library"
 msgstr ""
 
-#: build/editor/index.js:49
+#: build/editor/index.js:51
 msgid "Navigation Sidebar"
 msgstr ""
 
-#: build/editor/index.js:49
+#: build/editor/index.js:51
 msgid "New empty page detected. Page template was set to \"Full Width\""
 msgstr ""
 
 #. translators: %s: plugin name
-#: build/editor/index.js:49
+#: build/editor/index.js:51
 msgid "The \"%s\" plugin has encountered an error and cannot be rendered."
 msgstr ""
 
-#: build/editor/index.js:49
+#: build/editor/index.js:51
 msgid "Generate new section AI"
 msgstr ""
 
-#: build/editor/index.js:49
-#: build/editor/index.js:53
+#: build/editor/index.js:51
+#: build/editor/index.js:55
 msgid "Regenerate content"
 msgstr ""
 
-#: build/editor/index.js:49
+#: build/editor/index.js:51
 msgid "Write a brief description to Kubio AI about the new section's content."
 msgstr ""
 
-#: build/editor/index.js:49
+#: build/editor/index.js:51
 msgid "Change section"
 msgstr ""
 
 #. translators: %s: the name of the block when there is only one
-#: build/editor/index.js:51
+#: build/editor/index.js:53
 msgid "Add %s"
 msgstr ""
 
-#: build/editor/index.js:51
+#: build/editor/index.js:53
 msgid "Generate a new AI section"
 msgstr ""
 
-#: build/editor/index.js:51
+#: build/editor/index.js:53
 msgid "Choose a section and let Kubio AI generate your content."
 msgstr ""
 
-#: build/editor/index.js:51
+#: build/editor/index.js:53
 msgid "Select from templates gallery"
 msgstr ""
 
-#: build/editor/index.js:51
+#: build/editor/index.js:53
 msgid "Choose a section and write your content."
 msgstr ""
 
-#: build/editor/index.js:51
+#: build/editor/index.js:53
 msgid "AI Image"
 msgstr ""
 
-#: build/editor/index.js:51
+#: build/editor/index.js:53
 msgid "AI Image Editor"
 msgstr ""
 
-#: build/editor/index.js:51
+#: build/editor/index.js:53
 msgid "Use this image"
 msgstr ""
 
-#: build/editor/index.js:51
+#: build/editor/index.js:53
 msgid "Analog Film"
 msgstr ""
 
-#: build/editor/index.js:51
+#: build/editor/index.js:53
 msgid "Enhance"
 msgstr ""
 
-#: build/editor/index.js:51
+#: build/editor/index.js:53
 msgid "Modeling Compound"
 msgstr ""
 
-#: build/editor/index.js:51
+#: build/editor/index.js:53
 msgid "Tile Texture"
 msgstr ""
 
-#: build/editor/index.js:51
+#: build/editor/index.js:53
 msgid "Square (1024x1024)"
 msgstr ""
 
-#: build/editor/index.js:51
+#: build/editor/index.js:53
 msgid "Landscape (1152x896)"
 msgstr ""
 
-#: build/editor/index.js:51
+#: build/editor/index.js:53
 msgid "Wide Landscape (1216x832)"
 msgstr ""
 
-#: build/editor/index.js:51
+#: build/editor/index.js:53
 msgid "Panoramic (1344x768)"
 msgstr ""
 
-#: build/editor/index.js:51
+#: build/editor/index.js:53
 msgid "Tall portrait (768x1344)"
 msgstr ""
 
-#: build/editor/index.js:51
+#: build/editor/index.js:53
 msgid "Portrait (832x1216)"
 msgstr ""
 
-#: build/editor/index.js:51
+#: build/editor/index.js:53
 msgid "Compact portrait (896x1152)"
 msgstr ""
 
-#: build/editor/index.js:51
+#: build/editor/index.js:53
 msgid "Experiment with the latest generative AI and let your imagination define your images."
 msgstr ""
 
-#: build/editor/index.js:51
 #: build/editor/index.js:53
+#: build/editor/index.js:55
 msgid "Image Description"
 msgstr ""
 
-#: build/editor/index.js:51
+#: build/editor/index.js:53
 msgid "Samples"
 msgstr ""
 
 #. translators: %s is replaced with the number of credits
-#: build/editor/index.js:51
+#: build/editor/index.js:53
 msgid "More samples will multiply the cost. Estimated cost: %s credits."
 msgstr ""
 
-#: build/editor/index.js:51
+#: build/editor/index.js:53
 msgid "Image type"
 msgstr ""
 
-#: build/editor/index.js:51
+#: build/editor/index.js:53
 msgid "Image style"
 msgstr ""
 
-#: build/editor/index.js:51
+#: build/editor/index.js:53
 msgid "Generate image"
 msgstr ""
 
-#: build/editor/index.js:51
 #: build/editor/index.js:53
+#: build/editor/index.js:55
 msgid "Please wait, this may take a few minutes."
 msgstr ""
 
-#: build/editor/index.js:51
+#: build/editor/index.js:53
 msgid "All generated images will be saved in the Media Library."
 msgstr ""
 
-#: build/editor/index.js:51
+#: build/editor/index.js:53
 msgid "Your results will appear here."
 msgstr ""
 
-#: build/editor/index.js:51
+#: build/editor/index.js:53
 msgid "Generate awesome images with Kubio AI"
 msgstr ""
 
-#: build/editor/index.js:51
+#: build/editor/index.js:53
 msgid "Hello there! 🌈 Did you know you can unlock a whole new world of creativity with Kubio PRO?"
 msgstr ""
 
-#: build/editor/index.js:51
+#: build/editor/index.js:53
 msgid "Generate new images by just writing a few words."
 msgstr ""
 
-#: build/editor/index.js:51
+#: build/editor/index.js:53
 msgid "Create different kinds of images like paintings, 3D models, photographic, etc."
 msgstr ""
 
-#: build/editor/index.js:51
+#: build/editor/index.js:53
 msgid "Easily adjust images using the generative fill feature."
 msgstr ""
 
-#: build/editor/index.js:51
+#: build/editor/index.js:53
 msgid "Generate an image"
 msgstr ""
 
-#: build/editor/index.js:51
+#: build/editor/index.js:53
 msgid "Generative Fill"
 msgstr ""
 
-#: build/editor/index.js:51
+#: build/editor/index.js:53
 msgid "Use the brush to highlight an area of the image and specify the changes you want for that area."
 msgstr ""
 
-#: build/editor/index.js:51
+#: build/editor/index.js:53
 msgid "Variations"
 msgstr ""
 
-#: build/editor/index.js:51
+#: build/editor/index.js:53
 msgid "Describe the changes you would like to make for the current image."
 msgstr ""
 
-#: build/editor/index.js:51
+#: build/editor/index.js:53
 msgid "prev"
 msgstr ""
 
-#: build/editor/index.js:51
+#: build/editor/index.js:53
 msgid "next"
 msgstr ""
 
-#: build/editor/index.js:51
+#: build/editor/index.js:53
 msgid "Description of changes"
 msgstr ""
 
-#: build/editor/index.js:51
+#: build/editor/index.js:53
 msgid "Create variations"
 msgstr ""
 
-#: build/editor/index.js:51
+#: build/editor/index.js:53
 msgid "Clear drawing"
 msgstr ""
 
-#: build/editor/index.js:51
+#: build/editor/index.js:53
 msgid "Generate fill"
 msgstr ""
 
-#: build/editor/index.js:51
+#: build/editor/index.js:53
 msgid "Your search results will appear here."
 msgstr ""
 
-#: build/editor/index.js:51
+#: build/editor/index.js:53
 msgid "Save for later"
 msgstr ""
 
-#: build/editor/index.js:51
+#: build/editor/index.js:53
 msgid "Saved"
 msgstr ""
 
-#: build/editor/index.js:51
+#: build/editor/index.js:53
 msgid "Get more images"
 msgstr ""
 
-#: build/editor/index.js:53
+#: build/editor/index.js:55
 msgid "Tiny"
 msgstr ""
 
-#: build/editor/index.js:53
+#: build/editor/index.js:55
 msgid "Same as current image"
 msgstr ""
 
-#: build/editor/index.js:53
+#: build/editor/index.js:55
 msgid "Easily search for free images from Pexels. Just type an image description and Kubio AI will extract search terms to find relevant images."
 msgstr ""
 
-#: build/editor/index.js:53
+#: build/editor/index.js:55
 msgid "Image Orientation"
 msgstr ""
 
-#: build/editor/index.js:53
+#: build/editor/index.js:55
 msgid "Saved image size"
 msgstr ""
 
-#: build/editor/index.js:53
+#: build/editor/index.js:55
 msgid "Search image"
 msgstr ""
 
-#: build/editor/index.js:53
+#: build/editor/index.js:55
 msgid "Replace with AI"
 msgstr ""
 
-#: build/editor/index.js:53
+#: build/editor/index.js:55
 msgid "Add with AI"
 msgstr ""
 
-#: build/editor/index.js:53
+#: build/editor/index.js:55
 msgid "Surprise me"
 msgstr ""
 
-#: build/editor/index.js:53
+#: build/editor/index.js:55
 msgid "Kubio AI chooses a section and writes the content for you."
 msgstr ""
 
-#: build/editor/index.js:53
+#: build/editor/index.js:55
 msgid "Hand pick a design"
 msgstr ""
 
-#: build/editor/index.js:53
+#: build/editor/index.js:55
 msgid "You choose a section, Kubio AI writes your content."
 msgstr ""
 
-#: build/editor/index.js:53
+#: build/editor/index.js:55
 msgid "Kubio AI will keep the same design but regenerate the text and images."
 msgstr ""
 
-#: build/editor/index.js:53
+#: build/editor/index.js:55
 msgid "Regenerate design"
 msgstr ""
 
-#: build/editor/index.js:53
+#: build/editor/index.js:55
 msgid "Regenerate"
 msgstr ""
 
-#: build/editor/index.js:53
+#: build/editor/index.js:55
 msgid "Write a new prompt and let the AI generate the content for you"
 msgstr ""
 
-#: build/editor/index.js:53
+#: build/editor/index.js:55
 msgid "Change tone"
 msgstr ""
 
-#: build/editor/index.js:53
+#: build/editor/index.js:55
 msgid "Select the tone you want to rewrite this text."
 msgstr ""
 
-#: build/editor/index.js:53
+#: build/editor/index.js:55
 msgid "Rewrite"
 msgstr ""
 
-#: build/editor/index.js:53
+#: build/editor/index.js:55
 msgid "In which language would you like to translate this text?"
 msgstr ""
 
-#: build/editor/index.js:53
+#: build/editor/index.js:55
 msgid "Make shorter"
 msgstr ""
 
-#: build/editor/index.js:53
+#: build/editor/index.js:55
 msgid "Make longer"
 msgstr ""
 
-#: build/editor/index.js:53
+#: build/editor/index.js:55
 msgid "Fix spelling & grammar"
 msgstr ""
 
 #: build/format-library/index.js:1
 msgid "Inherited"
+msgstr ""
+
+#: build/format-library/index.js:1
+msgid "Font"
 msgstr ""
 
 #: build/global-data/index.js:1
@@ -12724,6 +12258,33 @@ msgid "WooCommerce style"
 msgstr ""
 
 #: build/wp-global-styles/index.js:1
+#: build/wp-global-styles/index.js:3
+msgctxt "Indicates this palette comes from the theme."
+msgid "Theme"
+msgstr ""
+
+#: build/wp-global-styles/index.js:1
+#: build/wp-global-styles/index.js:3
+msgctxt "Indicates this palette comes from WordPress."
+msgid "Default"
+msgstr ""
+
+#: build/wp-global-styles/index.js:1
+#: build/wp-global-styles/index.js:3
+msgctxt "Indicates this palette is created by the user."
+msgid "Custom"
+msgstr ""
+
+#: build/wp-global-styles/index.js:1
+msgid "Block spacing"
+msgstr ""
+
+#: build/wp-global-styles/index.js:1
+#: build/wp-global-styles/index.js:3
+msgid "Colors"
+msgstr ""
+
+#: build/wp-global-styles/index.js:1
 msgid "Customize the appearance of specific blocks for the whole site."
 msgstr ""
 
@@ -12741,6 +12302,11 @@ msgstr ""
 
 #: build/wp-global-styles/index.js:1
 msgid "Manage the typography settings for different elements."
+msgstr ""
+
+#: build/wp-global-styles/index.js:1
+#: build/wp-global-styles/index.js:3
+msgid "Elements"
 msgstr ""
 
 #: build/wp-global-styles/index.js:1
@@ -12816,6 +12382,16 @@ msgstr ""
 #: build/block-library/blocks/footer/block.json
 msgctxt "block description"
 msgid "You can replace the default page footer with a custom one using the footer template part. Various footers can be assigned to various pages."
+msgstr ""
+
+#: build/block-library/blocks/icon-list/blocks/icon-list-item/block.json
+msgctxt "block title"
+msgid "Icon list item"
+msgstr ""
+
+#: build/block-library/blocks/icon-list/blocks/icon-list/block.json
+msgctxt "block title"
+msgid "Icon List"
 msgstr ""
 
 #: build/block-library/blocks/navigation/blocks/navigation-top-bar/block.json

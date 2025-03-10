@@ -14,6 +14,8 @@ class Activation {
 
 
 	public function __construct() {
+
+
 		add_action(
 			'activated_plugin',
 			function ( $plugin ) {
@@ -31,11 +33,13 @@ class Activation {
 						admin_url( 'admin.php' )
 					);
 
+					// phpcs:ignore WordPress.Security.NonceVerification.Recommended
 					if ( ! $this->isCLI() && ! Arr::has( $_REQUEST, 'tgmpa-activate' ) && ! $this->isAJAX() ) {
 						wp_redirect( $url );
 						exit();
 					} else {
 
+						// phpcs:ignore WordPress.Security.NonceVerification.Recommended
 						if ( Arr::has( $_REQUEST, 'tgmpa-activate' ) || $this->isAJAX() ) {
 							Flags::set( 'activated_from_tgmpa_or_ajax', true );
 						}
@@ -91,6 +95,7 @@ class Activation {
 					return;
 				}
 
+				// phpcs:ignore WordPress.Security.NonceVerification.Recommended
 				$hash       = sanitize_text_field( Arr::get( $_REQUEST, 'kubio-activation-hash', null ) );
 				$saved_hash = Flags::get( 'activation-hash', false );
 				if ( $saved_hash === $hash ) {
@@ -116,13 +121,29 @@ class Activation {
 		return Flags::get( 'start_with_ai', false ) !== false;
 	}
 
+	public function activatedFromCustomizerOnboardingWizard() {
+		return Flags::get( 'auto_start_black_wizard_onboarding', false );
+	}
+
+	public function startWithBlackWizardOnboarding() {
+		//return false;
+		$onboarding_is_supported = kubio_is_black_wizard_onboarding_enabled() && Flags::get( 'import_design_ai_structure', false );
+		if(!$onboarding_is_supported) {
+			return false;
+		}
+
+		$activated_from_notice = 	$this->activeWithFrontpage() &&  Flags::get( 'start_source', false ) == 'notice-homepage';
+		$activated_from_theme_customizer =  $this->activatedFromCustomizerOnboardingWizard();
+		return $activated_from_notice || $activated_from_theme_customizer;
+	}
+
 	public function activeWithFrontpage() {
 
 		if ( $this->startWithAI() ) {
 			return true;
 		}
-
-		return apply_filters( 'kubio/activation/activate_with_frontpage', Flags::get( 'import_design', false ) !== false );
+		$import_design = Flags::get( 'import_design', false );
+		return apply_filters( 'kubio/activation/activate_with_frontpage',  $import_design !== false );
 	}
 
 	public function importUnmodifiedTemplates() {
@@ -160,10 +181,7 @@ class Activation {
 			return;
 		}
 
-		// activate pro
-		if ( kubio_is_pro() && ! Flags::get( 'kubio_pro_activation_time', false ) ) {
-			Flags::set( 'kubio_pro_activation_time', time() );
-		}
+		do_action( 'kubio/before_activation' );
 
 		// if free previously activated return
 		if ( Flags::get( 'kubio_activation_time', false ) ) {
@@ -173,12 +191,15 @@ class Activation {
 			}
 		}
 
-		Flags::set( 'kubio_f', get_option( 'fresh_site' ));
+		Flags::set( 'kubio_f', get_option( 'fresh_site' ) );
 		Flags::set( 'kubio_activation_time', time() );
 		Flags::set( 'stylesheet', get_stylesheet() );
 
 		$this->addCommonFilters();
 		$this->prepareRemoteData();
+
+		//set site uuid on activation
+		Flags::getSiteUUID();
 
 		add_filter( 'kubio/importer/page_path', array( $this, 'getDesignPagePath' ), 10, 2 );
 
@@ -187,16 +208,25 @@ class Activation {
 		}
 
 		if ( $this->activeWithFrontpage() ) {
-			add_filter( 'kubio/activation/force_front_page_creation',  '__return_true');
+			add_filter( 'kubio/activation/force_front_page_creation', '__return_true' );
 		}
-		
+
 		wp_cache_flush();
+
+
+		//store current data to restore if user wants it
+		KubioFrontPageRevertNotice::getInstance()->backupUserData();
+
+
 		$this->importDesign();
 		$this->importTemplates();
 		$this->importTemplateParts();
+
 		wp_cache_flush();
 		do_action( 'kubio/after_activation' );
-
+		//we wait for the template parts to import so we can backup them
+		KubioFrontPageRevertNotice::getInstance()->backupTemplateParts();
+		KubioFrontPageRevertNotice::getInstance()->backupGlobalData();
 		if ( ! $this->isCLI() ) {
 
 			// make an educated guess about the start source if not set
@@ -209,6 +239,7 @@ class Activation {
 				}
 				Flags::set( 'start_source', $start_source );
 			}
+
 
 			if ( $this->startWithAI() ) {
 				Flags::set( 'start_with_ai', false );
@@ -223,9 +254,21 @@ class Activation {
 				);
 				exit();
 			}
+			if( $this->startWithBlackWizardOnboarding()) {
+					$black_wizard_onboarding_hash = md5( uniqid( 'black-wizard-onboarding' ) );
+					Flags::set( 'black_wizard_onboarding_hash', $black_wizard_onboarding_hash );
+					$url = Utils::kubioGetEditorURL(
+						array(
+							'black-wizard-onboarding' => $black_wizard_onboarding_hash,
+						)
+					);
+					wp_redirect( $url );
+					exit();
+			}
 
 			if ( $this->activeWithFrontpage() ) {
 				if ( Flags::get( 'start_source', false ) == 'notice-homepage' ) {
+
 					$url = add_query_arg(
 						array(
 							'page'                    => 'kubio-get-started',
@@ -235,6 +278,7 @@ class Activation {
 					);
 
 					wp_redirect( $url );
+
 				} else {
 					wp_redirect(
 						Utils::kubioGetEditorURL()
@@ -256,7 +300,6 @@ class Activation {
 				exit();
 			}
 		}
-
 	}
 
 	public function addCommonFilters() {
@@ -293,6 +336,10 @@ class Activation {
 				return;
 			}
 
+			$ai_structure = isset( $data['ai-structure'] ) ? $data['ai-structure'] : null;
+			if ( $ai_structure ) {
+				Flags::set( 'import_design_ai_structure', $ai_structure );
+			}
 			$this->remote_content = $data;
 		} else {
 			$content              = file_get_contents( KUBIO_ROOT_DIR . '/defaults/default-site.dat' );
@@ -329,6 +376,7 @@ class Activation {
 			return;
 		}
 
+
 		$result = $this->setPages();
 
 		// try to set the blog page and menu
@@ -338,6 +386,7 @@ class Activation {
 			// only set menu location
 			static::preparePrimaryMenu( false );
 		}
+
 	}
 
 	private function setPages( $data = array() ) {
@@ -345,6 +394,7 @@ class Activation {
 		if ( ! kubio_theme_has_kubio_block_support() ) {
 			return new \WP_Error( 'not_supported_themes' );
 		}
+
 
 		$data = array_merge(
 			array(
@@ -410,18 +460,20 @@ class Activation {
 
 		$content = '';
 
-		if ( $this->activeWithFrontpage() ) {
+		if ( $this->activeWithFrontpage()) {
 			$content = Importer::getTemplateContent( 'page', 'front-page' );
 		}
 
-		if ( $query->have_posts() && !apply_filters( 'kubio/activation/force_front_page_creation', false )) {
+		if ( $query->have_posts() && ! apply_filters( 'kubio/activation/force_front_page_creation', false ) ) {
 			if ( apply_filters( 'kubio/activation/override_front_page_content', false ) ) {
+				KubioFrontPageRevertNotice::getInstance()->backupUserUsedStarterContentFrontpage($page_on_front);
 				wp_update_post(
 					array(
 						'ID'           => intval( $page_on_front ),
 						'post_content' => wp_slash( kubio_serialize_blocks( parse_blocks( $content ) ) ),
 					)
 				);
+				update_post_meta($page_on_front, '_wp_page_template', '');
 			}
 
 			return intval( $page_on_front );
@@ -504,9 +556,9 @@ class Activation {
 
 					if ( ! $has_front_page ) {
 						$menu_item_object_is_front_page = $menu_item->type === 'post_type' && $menu_item->object === 'page' && intval( $menu_item->object_id ) === intval( get_option( 'page_on_front' ) );
-						$custom_url                     = $menu_item->type === 'custom' ? $menu_item->url : null;
+						$custom_url                     = $menu_item->type === 'custom' ? $menu_item->url : '';
 						$menu_item_link_is_front_page   = false;
-						$parsed_url                     = parse_url( $custom_url );
+						$parsed_url                     = wp_parse_url( $custom_url );
 
 						if ( $parsed_url && $custom_url ) {
 							$site_url = site_url();
@@ -613,7 +665,7 @@ class Activation {
 	}
 
 	public static function skipAfterSwitchTheme() {
-		 set_transient( 'kubio_skip_after_theme_switch', true );
+		set_transient( 'kubio_skip_after_theme_switch', true );
 	}
 
 	public function afterSwitchTheme() {

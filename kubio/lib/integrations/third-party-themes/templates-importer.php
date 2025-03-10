@@ -188,7 +188,7 @@ class KubioThirdPartyThemeBlockImporter {
 			}
 		}
 
-		 return static::importContent( $block_templates_to_install, $is_fresh_site );
+		return static::importContent( $block_templates_to_install, $is_fresh_site );
 	}
 
 	public static function mapTemplatesToImportSlug( $templates ) {
@@ -481,5 +481,3 @@ function kubio_add_installed_via_fresh_site_to_utils_data( $data ) {
 }
 
 add_filter( 'kubio/kubio-utils-data/extras', 'kubio_add_installed_via_fresh_site_to_utils_data' );
-
-

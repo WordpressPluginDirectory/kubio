@@ -4,6 +4,7 @@
 namespace Kubio\Core\Blocks;
 
 
+
 class TemplatePartBlockBase extends BlockBase {
 	const CONTAINER = 'container';
 
@@ -37,6 +38,8 @@ class TemplatePartBlockBase extends BlockBase {
 		if ( function_exists( 'wp_filter_content_tags' ) ) {
 			$content = wp_filter_content_tags( $content );
 		} else {
+			// backward compatibility for WP < 5.5
+			// phpcs:ignore WordPress.WP.DeprecatedFunctions.wp_make_content_images_responsiveFound
 			$content = wp_make_content_images_responsive( $content );
 		}
 		$content = do_shortcode( $content );
@@ -57,25 +60,29 @@ class TemplatePartBlockBase extends BlockBase {
 		} else {
 			if ( basename( wp_get_theme()->get_stylesheet() ) === $theme ) {
 
-				$template_part_query = new \WP_Query(
-					array(
-						'post_type'      => 'wp_template_part',
-						'post_status'    => 'publish',
-						'post_name__in'  => array( $slug ),
-						'tax_query'      => array(
-							array(
-								'taxonomy' => 'wp_theme',
-								'field'    => 'slug',
-								'terms'    => $theme,
-							),
+				$query_args = array(
+					'post_type'      => 'wp_template_part',
+					'post_status'    => 'publish',
+					'post_name__in'  => array( $slug ),
+					// phpcs:ignore WordPress.DB.SlowDBQuery.slow_db_query_tax_query
+					'tax_query'      => array(
+						array(
+							'taxonomy' => 'wp_theme',
+							'field'    => 'slug',
+							'terms'    => $theme,
 						),
-						'posts_per_page' => 1,
-						'no_found_rows'  => true,
-					)
+					),
+					'posts_per_page' => 1,
+					'no_found_rows'  => true,
+				);
+				$template_part_query = new \WP_Query(
+					$query_args
 				);
 
 				$template_part_post = $template_part_query->have_posts() ? $template_part_query->next_post() : null;
+
 				if ( $template_part_post ) {
+
 					// A published post might already exist if this template part was customized elsewhere
 					// or if it's part of a customized template.
 					$content = $template_part_post->post_content;
@@ -93,10 +100,48 @@ class TemplatePartBlockBase extends BlockBase {
 							break;
 						}
 					}
+
+					if ( ! $content && kubio_wpml_is_active() ) {
+						$content = $this->getWpmlContent( $query_args );
+					}
 				}
 			}
 		}
 
+		return $content;
+	}
+
+	public function getWpmlContent( $query_args ) {
+		global $wpml_query_filter;
+		$had_filter = false;
+		if ( has_filter( 'posts_join', array( $wpml_query_filter, 'posts_join_filter' ) ) ) {
+			$had_filter = true;
+			remove_filter( 'posts_join', array( $wpml_query_filter, 'posts_join_filter' ), 10 );
+			remove_filter( 'posts_where', array( $wpml_query_filter, 'posts_where_filter' ), 10 );
+		}
+
+		$slug                = $this->getAttribute( 'slug' );
+		$template_part_query = new \WP_Query(
+			array_merge(
+				$query_args,
+				array(
+					'post_name__in' => array( $slug ),
+				)
+			)
+		);
+
+		$content            = null;
+		$template_part_post = $template_part_query->have_posts() ? $template_part_query->next_post() : null;
+		if ( $template_part_post ) {
+
+			// A published post might already exist if this template part was customized elsewhere
+			// or if it's part of a customized template.
+			$content = $template_part_post->post_content;
+		}
+		if ( $had_filter ) {
+			add_filter( 'posts_join', array( $wpml_query_filter, 'posts_join_filter' ), 10, 2 );
+			add_filter( 'posts_where', array( $wpml_query_filter, 'posts_where_filter' ), 10, 2 );
+		}
 		return $content;
 	}
 }

@@ -5,15 +5,14 @@
 use Kubio\CLI\CLI;
 use Kubio\Core\Activation;
 use Kubio\Core\Deactivation;
+use Kubio\Core\KubioFrontPageRevertNotice;
 
-use Kubio\Core\License\License;
-use Kubio\Core\License\Updater;
 use Kubio\DemoSites\DemoSites;
 use Kubio\GoogleFontsLocalLoader;
 use Kubio\Migrations;
 use Kubio\NotificationsManager;
+use Kubio\GutenbergControls;
 
-require_once __DIR__ . '/env.php';
 require_once __DIR__ . '/filters.php';
 require_once __DIR__ . '/preview/index.php';
 require_once __DIR__ . '/shortcodes/index.php';
@@ -54,7 +53,6 @@ function kubio_load_integrations() {
 			require_once $integration_entry;
 		}
 	}
-
 }
 
 function kubio_get_iframe_loader( $props = array() ) {
@@ -77,10 +75,13 @@ function kubio_get_iframe_loader( $props = array() ) {
 	return sprintf( '<iframe style="border:none;pointer-events:none;user-select:none;display:block" allowtransparency="true" width="%2$s" height="%2$s" src="%1$s"></iframe>', $url, $params['size'] );
 }
 
-Updater::load( KUBIO_ENTRY_FILE );
-License::load( KUBIO_ROOT_DIR );
+
 
 kubio_load_integrations();
+
+if ( file_exists( __DIR__ . '/pro/index.php' ) ) {
+	require_once __DIR__ . '/pro/index.php';
+}
 
 Activation::load();
 Deactivation::load();
@@ -89,4 +90,5 @@ NotificationsManager::load();
 GoogleFontsLocalLoader::registerFontResolver();
 Migrations::load();
 CLI::load();
-
+GutenbergControls::load();
+KubioFrontPageRevertNotice::load();

@@ -3,9 +3,9 @@
 Contributors: ExtendThemes
 Tags: page builder, landing page, website builder, blocks, gutenberg
 Requires at least: 5.8
-Tested up to: 6.6
-Requires PHP: 7.2
-Stable tag: 2.3.3
+Tested up to: 6.7
+Requires PHP: 7.4
+Stable tag: 2.5.1
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.en.html
 
@@ -18,12 +18,12 @@ Using the power of AI, Kubio gives you a head start by generating a first draft 
 https://vimeo.com/901485891
 
 
-Experience the potential of Kubio AI, where your creative visions are seamlessly translated into captivating web pages. 
+Experience the potential of Kubio AI, where your creative visions are seamlessly translated into captivating web pages.
 With its intelligent block-based builder, cutting-edge AI technology empowers you to effortlessly shape layouts, customize styles, and infuse life into every pixel.
 
--   **Generate entire pages based on short prompts** 
--   **Generate images and text** 
--   **Re-generate any section in your style** 
+-   **Generate entire pages based on short prompts**
+-   **Generate images and text**
+-   **Re-generate any section in your style**
 
 
 == CREATE RICH WEBSITES WITH THE KUBIO BLOCKS ==
@@ -53,12 +53,9 @@ The Kubio blocks are structured as seen below:
 
 -   **Image Gallery** - Create appealing image galleries and customize their number of columns, image size, click behavior, and more.
 -   **Shortcode** - Use shortcodes to insert various forms, galleries, tables, and more, depending on the plugins you use.
--   **Map** - Embed Google Maps, insert your desired address, and adjust zoom, height, and hover behavior.
 -   **Posts List** - Add your most recent or popular blog posts to any web page.
 -   **Social Icons** - Make your social media profiles stand out across your website. From Instagram to Snapchat and Youtube, you can add any icon you need and style it to match your brand.
 -   **Contact form** - Add a contact form to any page and customize its header, fields, and call to action with ease.
--   **Tabs** - Make use of tabs to improve navigation and user experience. Style your tabs in the normal, hover, and active state.
--   **Accordion** - Display creative collapsible texts in a dropdown manner. Stylize them according to your vision.
 -   **Icon list** - Create stylish lists of items and their icons. Customize their spacing, borders, shadows, color, and typography.
 -   **Dropdown Menu** - Add your main web pages and products to a stylish dropdown menu with this Gutenberg block.
 -   **Accordion Menu** - Add your main web pages to a stylish accordion menu that will help your visitors find the content they need.
@@ -128,7 +125,9 @@ Because Kubio allows full-site editing, you can create various headers, footers,
 
 
 == Blocks available with the PRO version ==
-
+-   **Map** - Embed Google Maps, insert your desired address, and adjust zoom, height, and hover behavior.
+-   **Tabs** - Make use of tabs to improve navigation and user experience. Style your tabs in the normal, hover, and active state.
+-   **Accordion** - Display creative collapsible texts in a dropdown manner. Stylize them according to your vision.
 -   **Breadcrumb** - Use this block to improve website navigation and to give users an overview of where they are on your site.
 -   **Image Collage** - Create visually appealing image collages using frames, overlays, shadows, borders, and other styling options.
 -   **Flip box** - Add flip effects to various elements on your website. Make edits to effect duration and direction.
@@ -148,22 +147,55 @@ You’ll find a growing online documentation for Kubio builder [here](https://ku
 -   [How to work with blocks](https://kubiobuilder.com/documentation/how-to-work-with-blocks/)
 -   [Youtube](https://www.youtube.com/channel/UCUd2jHMaUL1wHWqRpBDBgPQ)
 
+
+== Source files ==
+
+[github](https://github.com/extendthemes/kubio)
+
 == Frequently Asked Questions ==
 
 == Screenshots ==
 
-== Changelog ==
-= 2.3.3 and 2.3.3-pro = 
-- Fixed an issue with sticky navigation
 
 == Changelog ==
-= 2.3.2 and 2.3.2-pro = 
+= 2.5.1 and 2.5.1-pro =
+- General bug fixes
+
+= 2.5.0 and 2.5.0-pro =
+- Fixed issues detect when running the WordPress Plugin Check plugin
+
+= 2.4.6 and 2.4.6-pro =
+- Added better separation between the Kubio free and PRO versions
+
+= 2.4.5 and 2.4.5-pro =
+- Fix css editor rendering on Chrome 133 and above
+
+= 2.4.4 and 2.4.4-pro =
+- General bug fixes
+
+= 2.4.3 and 2.4.3-pro =
+- General bug fixes
+
+= 2.4.2 and 2.4.2-pro =
 - Various bug fixes
 
-= 2.3.1 and 2.3.1-pro = 
+= 2.4.1 and 2.4.1-pro =
+- Various bug fixes
+
+= 2.4.0 and 2.4.0-pro =
+- Added support for WordPress 6.7
+- General bug fixes
+
+= 2.3.3 and 2.3.3-pro =
+- Fixed an issue with sticky navigation
+
+= 2.3.2 and 2.3.2-pro =
+- Various bug fixes
+
+= 2.3.1 and 2.3.1-pro =
 - Minor bug fixes
 
-= 2.3.0 and 2.3.0-pro = 
+= 2.3.0 and 2.3.0-pro =
 - Added support for WordPress 6.6
 
 = 2.2.4 and 2.2.4-pro =

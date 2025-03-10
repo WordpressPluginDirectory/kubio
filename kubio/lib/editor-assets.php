@@ -5,6 +5,7 @@ use Kubio\AssetsDependencyInjector;
 use Kubio\Core\Utils;
 use Kubio\DemoSites\DemoSitesRepository;
 use Kubio\Flags;
+use Kubio\Core\KubioFrontPageRevertNotice;
 
 function kubio_override_script( $scripts, $handle, $src, $deps = array(), $ver = false, $in_footer = false ) {
 	$script = $scripts->query( $handle, 'registered' );
@@ -40,21 +41,13 @@ function kubio_override_style( $styles, $handle, $src, $deps = array(), $ver = f
 function kubio_register_kubio_scripts_scripts_dependencies( $version ) {
 	$scripts = array(
 		array(
-			'handle' => 'typed',
-			'deps'   => array( 'jquery' ),
-			'src'    => 'typed.js',
-		),
-		array(
 			'handle' => 'fancybox',
 			'deps'   => array( 'jquery' ),
 			'src'    => 'fancybox/jquery.fancybox.min.js',
-		),
-		array(
-			'handle' => 'swiper',
-			'deps'   => array( 'jquery' ),
-			'src'    => 'swiper/js/swiper.js',
-		),
+		)
 	);
+
+	$scripts  = apply_filters("kubio/register_kubio_scripts_dependencies", $scripts );
 
 	foreach ( $scripts as $script ) {
 		AssetsDependencyInjector::registerKubioScriptsDependency(
@@ -64,13 +57,12 @@ function kubio_register_kubio_scripts_scripts_dependencies( $version ) {
 			$version
 		);
 	}
-
 }
 
 function kubio_register_frontend_script( $handle ) {
 	add_filter(
 		'kubio/frontend/scripts',
-		function( $scripts ) use ( $handle ) {
+		function ( $scripts ) use ( $handle ) {
 
 			if ( ! in_array( $handle, $scripts ) ) {
 				$scripts[] = $handle;
@@ -103,7 +95,7 @@ function kubio_register_packages_scripts() {
 		$handle       = 'kubio-' . basename( dirname( $path ) );
 		$asset_file   = substr( $path, 0, - 3 ) . '.asset.php';
 		$asset        = file_exists( $asset_file )
-				? require( $asset_file )
+				? require $asset_file
 				: null;
 		$dependencies = isset( $asset['dependencies'] ) ? $asset['dependencies'] : array();
 
@@ -207,7 +199,7 @@ function kubio_replace_default_scripts( $scripts ) {
 		$asset_file  = KUBIO_ROOT_DIR . "/build/{$new}/index.asset.php";
 
 		$asset        = file_exists( $asset_file )
-				? require( $asset_file )
+				? require $asset_file
 				: null;
 		$dependencies = isset( $asset['dependencies'] ) ? $asset['dependencies'] : array();
 		$version      = isset( $asset['version'] ) ? $asset['version'] : filemtime( $script_path );
@@ -227,7 +219,6 @@ function kubio_replace_default_scripts( $scripts ) {
 			true
 		);
 	}
-
 }
 
 
@@ -236,12 +227,10 @@ function kubio_register_kubio_block_library_style_dependencies( $version ) {
 		array(
 			'handle' => 'fancybox',
 			'src'    => 'fancybox/jquery.fancybox.min.css',
-		),
-		array(
-			'handle' => 'swiper',
-			'src'    => 'swiper/css/swiper.min.css',
-		),
+		)
 	);
+
+	$styles  = apply_filters("kubio/register_block_library_style_dependencies", $styles );
 
 	foreach ( $styles as $style ) {
 		AssetsDependencyInjector::registerKubioFrontendStyleDependency(
@@ -251,7 +240,6 @@ function kubio_register_kubio_block_library_style_dependencies( $version ) {
 			$version
 		);
 	}
-
 }
 
 
@@ -345,7 +333,6 @@ function kubio_replace_default_styles( $styles ) {
 		filemtime( KUBIO_ROOT_DIR . 'build/editor/style.css' )
 	);
 	$styles->add_data( 'wp-block-editor', 'rtl', 'replace' );
-
 }
 
 add_action( 'init', 'kubio_register_packages_scripts' );
@@ -361,50 +348,69 @@ add_action(
 		global $wp_version;
 		if ( $handle === 'kubio-utils' || $handle === 'kubio-admin-panel' ) {
 			$include_test_templates = defined( 'KUBIO_INCLUDE_TEST_TEMPLATES' ) && KUBIO_INCLUDE_TEST_TEMPLATES === true;
-			$data                   = 'window.kubioUtilsData=' . wp_json_encode(
+			$is_wpml_active         = kubio_wpml_is_active();
+			$is_polylang_active     = kubio_polylang_is_active();
+
+			$data = 'window.kubioUtilsData=' . wp_json_encode(
 				array_merge(
 					kubio_get_site_urls(),
 					array(
-						'defaultAssetsURL'              => kubio_url( 'static/default-assets' ),
-						'staticAssetsURL'               => kubio_url( 'static' ),
-						'patternsAssetsUrl'             => kubio_url( 'static/patterns' ),
-						'kubioRemoteContentFile'        => 'https://static-assets.kubiobuilder.com/content-2022-05-17.json',
-						'kubioCloudPresetsUrl'          => Utils::getGlobalSnippetsURL(),
-						'kubioCloudPresetCategoriesUrl' => Utils::getGlobalSnippetsCategoriesURL(),
-						'kubioCloudPresetTagsUrl'       => Utils::getGlobalSnippetsTagsURL(),
-						'kubioCloudUrl'                 => Utils::getCloudURL(),
-						'kubioRemoteContent'            => Utils::getSnippetsURL( '/globals' ),
-						'kubioLocalContentFile'         => kubio_url( 'static/patterns/content-converted.json' ),
-						'kubioEditorURL'                => add_query_arg( 'page', 'kubio', admin_url( 'admin.php' ) ),
-						'patternsOnTheFly'              => ( defined( 'KUBIO_PATTERNS_ON_THE_FLY' ) && KUBIO_PATTERNS_ON_THE_FLY ) ? KUBIO_PATTERNS_ON_THE_FLY : '',
-						'base_url'                      => site_url(),
-						'admin_url'                     => admin_url(),
-						'admin_plugins_url'             => admin_url( 'plugins.php' ),
-						'demo_sites_url'                => Utils::getStarterSitesURL(),
-						'demo_parts_url'                => Utils::getStarterPartsURL(),
-						'plugins_states'                => DemoSitesRepository::getInstance()->getPluginsStates(),
-						'last_imported_starter'         => Flags::get( 'last_imported_starter' ),
-						'demo_site_ajax_nonce'          => wp_create_nonce( 'kubio-ajax-demo-site-verification' ),
-						'ajax_url'                      => admin_url( 'admin-ajax.php' ),
-						'kubio_ajax_nonce'              => wp_create_nonce( 'kubio_ajax_nonce' ),
-						'enable_starter_sites'          => apply_filters( 'kubio/starter-sites/enabled', true ),
-						'wpVersion'                     => preg_replace( '/([0-9]+).([0-9]+).*/', '$1.$2', $wp_version ),
-						'enable_try_online'             => Utils::isTryOnlineEnabled(),
-						'supplementary_upgrade_to_pro'  => apply_filters( 'kubio/show-supplementary-upgrade-to-pro', false ),
-						'kubioAIPricingURL'             => Utils::getCloudURL( '/ui-route/my-plans?purchase_ai=1' ),
-						'kubioAIParallelCalls'          => apply_filters( 'kubio/ai/parallel-calls', 5 ),
-						'showInternalFeatures'          => defined( '\KUBIO_INTERNAL' ) && \KUBIO_INTERNAL,
-						'sectionStylesTags'             => array( 'shadow', 'flat', 'outlined', 'rounded', 'minimal' ),
-						'activatedOnStage2'             => Flags::getSetting( 'activatedOnStage2', false ),
-						'aiStage2'                      => Flags::getSetting( 'aiStage2', false ),
-						'wpAdminUpgradePage'            => add_query_arg(
+						'defaultAssetsURL'               => kubio_url( 'static/default-assets' ),
+						'staticAssetsURL'                => kubio_url( 'static' ),
+						'patternsAssetsUrl'              => kubio_url( 'static/patterns' ),
+						'kubioRemoteContentFile'         => 'https://static-assets.kubiobuilder.com/content-2022-05-17.json',
+						'kubioCloudPresetsUrl'           => Utils::getGlobalSnippetsURL(),
+						'kubioCloudPresetCategoriesUrl'  => Utils::getGlobalSnippetsCategoriesURL(),
+						'kubioCloudPresetTagsUrl'        => Utils::getGlobalSnippetsTagsURL(),
+						'kubioCloudUrl'                  => Utils::getCloudURL(),
+						'kubioRemoteContent'             => Utils::getSnippetsURL( '/globals' ),
+						'kubioLocalContentFile'          => kubio_url( 'static/patterns/content-converted.json' ),
+						'kubioEditorURL'                 => add_query_arg( 'page', 'kubio', admin_url( 'admin.php' ) ),
+						'patternsOnTheFly'               => ( defined( 'KUBIO_PATTERNS_ON_THE_FLY' ) && KUBIO_PATTERNS_ON_THE_FLY ) ? KUBIO_PATTERNS_ON_THE_FLY : '',
+						'base_url'                       => site_url(),
+						'admin_url'                      => admin_url(),
+						'admin_plugins_url'              => admin_url( 'plugins.php' ),
+						'demo_sites_url'                 => Utils::getStarterSitesURL(),
+						'demo_parts_url'                 => Utils::getStarterPartsURL(),
+						'plugins_states'                 => DemoSitesRepository::getInstance()->getPluginsStates(),
+						'last_imported_starter'          => Flags::get( 'last_imported_starter' ),
+						'demo_site_ajax_nonce'           => wp_create_nonce( 'kubio-ajax-demo-site-verification' ),
+						'ajax_url'                       => admin_url( 'admin-ajax.php' ),
+						'kubio_ajax_nonce'               => wp_create_nonce( 'kubio_ajax_nonce' ),
+						'enable_starter_sites'           => apply_filters( 'kubio/starter-sites/enabled', true ),
+						'wpVersion'                      => preg_replace( '/([0-9]+).([0-9]+).*/', '$1.$2', $wp_version ),
+						'enable_try_online'              => Utils::isTryOnlineEnabled(),
+						'supplementary_upgrade_to_pro'   => apply_filters( 'kubio/show-supplementary-upgrade-to-pro', false ),
+						'kubioAIPricingURL'              => Utils::getCloudURL( '/ui-route/my-plans?purchase_ai=1' ),
+						'kubioAIParallelCalls'           => apply_filters( 'kubio/ai/parallel-calls', 5 ),
+						'showInternalFeatures'           => defined( '\KUBIO_INTERNAL' ) && \KUBIO_INTERNAL,
+						'sectionStylesTags'              => array( 'shadow', 'flat', 'outlined', 'rounded', 'minimal' ),
+						'activatedOnStage2'              => Flags::getSetting( 'activatedOnStage2', false ),
+						'aiStage2'                       => Flags::getSetting( 'aiStage2', false ),
+						'advancedMode'                   => Flags::getSetting( 'advancedMode', true ),
+						'featuresVersion'                => Flags::getSetting( 'featuresVersion', 1 ),
+						'wpAdminUpgradePage'             => add_query_arg(
 							array(
 								'tab'  => 'pro-upgrade',
 								'page' => 'kubio-get-started',
 							),
 							admin_url( 'admin.php' )
 						),
-						'allow3rdPartyBlogOverride'     => apply_filters( 'kubio/allow_3rd_party_blog_override', true ),
+						'adminLanguage'                  => get_user_locale(),
+						'autoStartBlackWizardOnboarding' =>  Flags::get( 'auto_start_black_wizard_onboarding', false ),
+						'importDesignIndex'              => Flags::get( 'import_design_index', null ),
+						'importDesignAiStructure'        => Flags::get( 'import_design_ai_structure', null ),
+						'aiWizardDescriptionOptional'    => Flags::getSetting( 'aiWizardDescriptionOptional', false ),
+						'showFrontPageRevertNotice'		 => KubioFrontPageRevertNotice::getShowNoticeInEditor(),
+						'frontPageRevertBackupData'		 => KubioFrontPageRevertNotice::getInstance()->getFrontPageBackupData(),
+						'frontPageRevertNoticeNonce' 	 =>  wp_create_nonce(KubioFrontPageRevertNotice::$nonceKey),
+						'allow3rdPartyBlogOverride'      => apply_filters( 'kubio/allow_3rd_party_blog_override', true ),
+						'multilanguage'                  => array(
+							'hasTranslator'    => $is_wpml_active || $is_polylang_active,
+							'isWpmlActive'     => $is_wpml_active,
+							'isPolylangActive' => $is_polylang_active,
+							'polylang_add_page_translation_nonce' => wp_create_nonce( 'kubio_api_polylang_add_page_translation' ),
+						),
 					),
 					apply_filters( 'kubio/kubio-utils-data/extras', array() )
 				)
@@ -449,7 +455,7 @@ function kubio_print_style_manager_web_worker() {
 
 	$script = preg_replace_callback(
 		'#<script(.*?)>(.*?)</script>#s',
-		function( $matches ) {
+		function ( $matches ) {
 			$script_attrs = Arr::get( $matches, 1, '' );
 			preg_match( "#src=(\"|')(.*?)(\"|')#", $script_attrs, $attrs_match );
 			$url     = Arr::get( $attrs_match, 2, '' );
@@ -480,6 +486,7 @@ function kubio_print_style_manager_web_worker() {
 		header( 'Etag: ' . md5( $content ) );
 	}
 
+	// phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 	die( $content );
 }
 
@@ -514,7 +521,7 @@ add_action(
 	</script>
 		<?php
 
-		$content = strip_tags( ob_get_clean() );
+		$content = wp_strip_all_tags( ob_get_clean() );
 
 		wp_add_inline_script( 'wp-polyfill', $content, 'after' );
 	}
@@ -541,10 +548,11 @@ function kubio_defer_kubio_styles( $tag, $handle, $href, $media ) {
 		return $tag;
 	}
 
-	$defferable_handles = array( 'kubio-google-fonts', 'kubio-third-party-blocks' );
+	$deferrable_handles = array( 'kubio-google-fonts', 'kubio-third-party-blocks' );
 
-	if ( in_array( $handle, $defferable_handles ) ) {
-		$tag  = preg_replace( "#rel='(.*?)'#", 'rel="preload" as="style" onload="this.onload=null;this.rel=\'$1\'"', $tag );
+	if ( in_array( $handle, $deferrable_handles ) ) {
+		$tag = preg_replace( "#rel='(.*?)'#", 'rel="preload" as="style" onload="this.onload=null;this.rel=\'$1\'"', $tag );
+		// phpcs:ignore WordPress.WP.EnqueuedResources.NonEnqueuedStylesheet
 		$tag .= "<noscript><link rel='stylesheet' href='{$href}' media='{$media}'></noscript>";
 	}
 

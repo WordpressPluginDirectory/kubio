@@ -7,7 +7,6 @@ use Kubio\Core\LodashBasic;
 use Kubio\Core\Registry;
 use Kubio\Core\Styles\FlexAlign;
 use Kubio\Core\Utils;
-use Kubio\Core\StyleManager\DynamicStyles;
 
 
 class NavigationTopBarBlock extends SectionBlock {
@@ -40,7 +39,6 @@ class NavigationBlock extends BlockContainerBase {
 
 		return $map;
 	}
-
 }
 
 
@@ -93,7 +91,7 @@ class NavigationSectionBlock extends BlockContainerBase {
 			'animation.duration.value',
 			0,
 			array(
-				'styledComponent' => NavigationBlock::NAVIGATION_CONTAINER,
+				'styledComponent' => NavigationBlock::NAVIGATION_SECTION,
 				'media'           => 'desktop',
 				'ancestor'        => '',
 			)
