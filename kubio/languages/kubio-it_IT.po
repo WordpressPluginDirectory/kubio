@@ -7,7 +7,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2025-04-01T08:41:28+03:00\n"
+"POT-Creation-Date: 2025-05-05T17:34:55+03:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Language: \n"
 "X-Generator: WP-CLI 2.11.0\n"
@@ -81,80 +81,90 @@ msgstr "Articoli scritti da %s"
 msgid "Posts about %s"
 msgstr "Articoli su %s"
 
+#: build/block-library/blocks/page-title/index.php:50
+#: lib/integrations/third-party-themes/templates-importer.php:285
+#: lib/kubio-editor.php:160
+#: lib/src/Core/Activation.php:427
+#: lib/src/Core/Activation.php:611
+#: lib/src/Core/KubioFrontPageRevertNotice.php:556
+#: build/editor/index.js:21
+msgid "Blog"
+msgstr "Blog"
+
 #. translators: Yearly archive title. 1: Year
-#: build/block-library/blocks/page-title/index.php:75
+#: build/block-library/blocks/page-title/index.php:74
 msgctxt "yearly archives date format"
 msgid "Y"
 msgstr "Y"
 
 #. translators: Monthly archive title. 1: Month name and year
-#: build/block-library/blocks/page-title/index.php:79
+#: build/block-library/blocks/page-title/index.php:78
 msgctxt "monthly archives date format"
 msgid "F Y"
 msgstr "Archivio mensile %1$s"
 
 #. translators: Daily archive title. 1: Date
-#: build/block-library/blocks/page-title/index.php:83
+#: build/block-library/blocks/page-title/index.php:82
 msgctxt "daily archives date format"
 msgid "F j, Y"
 msgstr "j F Y"
 
-#: build/block-library/blocks/page-title/index.php:87
+#: build/block-library/blocks/page-title/index.php:86
 msgctxt "post format archive title"
 msgid "Asides"
 msgstr "Parentesi"
 
-#: build/block-library/blocks/page-title/index.php:89
+#: build/block-library/blocks/page-title/index.php:88
 msgctxt "post format archive title"
 msgid "Galleries"
 msgstr "Gallerie"
 
-#: build/block-library/blocks/page-title/index.php:91
+#: build/block-library/blocks/page-title/index.php:90
 msgctxt "post format archive title"
 msgid "Images"
 msgstr "Immagini"
 
-#: build/block-library/blocks/page-title/index.php:93
+#: build/block-library/blocks/page-title/index.php:92
 msgctxt "post format archive title"
 msgid "Videos"
 msgstr "Video"
 
-#: build/block-library/blocks/page-title/index.php:95
+#: build/block-library/blocks/page-title/index.php:94
 msgctxt "post format archive title"
 msgid "Quotes"
 msgstr "Citazioni"
 
-#: build/block-library/blocks/page-title/index.php:97
+#: build/block-library/blocks/page-title/index.php:96
 msgctxt "post format archive title"
 msgid "Links"
 msgstr "Link"
 
-#: build/block-library/blocks/page-title/index.php:99
+#: build/block-library/blocks/page-title/index.php:98
 msgctxt "post format archive title"
 msgid "Statuses"
 msgstr "Stati"
 
-#: build/block-library/blocks/page-title/index.php:101
+#: build/block-library/blocks/page-title/index.php:100
 msgctxt "post format archive title"
 msgid "Audio"
 msgstr "Audio"
 
-#: build/block-library/blocks/page-title/index.php:103
+#: build/block-library/blocks/page-title/index.php:102
 msgctxt "post format archive title"
 msgid "Chats"
 msgstr "Chats"
 
 #. translators: Post type archive title. 1: Post type name
-#: build/block-library/blocks/page-title/index.php:107
+#: build/block-library/blocks/page-title/index.php:106
 msgid "Archives: %s"
 msgstr "Archivi: %s"
 
 #. translators: Taxonomy term archive title. 1: Taxonomy singular name, 2: Current taxonomy term
-#: build/block-library/blocks/page-title/index.php:111
+#: build/block-library/blocks/page-title/index.php:110
 msgid "%1$s: %2$s"
 msgstr "%1$s: %2$s"
 
-#: build/block-library/blocks/page-title/index.php:113
+#: build/block-library/blocks/page-title/index.php:112
 msgid "Archives"
 msgstr "Archivi"
 
@@ -211,9 +221,9 @@ msgstr "Area widget non trovata"
 
 #: lib/add-edit-in-kubio.php:93
 #: lib/add-edit-in-kubio.php:197
-#: lib/add-edit-in-kubio.php:364
+#: lib/add-edit-in-kubio.php:376
 #: lib/filters/default-editor-overlay.php:156
-#: lib/kubio-editor.php:996
+#: lib/kubio-editor.php:997
 #: build/block-library/index.js:13
 msgid "Edit with Kubio"
 msgstr "Modifica con Kubio"
@@ -272,7 +282,7 @@ msgid "Starter Sites"
 msgstr "Modelli di sito"
 
 #: lib/admin-pages/main-page/demo-sites.php:13
-#: lib/kubio-editor.php:1245
+#: lib/kubio-editor.php:1246
 msgid "You need a higher level of permission."
 msgstr "Hai bisogno di autorizzazioni più elevate."
 
@@ -350,7 +360,7 @@ msgstr "Disponibile solo con Kubio PRO"
 #: lib/admin-pages/main-page/demo-sites.php:149
 #: build/block-editor/index.js:11
 #: build/block-editor/index.js:23
-#: build/block-editor/index.js:96
+#: build/block-editor/index.js:94
 #: build/block-library/index.js:19
 #: build/controls/index.js:35
 #: build/editor/index.js:1
@@ -522,7 +532,7 @@ msgstr "Costruisci in modo più intelligente e veloce con Kubio AI"
 msgid "Unauthorized"
 msgstr "Non autorizzato"
 
-#: lib/AI/api.php:700
+#: lib/AI/api.php:873
 #: lib/AI/SDApi/KubioCloudSDApi.php:75
 msgid "No image was generated"
 msgstr "Nessuna immagine è stata generata"
@@ -537,7 +547,11 @@ msgstr "Fotografico"
 msgid "3D Model"
 msgstr "Modello 3D"
 
+#. translators: 1: The side of the block being modified (top, bottom, left etc.). 2. Type of spacing being modified (padding, margin, etc).
+#. translators: %s: file name
 #: lib/AI/SDApi/KubioImagePrompts.php:15
+#: build/block-editor/index.js:100
+#: build/block-editor/index.js:110
 #: build/controls/index.js:35
 msgid "Background image"
 msgstr "Immagine di sfondo"
@@ -552,7 +566,7 @@ msgid "Artistic painting"
 msgstr "Pittura artistica"
 
 #: lib/AI/SDApi/KubioImagePrompts.php:24
-#: build/block-editor/index.js:96
+#: build/block-editor/index.js:94
 #: build/block-library/index.js:19
 #: build/editor/index.js:55
 msgid "Landscape"
@@ -563,7 +577,7 @@ msgid "Macro"
 msgstr "Macro"
 
 #: lib/AI/SDApi/KubioImagePrompts.php:26
-#: build/block-editor/index.js:96
+#: build/block-editor/index.js:94
 #: build/block-library/index.js:19
 #: build/editor/index.js:55
 msgid "Portrait"
@@ -599,6 +613,7 @@ msgid "Floral"
 msgstr "Floreale"
 
 #: lib/AI/SDApi/KubioImagePrompts.php:40
+#: build/block-editor/index.js:100
 #: build/controls/index.js:15
 #: build/controls/index.js:35
 #: build/controls/index.js:37
@@ -858,25 +873,25 @@ msgstr "La risposta dell'IA non è valida"
 msgid "AI response is invalid ( Empty response )"
 msgstr "La risposta dell'IA non è valida (risposta vuota)"
 
-#: lib/api/colibri.php:84
-#: lib/api/colibri.php:145
+#: lib/api/colibri.php:107
+#: lib/api/colibri.php:168
 msgid "Zip Export not supported."
 msgstr "Esportazione Zip non supportata."
 
-#: lib/api/colibri.php:98
+#: lib/api/colibri.php:121
 msgid "Bad screenshot."
 msgstr "Cattura schermo non valida."
 
-#: lib/api/colibri.php:103
-#: lib/api/colibri.php:163
+#: lib/api/colibri.php:126
+#: lib/api/colibri.php:186
 msgid "Bad name."
 msgstr "Nome non valido."
 
-#: lib/api/colibri.php:158
+#: lib/api/colibri.php:181
 msgid "No id."
 msgstr "Nessun ID."
 
-#: lib/api/colibri.php:218
+#: lib/api/colibri.php:241
 msgid "Unable to open export file (archive) for writing."
 msgstr "Impossibile aprire il file di esportazione (archivio) per la scrittura."
 
@@ -1255,6 +1270,7 @@ msgstr "Slug della parte del template"
 #: lib/full-site-editing/template-parts.php:140
 #: lib/full-site-editing/templates.php:21
 #: lib/full-site-editing/templates.php:259
+#: build/editor/index.js:51
 #: build/wp-global-styles/index.js:3
 msgid "Theme"
 msgstr "Tema"
@@ -1351,31 +1367,22 @@ msgstr "Template da includere nel tuo tema."
 msgid "Template slug"
 msgstr "Slug del template"
 
-#: lib/global-data.php:20
-#: lib/global-data.php:129
+#: lib/global-data.php:21
+#: lib/global-data.php:130
 msgid "Kubio Globals"
 msgstr "Kubio Globali"
 
 #. translators: %s is the number of the color e.g. Kubio color 1
-#: lib/global-data.php:424
+#: lib/global-data.php:425
 msgid "Kubio color %s"
 msgstr "Colore Kubio %s"
 
-#: lib/integrations/third-party-themes/templates-importer.php:285
-#: lib/kubio-editor.php:160
-#: lib/src/Core/Activation.php:424
-#: lib/src/Core/Activation.php:608
-#: lib/src/Core/KubioFrontPageRevertNotice.php:545
-#: build/editor/index.js:21
-msgid "Blog"
-msgstr "Blog"
-
 #: lib/integrations/third-party-themes/templates-importer.php:323
-#: lib/src/Core/Activation.php:491
-#: lib/src/Core/Activation.php:594
-#: lib/src/Core/KubioFrontPageRevertNotice.php:470
-#: lib/src/Core/KubioFrontPageRevertNotice.php:519
-#: lib/src/Core/KubioFrontPageRevertNotice.php:532
+#: lib/src/Core/Activation.php:494
+#: lib/src/Core/Activation.php:597
+#: lib/src/Core/KubioFrontPageRevertNotice.php:481
+#: lib/src/Core/KubioFrontPageRevertNotice.php:530
+#: lib/src/Core/KubioFrontPageRevertNotice.php:543
 msgid "Home"
 msgstr "Home"
 
@@ -1460,6 +1467,7 @@ msgid "Hero accent"
 msgstr "Accento della sezione principale"
 
 #: lib/kubio-editor.php:141
+#: build/ai/index.js:3
 msgid "About"
 msgstr "Chi siamo"
 
@@ -1468,10 +1476,8 @@ msgstr "Chi siamo"
 msgid "Features"
 msgstr "Funzionalità"
 
-#. translators: %d: number of blocks
-#. translators: %d: number of words
 #: lib/kubio-editor.php:151
-#: build/block-editor/index.js:118
+#: build/block-editor/index.js:110
 #: build/block-library/index.js:3
 #: build/block-library/index.js:29
 #: build/block-library/index.js:37
@@ -1543,83 +1549,83 @@ msgstr "Header"
 msgid "Footers"
 msgstr "Footer"
 
-#: lib/kubio-editor.php:385
+#: lib/kubio-editor.php:386
 #: build/block-editor/index.js:1
 #: build/block-library/index.js:19
 msgid "Thumbnail"
 msgstr "Miniatura"
 
-#: lib/kubio-editor.php:386
+#: lib/kubio-editor.php:387
 #: build/block-editor/index.js:1
 #: build/block-library/index.js:19
 #: build/editor/index.js:55
 msgid "Medium"
 msgstr "Medio"
 
-#: lib/kubio-editor.php:387
+#: lib/kubio-editor.php:388
 #: build/block-editor/index.js:1
 #: build/block-library/index.js:19
 #: build/editor/index.js:55
 msgid "Large"
 msgstr "Grande"
 
-#: lib/kubio-editor.php:388
+#: lib/kubio-editor.php:389
 #: build/block-editor/index.js:1
 #: build/block-library/index.js:19
 msgid "Original Size"
 msgstr "Dimensione originale"
 
-#: lib/kubio-editor.php:980
-#: lib/kubio-editor.php:984
-#: lib/kubio-editor.php:995
+#: lib/kubio-editor.php:981
+#: lib/kubio-editor.php:985
+#: lib/kubio-editor.php:996
 msgid "Kubio"
 msgstr "Kubio"
 
-#: lib/kubio-editor.php:1023
+#: lib/kubio-editor.php:1024
 #: lib/src/Core/EditInKubioCustomizerPanel.php:87
 msgid "Open Kubio Editor"
 msgstr "Apri Editor Kubio"
 
-#: lib/kubio-editor.php:1101
+#: lib/kubio-editor.php:1102
 msgid "What to show on the front page"
 msgstr "Cosa mostrare nella pagina principale"
 
-#: lib/kubio-editor.php:1114
+#: lib/kubio-editor.php:1115
 msgid "The ID of the page that should be displayed on the front page"
 msgstr "L'ID della pagina che dovrebbe essere mostrata nella home page"
 
-#: lib/kubio-editor.php:1129
+#: lib/kubio-editor.php:1130
 msgid "The ID of the page that displays the posts"
 msgstr "L'ID della pagina che mostra gli articoli"
 
-#: lib/kubio-editor.php:1147
+#: lib/kubio-editor.php:1148
 msgid "Site icon."
 msgstr "Icona del sito."
 
-#: lib/kubio-editor.php:1164
+#: lib/kubio-editor.php:1165
 msgctxt "Template name"
 msgid "Full Width"
 msgstr "Larghezza piena"
 
-#: lib/kubio-editor.php:1165
-#: lib/kubio-editor.php:1172
+#: lib/kubio-editor.php:1166
+#: lib/kubio-editor.php:1173
 msgid "Recommended Kubio template to display individual pages. This template works best with the Kubio provided blocks and predesigned sections."
 msgstr "Modello Kubio consigliato per visualizzare pagine individuali. Questo modello funziona meglio con i blocchi forniti da Kubio e le sezioni predefinite."
 
-#: lib/kubio-editor.php:1171
+#: lib/kubio-editor.php:1172
 msgctxt "Template name"
 msgid "Kubio Full Width"
 msgstr "Kubio Larghezza Intera"
 
-#: lib/kubio-editor.php:1246
+#: lib/kubio-editor.php:1247
 msgid "Sorry, you are not allowed to customize this site."
 msgstr "Non hai i permessi per personalizzare questo sito."
 
-#: lib/kubio-editor.php:1264
+#: lib/kubio-editor.php:1265
 msgid "Kubio Section"
 msgstr "Sezione Kubio"
 
-#: lib/kubio-editor.php:1306
+#: lib/kubio-editor.php:1307
 msgid "Kubio Favorites"
 msgstr "Preferiti di Kubio"
 
@@ -1830,7 +1836,7 @@ msgstr "Si è verificato un errore durante la chiamata al Server delle Licenze d
 msgid "Current license key was removed! Reason: %s"
 msgstr "La chiave di licenza attuale è stata rimossa! Motivo: %s"
 
-#: lib/src/Core/Activation.php:544
+#: lib/src/Core/Activation.php:547
 msgid "Primary menu"
 msgstr "Menu principale"
 
@@ -1845,6 +1851,7 @@ msgid "Template Part Not Found"
 msgstr "Parte del template non trovata"
 
 #: lib/src/Core/CustomizerImporter.php:275
+#: build/block-editor/index.js:100
 #: build/block-library/index.js:19
 #: build/controls/index.js:19
 #: build/controls/index.js:35
@@ -1863,28 +1870,28 @@ msgstr "Dopo aver installato il costruttore Kubio, tutte le modifiche al sito ve
 msgid " Please use the button below to open the Kubio editor."
 msgstr "Per favore, utilizza il pulsante qui sotto per aprire l'editor di Kubio."
 
-#: lib/src/Core/KubioFrontPageRevertNotice.php:699
+#: lib/src/Core/KubioFrontPageRevertNotice.php:710
 msgid "Keep the new home page?"
 msgstr "Mantenere la nuova home page?"
 
-#: lib/src/Core/KubioFrontPageRevertNotice.php:703
+#: lib/src/Core/KubioFrontPageRevertNotice.php:714
 msgid " We created a new home page for you. If you don't like it you can restore your previous home page."
 msgstr "Abbiamo creato una nuova home page per te. Se non ti piace, puoi ripristinare la tua home page precedente."
 
-#: lib/src/Core/KubioFrontPageRevertNotice.php:707
+#: lib/src/Core/KubioFrontPageRevertNotice.php:718
 msgid "Yes, keep my new home page"
 msgstr "Sì, mantieni la mia nuova home page"
 
-#: lib/src/Core/KubioFrontPageRevertNotice.php:710
+#: lib/src/Core/KubioFrontPageRevertNotice.php:721
 msgid "Restore my previous home page"
 msgstr "Ripristina la mia vecchia home page"
 
-#: lib/src/Core/KubioFrontPageRevertNotice.php:737
+#: lib/src/Core/KubioFrontPageRevertNotice.php:748
 #: build/editor/index.js:1
 msgid "Your previous home page was showing the most recent blog posts. Are you sure you want to restore your previous home page?"
 msgstr "La tua pagina iniziale precedente mostrava gli articoli più recenti del blog. Sei sicuro di voler ripristinare la tua pagina iniziale precedente?"
 
-#: lib/src/Core/KubioFrontPageRevertNotice.php:739
+#: lib/src/Core/KubioFrontPageRevertNotice.php:750
 #: build/editor/index.js:1
 msgid "Are you sure you want to restore your previous home page?"
 msgstr "Sei sicuro di voler ripristinare la tua home page precedente?"

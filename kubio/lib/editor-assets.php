@@ -385,6 +385,7 @@ add_action(
 						'kubioAIParallelCalls'           => apply_filters( 'kubio/ai/parallel-calls', 5 ),
 						'showInternalFeatures'           => defined( '\KUBIO_INTERNAL' ) && \KUBIO_INTERNAL,
 						'sectionStylesTags'              => array( 'shadow', 'flat', 'outlined', 'rounded', 'minimal' ),
+						'kubio_is_ai_site_editor'		 => Utils::getIsAISiteEditor(),
 						'activatedOnStage2'              => Flags::getSetting( 'activatedOnStage2', false ),
 						'aiStage2'                       => Flags::getSetting( 'aiStage2', false ),
 						'advancedMode'                   => Flags::getSetting( 'advancedMode', true ),
@@ -405,6 +406,7 @@ add_action(
 						'frontPageRevertBackupData'		 => KubioFrontPageRevertNotice::getInstance()->getFrontPageBackupData(),
 						'frontPageRevertNoticeNonce' 	 =>  wp_create_nonce(KubioFrontPageRevertNotice::$nonceKey),
 						'allow3rdPartyBlogOverride'      => apply_filters( 'kubio/allow_3rd_party_blog_override', true ),
+
 						'multilanguage'                  => array(
 							'hasTranslator'    => $is_wpml_active || $is_polylang_active,
 							'isWpmlActive'     => $is_wpml_active,
