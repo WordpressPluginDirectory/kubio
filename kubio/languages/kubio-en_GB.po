@@ -7,7 +7,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2025-09-11T11:33:25+03:00\n"
+"POT-Creation-Date: 2025-11-07T10:35:14+02:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Language: \n"
 "X-Generator: WP-CLI 2.12.0\n"
@@ -1839,6 +1839,10 @@ msgstr "Kubio Preview"
 #: lib/preview/index.php:253
 msgid "Current preview state is unavailable"
 msgstr "Current preview state is unavailable"
+
+#: lib/preview/index.php:288
+msgid "No URL provided"
+msgstr "No URL provided"
 
 #. translators: the placeholder is an url
 #: lib/pro/filters/notices.php:33
